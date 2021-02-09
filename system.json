@@ -100,8 +100,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": null,
-  "url": "https://github.com/foag/morkborkFVTT",
-  "manifest": "https://raw.githubusercontent.com/foag/morkborkFVTT/main/system.json",
-  "download": "https://raw.githubusercontent.com/foag/morkborkFVTT/main/dist/morkbork.zip",
+  "url": "https://github.com/foag/morkbork",
+  "manifest": "https://raw.githubusercontent.com/foag/morkbork/main/system.json",
+  "download": "https://raw.githubusercontent.com/foag/morkbork/main/dist/morkbork.zip",
   "license": null
 }
