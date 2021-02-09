@@ -4,7 +4,7 @@ import { MbClassList } from "../../config.js";
  * Extend the base Actor entity by defining a custom roll data structure which is ideal for the Simple system.
  * @extends {Actor}
  */
-export class MorkBorgActor extends Actor {
+export class MorkBorkActor extends Actor {
 
   /**
    * Augment the basic actor data with additional dynamic data.
