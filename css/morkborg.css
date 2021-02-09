@@ -198,7 +198,7 @@
 }
 
 .morkborg .tabs .item.active {
-  background: #f142af;
+  background: #ffe72e;
   color: black;
   text-decoration: underline;
   text-shadow: none;
@@ -258,11 +258,11 @@
 }
 
 .morkborg .items-list .item-header {
-  color: #ffc815;
+  color: #ffe72e;
   background-color: #ffffff18;
   margin: 2px 0;
   padding: 0;
-  border: 2px groove grey;
+  border: 2px groove #ffffff18;
   font-weight: bold;
 }
 
@@ -360,10 +360,9 @@
 
 .morkborg .char-sheet .left-column {
   grid-area: left-column;
-  border-right: 1px solid #ffc815;
+  border-right: 1px solid #ffe72e;
   padding: 10px 20px;
   height: 100%;
-  background: #292929;
 }
 
 .morkborg .char-sheet .left-column .left-column-title {
@@ -409,7 +408,6 @@
 
 .morkborg .ability {
   margin-bottom: 10px;
-  list-style: none;
 }
 
 .morkborg .mb-label {
@@ -469,11 +467,12 @@
 
 .morkborg .window-content {
   padding: 0px;
-  background: #585858;
+  background: black;
   color: white;
 }
 
 .morkborg .rollable {
+  color: #f142af;
   -ms-flex-item-align: center;
   align-self: center;
 }
@@ -492,7 +491,7 @@
 .morkborg textarea {
   background: black;
   color: white;
-  border: 1px solid #ffc815;
+  border: 1px solid #ffe72e;
 }
 
 .morkborg label {
@@ -500,31 +499,28 @@
   text-transform: capitalize;
   -ms-flex-item-align: center;
   align-self: center;
-  text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
 }
 
 .morkborg h1 {
   border-bottom: none;
   font-family: "FetteTrumpDeutsch", fantasy, serif;
   font-size: 30px;
-  color: #ffc815;
-  text-shadow: 5px 6px 5px rgba(0,0,0,5);
+  color: #ffe72e;
 }
 
 .morkborg h2 {
   border-bottom: none;
   font-family: "Rakkas", cursive, serif;
-  font-size: 20px;
-  color: #ffc815;
+  font-size: 15px;
+  color: #ffe72e;
   margin-top: 15px;
-  text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
 }
 
 .morkborg input {
   text-align: center;
   background: black;
   color: white;
-  border: 1px solid #ffc815;
+  border: 1px solid #ffe72e;
 }
 
 .morkborg button {
@@ -574,7 +570,7 @@
 .morkborg select {
   height: 25px;
   background: black;
-  border: 1px solid #ffc815;
+  border: 1px solid #ffe72e;
   border-radius: 3px;
   padding: 0 3px;
   -o-text-overflow: ellipsis;
@@ -604,8 +600,19 @@
 .dice-roll .dice-total.critical,
 .inline-roll.critical {
   color: green;
-  font-weight: 900; }
+  font-weight: 900;
+}
 
 .dice-roll .dice-total.fumble,
 .inline-roll.fumble {
-  color: red; }
+  color: red;
+}
+
+/* ----------------------------------------- */
+/*  Rollable                                 */
+/* ----------------------------------------- */
+.mb .rollable:hover {
+  color: #000;
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}

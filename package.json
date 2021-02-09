@@ -1,0 +1,27 @@
+{
+  "name": "morkbork",
+  "version": "1.0.0",
+  "description": "CSS compiler for the Mork Borg system",
+  "scripts": {
+    "build": "gulp",
+    "compile": "gulp css",
+    "watch": "gulp",
+    "gulp": "gulp"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "author": "foag",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
