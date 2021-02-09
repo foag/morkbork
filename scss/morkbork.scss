@@ -1,0 +1,211 @@
+// Import utilities.
+@import 'utils/typography';
+@import 'utils/colors';
+@import 'utils/mixins';
+@import 'utils/variables';
+@import 'utils/grid';
+
+
+body {
+  font-family: $font-primary; 
+  background-image: url('../img/board_bg.jpg');
+}
+
+/* Styles limited to morkbork sheets */
+.morkbork {
+  @import 'components/forms';
+  @import 'components/tabs';
+  @import 'components/items';
+  @import 'components/character';
+
+  .window-content {
+    padding: 0px;
+    background: $mb-black;
+    color: $mb-white;
+  }
+
+  .rollable {
+    color: $mb-white;
+    border-bottom: 1px dashed $mb-white;
+    display: inline-block;
+
+    &:hover,
+    &:focus {
+      color: $mb-white;
+      text-shadow: 0 0 10px $mb-pink;
+      cursor: pointer;
+    }
+    
+    align-self: center;
+  }
+
+  body {
+    font-family: $font-primary;
+    color: $mb-white;
+  }
+  
+  textarea {
+    background: $mb-black;
+    color: $mb-white;
+    border: 1px solid $mb-yellow;
+  }
+
+  label {
+    // font-weight: bold;
+    // text-transform: capitalize;
+    align-self: center;
+  }
+  
+  h1 {
+    border-bottom: none;
+    font-family: $font-secondary;
+    font-size: 30px;
+    color: black;
+    background: $mb-yellow;
+    line-height: 35px;
+    display: inline-block;
+  }
+  
+  h2 {
+    border-bottom: none;
+    font-family: $font-primary;
+    font-weight: bold;
+    font-size: 15px;
+    color: $mb-yellow;
+    margin-top: 15px;
+  }
+  
+  input {
+    text-align: center;
+    color: $mb-white;
+    background: $mb-black;
+    border: 0;
+    border-bottom: 1px dotted $mb-white;
+    border-radius: 0;
+
+    &:focus {
+      color: $mb-black;
+      background: $mb-white;
+      border-bottom: 1px dotted $mb-black;
+      box-shadow: none;
+    }
+  }
+
+  button {
+    font-family: $font-primary;
+    border: 1px solid;
+    border-radius: 0;
+    color: $mb-white;
+    margin: 0 10px 0;
+    line-height: 30px;
+    font-weight: bold;
+
+    &:active,
+    &:hover {
+      background: $mb-white;
+      color: $mb-black;
+      cursor: pointer;
+      box-shadow: none;
+    }
+  }
+
+  ul, li {
+    list-style-type: none;
+  }
+  
+  .defense {
+    background: $mb-black;
+    border: 1px solid;
+    color: $mb-white;
+    margin: 0 10px 0;
+    line-height: 30px;
+    font-weight: bold;
+
+    &:hover {
+      background: $mb-black;
+      // color: $mb-black;
+      cursor: pointer;
+      text-shadow: 0 0 10px $mb-yellow;
+    }
+  }
+
+  .attack {
+    background: $mb-white;
+    border: 1px solid;
+    border-radius: none;
+    color: $mb-black;
+    margin: 0 10px 0;
+    line-height: 30px;
+    font-weight: bold;
+
+    &:hover {
+      background: $mb-white;
+      color: $mb-black;
+      cursor: pointer;
+      text-shadow: 0 0 10px $mb-red;
+    }
+  }
+  
+  select {
+    height: 25px;
+    background: $mb-white;
+    border-color: $mb-white;
+    border-radius: 0;
+    padding: 0 3px;
+    text-overflow: ellipsis;
+    color: $mb-black;
+  
+    option {
+      margin: 40px;
+      background: $mb-black;
+      color: $mb-white;
+      text-shadow: 0 1px 0 $mb-pink;
+    }
+  }
+
+  /* ----------------------------------------- */
+  /*  TinyMCE                                  */
+  /* ----------------------------------------- */
+  .editor-content:empty:before {
+    content: "This text is editable";
+  }
+
+  .tinymcewrapper {
+    background: white;
+    color: black;
+  }
+  /*
+  suppose you have class MyActorSheet extends ActorSheet {
+  you need to define MyActorSheet._createEditor()
+  (AFK) Anathema (He/Him)[UTC-7]04/11/2020
+  awesome. Clarity achieved.
+
+  _createEditor(target, editorOptions, initialContent) {
+    editorOptions.content_css = "your/css/path.css";
+    return super._createEditor(target, editorOptions, initialContent);
+  });
+  */
+}
+
+/* ----------------------------------------- */
+/*  Chat Rolls                               */
+/* ----------------------------------------- */
+.dice-roll .dice-total.critical,
+.inline-roll.critical {
+  color: green;
+  font-weight: 900;
+}
+
+.dice-roll .dice-total.fumble,
+.inline-roll.fumble {
+  color: red;
+}
+/* ----------------------------------------- */
+/*  Rollable                                 */
+/* ----------------------------------------- */
+
+.mb .rollable:hover {
+  color: #000;
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}

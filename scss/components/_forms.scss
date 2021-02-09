@@ -16,13 +16,19 @@
   }
 }
 
+.profile-img-wrapper {
+  display: flex;
+    padding: 1rem;
+}
+
 .profile-img {
-  flex: 0 0 100px;
-  height: 200px;
+  height: 100px;
+  margin: 0 auto;
 }
 
 .sheet-tabs {
   flex: 0;
+  border: none!important;
 }
 
 .sheet-body,

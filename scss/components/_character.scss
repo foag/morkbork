@@ -8,7 +8,7 @@
 
     .left-column { 
         grid-area: left-column; 
-        border-right: 1px solid $mb-yellow;
+        border-right: 1px solid $mb-white;
         padding: 10px 20px;
         height: 100%;
 
@@ -59,9 +59,18 @@
     margin-bottom: 10px;
 }
 
+.ability-name {
+    text-transform: capitalize;
+}
+
 .mb-label {
-    text-transform: uppercase;
-    font-family: $font-tertiary;
+    // text-transform: uppercase;
+    // font-family: $font-tertiary;
+    // font-weight: bold;
+}
+
+.mb-label + span {
+    color: $mb-yellow;
 }
 
 .small-input {
@@ -86,10 +95,10 @@
 .class-grid {
     padding-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
     grid-template-rows: 125px 1fr 1fr;
     gap: 1px 1px;
-    grid-template-areas: "class-img class-abilities class-items class-items" "class-content class-content class-content class-content" "class-content class-content class-content class-content";
+    grid-template-areas: "class-abilities class-img class-items class-items" "class-content class-content class-content class-content" "class-content class-content class-content class-content";
     height: 100%;
 
     .class-content { 

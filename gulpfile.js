@@ -1,3 +1,5 @@
+const cpPath = "/Users/foag/Library/Application Support/FoundryVTT/Data/systems"
+
 const gulp = require('gulp');
 const prefix = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');

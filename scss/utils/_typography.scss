@@ -1,18 +1,32 @@
-// @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
-// @font-face {
-//     font-family: 'Sebaldus-Gotisch';
-//     src: url("../fonts/Sebaldus-Gotisch.ttf") format('truetype');
-// }
-
-@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;577&display=swap');
-
 @font-face {
-    font-family: 'FetteTrumpDeutsch';
-    src: url("../fonts/FetteTrumpDeutsch.ttf") format('truetype');
+    font-family: 'edoregular';
+    src: url('../fonts/edo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-$font-primary: 'Inconsolata', "Signika", sans-serif;
-$font-secondary: 'FetteTrumpDeutsch', fantasy, serif;
-$font-tertiary: 'Rakkas', cursive, serif;
+@font-face {
+    font-family: 'kingthings';
+    src: url('../fonts/kingthings.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kingthings';
+    src: url('../fonts/Moms_typewriter-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'requiem';
+    src: url('../fonts/requiem_for_a-webfont.woff2') format('woff2'),
+         url('../fonts/requiem_for_a-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-primary: 'kingthings', "Signika", sans-serif;
+$font-secondary: 'requiem', fantasy, serif;
+$font-tertiary: 'edoregular', cursive, serif;

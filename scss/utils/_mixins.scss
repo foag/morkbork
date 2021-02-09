@@ -14,3 +14,19 @@
 @mixin hide {
   display: none;
 }
+
+$sides: ("b": "bottom","t": "top","l": "left","r": "right");
+@each $prefix, $value in $sides {
+  @for $i from 0 through 10 {
+    .m#{$prefix} {
+      &-#{($i)} {
+        margin-#{$value}:#{($i * 0.5)}rem;
+      }
+    }
+    .p#{$prefix} {
+      &-#{($i)} {
+        padding-#{$value}:#{($i * 0.5)}rem;
+      }
+    }
+  }
+}

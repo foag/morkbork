@@ -1,0 +1,1049 @@
+@font-face {
+  font-family: 'edoregular';
+  src: url("../fonts/edo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kingthings';
+  src: url("../fonts/kingthings.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kingthings';
+  src: url("../fonts/Moms_typewriter-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'requiem';
+  src: url("../fonts/requiem_for_a-webfont.woff2") format("woff2"), url("../fonts/requiem_for_a-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mb-0 {
+  margin-bottom: 0rem;
+}
+
+.pb-0 {
+  padding-bottom: 0rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.pb-4 {
+  padding-bottom: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 2.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 2.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 3rem;
+}
+
+.pb-6 {
+  padding-bottom: 3rem;
+}
+
+.mb-7 {
+  margin-bottom: 3.5rem;
+}
+
+.pb-7 {
+  padding-bottom: 3.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 4rem;
+}
+
+.pb-8 {
+  padding-bottom: 4rem;
+}
+
+.mb-9 {
+  margin-bottom: 4.5rem;
+}
+
+.pb-9 {
+  padding-bottom: 4.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 5rem;
+}
+
+.pb-10 {
+  padding-bottom: 5rem;
+}
+
+.mt-0 {
+  margin-top: 0rem;
+}
+
+.pt-0 {
+  padding-top: 0rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.pt-3 {
+  padding-top: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.pt-4 {
+  padding-top: 2rem;
+}
+
+.mt-5 {
+  margin-top: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 2.5rem;
+}
+
+.mt-6 {
+  margin-top: 3rem;
+}
+
+.pt-6 {
+  padding-top: 3rem;
+}
+
+.mt-7 {
+  margin-top: 3.5rem;
+}
+
+.pt-7 {
+  padding-top: 3.5rem;
+}
+
+.mt-8 {
+  margin-top: 4rem;
+}
+
+.pt-8 {
+  padding-top: 4rem;
+}
+
+.mt-9 {
+  margin-top: 4.5rem;
+}
+
+.pt-9 {
+  padding-top: 4.5rem;
+}
+
+.mt-10 {
+  margin-top: 5rem;
+}
+
+.pt-10 {
+  padding-top: 5rem;
+}
+
+.ml-0 {
+  margin-left: 0rem;
+}
+
+.pl-0 {
+  padding-left: 0rem;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+.pl-1 {
+  padding-left: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 1rem;
+}
+
+.ml-3 {
+  margin-left: 1.5rem;
+}
+
+.pl-3 {
+  padding-left: 1.5rem;
+}
+
+.ml-4 {
+  margin-left: 2rem;
+}
+
+.pl-4 {
+  padding-left: 2rem;
+}
+
+.ml-5 {
+  margin-left: 2.5rem;
+}
+
+.pl-5 {
+  padding-left: 2.5rem;
+}
+
+.ml-6 {
+  margin-left: 3rem;
+}
+
+.pl-6 {
+  padding-left: 3rem;
+}
+
+.ml-7 {
+  margin-left: 3.5rem;
+}
+
+.pl-7 {
+  padding-left: 3.5rem;
+}
+
+.ml-8 {
+  margin-left: 4rem;
+}
+
+.pl-8 {
+  padding-left: 4rem;
+}
+
+.ml-9 {
+  margin-left: 4.5rem;
+}
+
+.pl-9 {
+  padding-left: 4.5rem;
+}
+
+.ml-10 {
+  margin-left: 5rem;
+}
+
+.pl-10 {
+  padding-left: 5rem;
+}
+
+.mr-0 {
+  margin-right: 0rem;
+}
+
+.pr-0 {
+  padding-right: 0rem;
+}
+
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
+.pr-1 {
+  padding-right: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 1rem;
+}
+
+.pr-2 {
+  padding-right: 1rem;
+}
+
+.mr-3 {
+  margin-right: 1.5rem;
+}
+
+.pr-3 {
+  padding-right: 1.5rem;
+}
+
+.mr-4 {
+  margin-right: 2rem;
+}
+
+.pr-4 {
+  padding-right: 2rem;
+}
+
+.mr-5 {
+  margin-right: 2.5rem;
+}
+
+.pr-5 {
+  padding-right: 2.5rem;
+}
+
+.mr-6 {
+  margin-right: 3rem;
+}
+
+.pr-6 {
+  padding-right: 3rem;
+}
+
+.mr-7 {
+  margin-right: 3.5rem;
+}
+
+.pr-7 {
+  padding-right: 3.5rem;
+}
+
+.mr-8 {
+  margin-right: 4rem;
+}
+
+.pr-8 {
+  padding-right: 4rem;
+}
+
+.mr-9 {
+  margin-right: 4.5rem;
+}
+
+.pr-9 {
+  padding-right: 4.5rem;
+}
+
+.mr-10 {
+  margin-right: 5rem;
+}
+
+.pr-10 {
+  padding-right: 5rem;
+}
+
+.grid,
+.grid-2col {
+  display: grid;
+  grid-column: span 2 / span 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0;
+}
+
+.grid-3col {
+  grid-column: span 3 / span 3;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4col {
+  grid-column: span 4 / span 4;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-5col {
+  grid-column: span 5 / span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-6col {
+  grid-column: span 5 / span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-7col {
+  grid-column: span 7 / span 7;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-8col {
+  grid-column: span 8 / span 8;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-9col {
+  grid-column: span 9 / span 9;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-10col {
+  grid-column: span 10 / span 10;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.grid-11col {
+  grid-column: span 11 / span 11;
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+}
+
+.grid-12col {
+  grid-column: span 12 / span 12;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.flex-group-center,
+.flex-group-left,
+.flex-group-right {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+.flex-group-left {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.flex-group-right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body {
+  font-family: "kingthings", "Signika", sans-serif;
+  background-image: url("../img/board_bg.jpg");
+}
+
+/* Styles limited to morkbork sheets */
+.morkbork {
+  /* ----------------------------------------- */
+  /*  TinyMCE                                  */
+  /* ----------------------------------------- */
+  /*
+  suppose you have class MyActorSheet extends ActorSheet {
+  you need to define MyActorSheet._createEditor()
+  (AFK) Anathema (He/Him)[UTC-7]04/11/2020
+  awesome. Clarity achieved.
+
+  _createEditor(target, editorOptions, initialContent) {
+    editorOptions.content_css = "your/css/path.css";
+    return super._createEditor(target, editorOptions, initialContent);
+  });
+  */
+}
+
+.morkbork .item-form {
+  font-family: "kingthings", "Signika", sans-serif;
+}
+
+.morkbork .sheet-header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 210px;
+  flex: 0 0 210px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.morkbork .sheet-header .header-fields {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.morkbork .profile-img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+.morkbork .profile-img {
+  height: 100px;
+  margin: 0 auto;
+}
+
+.morkbork .sheet-tabs {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  border: none !important;
+}
+
+.morkbork .sheet-body,
+.morkbork .sheet-body .tab,
+.morkbork .sheet-body .tab .editor {
+  height: 100%;
+}
+
+.morkbork .mce-content-body {
+  color: white;
+}
+
+.morkbork .mce-content-body p {
+  color: white;
+}
+
+.morkbork .tabs .item {
+  background: black;
+  border: 1px solid;
+  border-radius: 0;
+  margin: 0 10px 0;
+  line-height: 30px;
+}
+
+.morkbork .tabs .item:hover, .morkbork .tabs .item:focus {
+  background: white;
+  color: black;
+  text-shadow: none;
+}
+
+.morkbork .tabs .item.active {
+  background: #FFE82C;
+  color: black;
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+.morkbork .items-list {
+  list-style: none;
+  margin: 7px 0;
+  padding: 0 5px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  /* Tags */
+}
+
+.morkbork .items-list .item {
+  line-height: 30px;
+  padding: 0 2px;
+  border-bottom: 1px solid #ffffff18;
+}
+
+.morkbork .items-list .item:last-child {
+  border-bottom: none;
+}
+
+.morkbork .items-list .item .item-name {
+  cursor: pointer;
+  max-height: 30px;
+  overflow: hidden;
+}
+
+.morkbork .items-list .item .item-name .item-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  background-size: 30px;
+  margin-right: 5px;
+}
+
+.morkbork .items-list .item .item-name h4 {
+  margin: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.morkbork .items-list .item .item-properties {
+  margin-top: 3px;
+}
+
+.morkbork .items-list .item .action {
+  color: #f142af;
+}
+
+.morkbork .items-list .item .action:hover, .morkbork .items-list .item .action:focus {
+  color: white;
+  text-shadow: 0 0 10px #f142af;
+  cursor: pointer;
+}
+
+.morkbork .items-list .item-header {
+  color: #FFE82C;
+  background-color: #ffffff18;
+  margin: 2px 0;
+  padding: 0;
+  border: 2px groove #ffffff18;
+  font-weight: bold;
+}
+
+.morkbork .items-list .item-header .item-image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  margin-right: 5px;
+}
+
+.morkbork .items-list .item-header img {
+  display: block;
+  border: none;
+}
+
+.morkbork .items-list .item-header .item-detail {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.morkbork .items-list .item-header h3 {
+  padding-left: 5px;
+  font-family: "kingthings", "Signika", sans-serif;
+  margin: 0px;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.morkbork .items-list .item-detail {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 70px;
+  flex: 0 0 70px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  border-right: 1px solid #ffffff18;
+  word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.morkbork .items-list .item-detail:last-child {
+  border-right: none;
+}
+
+.morkbork .items-list .item-controls {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 55px;
+  flex: 0 0 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  text-align: right;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.morkbork .items-list .item-controls a {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.morkbork .items-list .item-controls a:hover, .morkbork .items-list .item-controls a:focus {
+  color: white;
+  text-shadow: 0 0 10px #f142af;
+  cursor: pointer;
+}
+
+.morkbork .items-list .item-summary {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0.25em 0.5em;
+  border-top: 1px solid #ffffff18;
+}
+
+.morkbork .items-list .tag {
+  display: inline-block;
+  margin: 0 2px 0 0;
+  padding: 0 3px;
+  font-size: 10px;
+  line-height: 16px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.morkbork .char-sheet {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 180px 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "left-column header header header header" "left-column content content content content" "left-column content content content content" "left-column content content content content";
+  height: 100%;
+}
+
+.morkbork .char-sheet .left-column {
+  grid-area: left-column;
+  border-right: 1px solid white;
+  padding: 10px 20px;
+  height: 100%;
+}
+
+.morkbork .char-sheet .left-column .left-column-title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.morkbork .char-sheet .left-column .left-column-input {
+  min-height: 30px;
+}
+
+.morkbork .char-sheet .header {
+  grid-area: header;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.morkbork .char-sheet .header-item {
+  margin-bottom: 10px;
+}
+
+.morkbork .char-sheet .content {
+  grid-area: content;
+  padding: 10px;
+}
+
+.morkbork .char-sheet .grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "check-box desc";
+}
+
+.morkbork .char-sheet .grid-container .check-box {
+  grid-area: check-box;
+}
+
+.morkbork .char-sheet .grid-container .desc {
+  grid-area: desc;
+  margin-bottom: 5px;
+}
+
+.morkbork .ability {
+  margin-bottom: 10px;
+}
+
+.morkbork .ability-name {
+  text-transform: capitalize;
+}
+
+.morkbork .mb-label + span {
+  color: #FFE82C;
+}
+
+.morkbork .small-input {
+  max-width: 60px;
+}
+
+.morkbork .charname {
+  height: 50px;
+  padding: 0px;
+  margin: 5px 0;
+  border-bottom: none;
+  font-size: 25px;
+}
+
+.morkbork .charname input {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+.morkbork .class-grid {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
+  grid-template-rows: 125px 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "class-abilities class-img class-items class-items" "class-content class-content class-content class-content" "class-content class-content class-content class-content";
+  height: 100%;
+}
+
+.morkbork .class-grid .class-content {
+  grid-area: class-content;
+}
+
+.morkbork .class-grid .class-img {
+  grid-area: class-img;
+}
+
+.morkbork .class-grid .class-abilities {
+  grid-area: class-abilities;
+}
+
+.morkbork .class-grid .class-abilities .class-ability-mod {
+  text-align: center;
+}
+
+.morkbork .class-grid .class-items {
+  grid-area: class-items;
+}
+
+.morkbork .window-content {
+  padding: 0px;
+  background: black;
+  color: white;
+}
+
+.morkbork .rollable {
+  color: white;
+  border-bottom: 1px dashed white;
+  display: inline-block;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.morkbork .rollable:hover, .morkbork .rollable:focus {
+  color: white;
+  text-shadow: 0 0 10px #f142af;
+  cursor: pointer;
+}
+
+.morkbork body {
+  font-family: "kingthings", "Signika", sans-serif;
+  color: white;
+}
+
+.morkbork textarea {
+  background: black;
+  color: white;
+  border: 1px solid #FFE82C;
+}
+
+.morkbork label {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.morkbork h1 {
+  border-bottom: none;
+  font-family: "requiem", fantasy, serif;
+  font-size: 30px;
+  color: black;
+  background: #FFE82C;
+  line-height: 35px;
+  display: inline-block;
+}
+
+.morkbork h2 {
+  border-bottom: none;
+  font-family: "kingthings", "Signika", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #FFE82C;
+  margin-top: 15px;
+}
+
+.morkbork input {
+  text-align: center;
+  color: white;
+  background: black;
+  border: 0;
+  border-bottom: 1px dotted white;
+  border-radius: 0;
+}
+
+.morkbork input:focus {
+  color: black;
+  background: white;
+  border-bottom: 1px dotted black;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.morkbork button {
+  font-family: "kingthings", "Signika", sans-serif;
+  border: 1px solid;
+  border-radius: 0;
+  color: white;
+  margin: 0 10px 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.morkbork button:active, .morkbork button:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.morkbork ul, .morkbork li {
+  list-style-type: none;
+}
+
+.morkbork .defense {
+  background: black;
+  border: 1px solid;
+  color: white;
+  margin: 0 10px 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.morkbork .defense:hover {
+  background: black;
+  cursor: pointer;
+  text-shadow: 0 0 10px #FFE82C;
+}
+
+.morkbork .attack {
+  background: white;
+  border: 1px solid;
+  border-radius: none;
+  color: black;
+  margin: 0 10px 0;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.morkbork .attack:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+  text-shadow: 0 0 10px #8B4446;
+}
+
+.morkbork select {
+  height: 25px;
+  background: white;
+  border-color: white;
+  border-radius: 0;
+  padding: 0 3px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: black;
+}
+
+.morkbork select option {
+  margin: 40px;
+  background: black;
+  color: white;
+  text-shadow: 0 1px 0 #f142af;
+}
+
+.morkbork .editor-content:empty:before {
+  content: "This text is editable";
+}
+
+.morkbork .tinymcewrapper {
+  background: white;
+  color: black;
+}
+
+/* ----------------------------------------- */
+/*  Chat Rolls                               */
+/* ----------------------------------------- */
+.dice-roll .dice-total.critical,
+.inline-roll.critical {
+  color: green;
+  font-weight: 900;
+}
+
+.dice-roll .dice-total.fumble,
+.inline-roll.fumble {
+  color: red;
+}
+
+/* ----------------------------------------- */
+/*  Rollable                                 */
+/* ----------------------------------------- */
+.mb .rollable:hover {
+  color: #000;
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}

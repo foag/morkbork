@@ -2,10 +2,13 @@
 
   <div class="char-sheet">
     <div class="left-column">
-      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+      <!-- <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" /> -->
+      <div class="profile-img-wrapper">
+        <img src="{{actor.classObj.img}}" title="{{actor.classObj.name}}" height="100" width="100" class="profile-img" />
+      </div>
       
       <h1 class="left-column-title">Hit Points</h1>
-      <div class="grid grid-2col">
+      <div class="grid grid-2col mb-2">
         <div class="flex-center">
           <input class="left-column-input" type="text" name="data.health.value" value="{{data.health.value}}" data-dtype="Number" placeholder="0"/>
           <h4>Current</h4>
@@ -67,17 +70,21 @@
             <button style="margin-right: 0px;" class="rollable flex-center defense" type="button" data-roll="1d20+@abilities.agility.value" data-label="Defense">Defense</button>
           </div>
             
-          <div class="header-item flexrow flex-between" style="margin-top: 10px;">
+          <div class="header-item flexrow flex-between items-center" style="margin-top: 10px;">
             <label class="mb-label" for="data.powers">Powers:</label>
             <input class="small-input" type="text" name="data.powers" value="{{data.powers}}" data-dtype="Number" placeholder="Current"/>
             {{!-- TODO make roll update powers but only if powers are at 0 --}}
-            <span class="rollable flex-center" data-roll="1d4+@abilities.presence.value" data-label="Powers">Roll</span>
+            <div class="flex-center">
+              <span class="rollable flex-center" data-roll="1d4+@abilities.presence.value" data-label="Powers">Roll</span>
+            </div>
           </div>
 
-          <div class="header-item flexrow flex-between">
+          <div class="header-item flexrow flex-between items-center">
             <label class="mb-label" for="data.omens">Omens:</label>
             <input class="small-input" type="text" name="data.omens" value="{{data.omens}}" data-dtype="Number" placeholder="Current"/>
-            <span class="rollable flex-center" data-roll="{{actor.classObj.data.omensDice}}" data-label="{{actor.classObj.data.omensDice}}">{{actor.classObj.data.omensDice}}</span>
+            <div class="flex-center">
+              <span class="rollable flex-center" data-roll="{{actor.classObj.data.omensDice}}" data-label="{{actor.classObj.data.omensDice}}">{{actor.classObj.data.omensDice}}</span>
+            </div>
           </div>
 
         </div>
@@ -120,12 +127,7 @@
             </div>
           </div>
           
-          <div class="class-grid">
-
-            <div class="class-img">
-              <img src="{{actor.classObj.img}}" title="{{actor.classObj.name}}" height="100" width="100"/>
-            </div>
-            
+          <div class="class-grid">            
             <div class="class-abilities">
               <h2 style="margin-top: 0px;">Ability Modifiers</h2>
               <div class="grid grid-2col flex">

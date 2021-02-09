@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import MB from '../config.js'
 
-// console.log('Loading Foundry Mocks')
+console.log('Loading Foundry Mocks')
 
 /**
  * Item
