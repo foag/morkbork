@@ -6,80 +6,80 @@
   "compatibleCoreVersion": "0.7.8",
   "minimumCoreVersion": "0.6.0",
   "templateVersion": 2,
-  "author": "foag, cliff-inge",
-  "esmodules": ["morkborg.js"],
-  "styles": ["css/morkborg.css"],
+  "author": "foag, cliffinge",
+  "esmodules": ["morkbork.js"],
+  "styles": ["css/morkbork.css"],
   "scripts": [],
   "packs": [
     {
       "name": "gear",
       "label": "Gear",
-      "system": "morkborg",
-      "module": "morkborg",
+      "system": "morkbork",
+      "module": "morkbork",
       "path": "./packs/gear.db",
       "entity": "Item"
     },
     {
       "name": "features",
       "label": "Features",
-      "system": "morkborg",
-      "module": "morkborg",
+      "system": "morkbork",
+      "module": "morkbork",
       "path": "./packs/features.db",
       "entity": "Item"
     },
     {
       "name": "armor",
       "label": "Armor",
-      "system": "morkborg",
-      "module": "morkborg",
+      "system": "morkbork",
+      "module": "morkbork",
       "path": "./packs/armor.db",
       "entity": "Item"
     },
     {
       "name": "weapons",
       "label": "Weapons",
-      "system": "morkborg",
-      "module": "morkborg",
+      "system": "morkbork",
+      "module": "morkbork",
       "path": "./packs/weapon.db",
       "entity": "Item"
     },
     {
       "name": "scrolls",
       "label": "Scrolls",
-      "system": "morkborg",
-      "module": "morkborg",
+      "system": "morkbork",
+      "module": "morkbork",
       "path": "./packs/scrolls.db",
       "entity": "Item"
     },
     {
       "name": "classes",
       "label": "Classes",
-      "system": "morkborg",
-      "module": "morkborg",
+      "system": "morkbork",
+      "module": "morkbork",
       "path": "./packs/classes.db",
       "entity": "Item"
     },
     {
       "name": "bestiary",
       "label": "Bestiary",
-      "system": "morkborg",
-      "module": "morkborg",
+      "system": "morkbork",
+      "module": "morkbork",
       "path": "./packs/bestiary.db",
       "entity": "Actor"
     },
     {
       "name": "macros",
       "label": "Macros",
-      "system": "morkborg",
-      "module": "morkborg",
+      "system": "morkbork",
+      "module": "morkbork",
       "path": "./packs/macros.db",
       "entity": "Macro"
     },
     {
       "name": "tables",
       "label": "Tables",
-      "system": "morkborg",
-      "module": "morkborg",
+      "system": "morkbork",
+      "module": "morkbork",
       "path": "./packs/tables.db",
       "entity": "RollTable"
     }

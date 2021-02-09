@@ -9,7 +9,7 @@ export const highlightCriticalSuccessFailure = function (message, html, data) {
     const d = roll.dice[0]
 
     // Ensure it is a d20 roll or a custom roll
-    const rollData = d.options.morkborg
+    const rollData = d.options.morkbork
     const needsHighlight = ((d.faces === 20) && (d.results.length === 1)) || rollData
     if (!needsHighlight) return
 

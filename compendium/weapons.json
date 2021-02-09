@@ -25,7 +25,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/axe-battle.png"
+        "img": "systems/morkbork/icons/items/weapons/axe-battle.png"
     },
     {
         "name": "Bow",
@@ -53,7 +53,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/bow-short.jpg"
+        "img": "systems/morkbork/icons/items/weapons/bow-short.jpg"
     },
     {
         "name": "Composite Bow",
@@ -81,7 +81,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/bow-long.jpg"
+        "img": "systems/morkbork/icons/items/weapons/bow-long.jpg"
     },
     {
         "name": "Sling",
@@ -109,7 +109,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/sling.jpg"
+        "img": "systems/morkbork/icons/items/weapons/sling.jpg"
     },
     {
         "name": "Crossbow",
@@ -137,7 +137,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/crossbow.jpg"
+        "img": "systems/morkbork/icons/items/weapons/crossbow.jpg"
     },
     {
         "name": "Heavy Crossbow",
@@ -165,7 +165,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/crossbow.jpg"
+        "img": "systems/morkbork/icons/items/weapons/crossbow.jpg"
     },
     {
         "name": "Club",
@@ -193,7 +193,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/club.jpg"
+        "img": "systems/morkbork/icons/items/weapons/club.jpg"
     },
     {
         "name": "Flail",
@@ -221,7 +221,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/flail.png"
+        "img": "systems/morkbork/icons/items/weapons/flail.png"
     },
     {
         "name": "Femur",
@@ -249,7 +249,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/femur.jpg"
+        "img": "systems/morkbork/icons/items/weapons/femur.jpg"
     },
     {
         "name": "Handaxe",
@@ -277,7 +277,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/axe-hand.jpg"
+        "img": "systems/morkbork/icons/items/weapons/axe-hand.jpg"
     },
     {
         "name": "Dagger, Knife",
@@ -305,7 +305,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/knife.png"
+        "img": "systems/morkbork/icons/items/weapons/knife.png"
     },
     {
         "name": "Mace",
@@ -333,7 +333,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/mace.png"
+        "img": "systems/morkbork/icons/items/weapons/mace.png"
     },
     {
         "name": "Shortsword",
@@ -361,7 +361,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/sword-short.jpg"
+        "img": "systems/morkbork/icons/items/weapons/sword-short.jpg"
     },
     {
         "name": "Staff",
@@ -389,7 +389,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/staff.jpg"
+        "img": "systems/morkbork/icons/items/weapons/staff.jpg"
     },
     {
         "name": "Longsword",
@@ -417,7 +417,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/sword-long.jpg"
+        "img": "systems/morkbork/icons/items/weapons/sword-long.jpg"
     },
     {
         "name": "Warhammer",
@@ -445,7 +445,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/hammer-war.png"
+        "img": "systems/morkbork/icons/items/weapons/hammer-war.png"
     },
     {
         "name": "Whip",
@@ -473,7 +473,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/whip.png"
+        "img": "systems/morkbork/icons/items/weapons/whip.png"
     },
     {
         "name": "Spear",
@@ -501,7 +501,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/spear.jpg"
+        "img": "systems/morkbork/icons/items/weapons/spear.jpg"
     },
     {
         "name": "Great Sword",
@@ -529,7 +529,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/sword-great.png"
+        "img": "systems/morkbork/icons/items/weapons/sword-great.png"
     },
     {
         "name": "Halberd or Polearm",
@@ -557,7 +557,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/polearm.jpg"
+        "img": "systems/morkbork/icons/items/weapons/polearm.jpg"
     },
     {
         "name": "Great Axe",
@@ -585,7 +585,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/axe-great.png"
+        "img": "systems/morkbork/icons/items/weapons/axe-great.png"
     },
     {
         "name": "Throwing Knives",
@@ -613,7 +613,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/throwing-knives.jpg"
+        "img": "systems/morkbork/icons/items/weapons/throwing-knives.jpg"
     },
     {
         "name": "Rock",
@@ -641,6 +641,6 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/weapons/rock.jpg"
+        "img": "systems/morkbork/icons/items/weapons/rock.jpg"
     }
 ]

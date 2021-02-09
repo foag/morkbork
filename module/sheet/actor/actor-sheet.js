@@ -4,12 +4,12 @@ import { MbClassList } from "../../config.js";
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class MorkBorgActorSheet extends ActorSheet {
+export class MorkBorkActorSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["morkborg", "sheet", "actor"],
+      classes: ["morkbork", "sheet", "actor"],
       width: 900,
       height: 620,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "main" }]
@@ -20,7 +20,7 @@ export class MorkBorgActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    const path = "systems/morkborg/templates/actor";
+    const path = "systems/morkbork/templates/actor";
     return `${path}/${this.actor.data.type}-sheet.html`;
   }
   
@@ -475,4 +475,4 @@ export class MorkBorgActorSheet extends ActorSheet {
     this.actor.rollAbilityCheck(ability)
   }
 }
-export default MorkBorgActorSheet
+export default MorkBorkActorSheet

@@ -37,7 +37,7 @@
           "special": "Quick, attacks and defence are DR14."
       },
       "flags": {},
-      "img": "systems/morkborg/icons/bestiary/SETH_Goblin.webp"
+      "img": "systems/morkbork/icons/bestiary/SETH_Goblin.webp"
   },
   {
     "name": "BENT Scum",
@@ -77,7 +77,7 @@
         "special": "Poisoned knife. Test Toughness DR10 or become infected."
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/BENT_Scum.webp"
+    "img": "systems/morkbork/icons/bestiary/BENT_Scum.webp"
   },
   {
     "name": "ZUKUMA Berserker",
@@ -117,7 +117,7 @@
         "special": "Wields (d4) 1. Long flail d8; 2. Heavy mace d6; 3. Chained sword d6; 4. Huge warhammer d10"
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/ZUKUMA_Berserker.webp"
+    "img": "systems/morkbork/icons/bestiary/ZUKUMA_Berserker.webp"
   },
   {
     "name": "WRAT Wraith",
@@ -157,7 +157,7 @@
         "special": "Swift, elusive and difficult to hit (DR14)."
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/WRAT_Wraith.webp"
+    "img": "systems/morkbork/icons/bestiary/WRAT_Wraith.webp"
   },
   {
     "name": "BELZE Blood-drenched skeleton",
@@ -197,7 +197,7 @@
         "special": "Skulks about, impossibly soundless. Attacks by surprise. Can mimic voices to lure victims, but can only repeat what it has heard. Attacks on them with piercing weapons are DR14. Any strike doing 5 or more damage destroys the skeleton completely."
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/BELZE_skeleton.webp"
+    "img": "systems/morkbork/icons/bestiary/BELZE_skeleton.webp"
   },
   {
     "name": "LICH Undead (weak) necromancer",
@@ -237,7 +237,7 @@
         "special": "Paralyzing touch (Presence DR14 every round to break free)."
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/LICH_Undead.webp"
+    "img": "systems/morkbork/icons/bestiary/LICH_Undead.webp"
   },
   {
     "name": "ARBINT Troll",
@@ -277,7 +277,7 @@
         "special": "easy to hit; attacks are DR10."
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/ARBINT_Troll.webp"
+    "img": "systems/morkbork/icons/bestiary/ARBINT_Troll.webp"
   },
   {
     "name": "NODH zombie",
@@ -317,7 +317,7 @@
         "special": "Anyone bitten tests Toughness DR8 or dies within two days before rising as a zombie. The only cure or vaccine is said to be found at the peak of a pale mountain within an infinitely-miserable forest of dark leaves."
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/NOHD_Zombie.webp"
+    "img": "systems/morkbork/icons/bestiary/NOHD_Zombie.webp"
   },
   {
     "name": "LADY PORCELAIN undead doll",
@@ -357,7 +357,7 @@
         "special": "Their mad gaze demands a Presence DR12 test at the start of combat to avoid being frozen with fear for d4 rounds."
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/LADY_POROCELAIN_Undead_Doll.webp"
+    "img": "systems/morkbork/icons/bestiary/LADY_POROCELAIN_Undead_Doll.webp"
   },
   {
     "name": "THINX Grotesque",
@@ -397,7 +397,7 @@
         "special": "They move slowly and are easy to hit (DR10). Their terrifying gaze is used on 1–2 on a d6 each round. Always hits (Eye-beam d8)"
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/THINX_Grotesque.webp"
+    "img": "systems/morkbork/icons/bestiary/THINX_Grotesque.webp"
   },
   {
     "name": "ALAND Wickhead knife-wielder",
@@ -437,7 +437,7 @@
         "special": "Can magically douse all nearby light sources, ignite its own blinding light and attack. Then vanish into the darkness."
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/ALAND_Wickhead.webp"
+    "img": "systems/morkbork/icons/bestiary/ALAND_Wickhead.webp"
   },
   {
     "name": "EULOTHA Wyvern",
@@ -477,6 +477,6 @@
         "special": "60% chance that she bites."
     },
     "flags": {},
-    "img": "systems/morkborg/icons/bestiary/EULOTHA_Wyvern.webp"
+    "img": "systems/morkbork/icons/bestiary/EULOTHA_Wyvern.webp"
   }
 ]

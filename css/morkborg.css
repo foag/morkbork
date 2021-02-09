@@ -108,8 +108,8 @@
   justify-content: space-between;
 }
 
-/* Styles limited to morkborg sheets */
-.morkborg {
+/* Styles limited to morkbork sheets */
+.morkbork {
   /* ----------------------------------------- */
   /*  TinyMCE                                  */
   /* ----------------------------------------- */
@@ -126,11 +126,11 @@
   */
 }
 
-.morkborg .item-form {
+.morkbork .item-form {
   font-family: "Inconsolata", "Signika", sans-serif;
 }
 
-.morkborg .sheet-header {
+.morkbork .sheet-header {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 210px;
   flex: 0 0 210px;
@@ -150,40 +150,40 @@
   margin-bottom: 10px;
 }
 
-.morkborg .sheet-header .header-fields {
+.morkbork .sheet-header .header-fields {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.morkborg .profile-img {
+.morkbork .profile-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100px;
   flex: 0 0 100px;
   height: 200px;
 }
 
-.morkborg .sheet-tabs {
+.morkbork .sheet-tabs {
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
 }
 
-.morkborg .sheet-body,
-.morkborg .sheet-body .tab,
-.morkborg .sheet-body .tab .editor {
+.morkbork .sheet-body,
+.morkbork .sheet-body .tab,
+.morkbork .sheet-body .tab .editor {
   height: 100%;
 }
 
-.morkborg .mce-content-body {
+.morkbork .mce-content-body {
   color: white;
 }
 
-.morkborg .mce-content-body p {
+.morkbork .mce-content-body p {
   color: white;
 }
 
-.morkborg .tabs .item {
+.morkbork .tabs .item {
   background: rgba(255, 255, 255, 0.125);
   border: 1px solid;
   border-radius: 4px;
@@ -192,19 +192,19 @@
   font-weight: bold;
 }
 
-.morkborg .tabs .item:hover, .morkborg .tabs .item:focus {
+.morkbork .tabs .item:hover, .morkbork .tabs .item:focus {
   background: white;
   color: black;
 }
 
-.morkborg .tabs .item.active {
+.morkbork .tabs .item.active {
   background: #ffe72e;
   color: black;
   text-decoration: underline;
   text-shadow: none;
 }
 
-.morkborg .items-list {
+.morkbork .items-list {
   list-style: none;
   margin: 7px 0;
   padding: 0 5px;
@@ -213,23 +213,23 @@
   /* Tags */
 }
 
-.morkborg .items-list .item {
+.morkbork .items-list .item {
   line-height: 30px;
   padding: 0 2px;
   border-bottom: 1px solid #ffffff18;
 }
 
-.morkborg .items-list .item:last-child {
+.morkbork .items-list .item:last-child {
   border-bottom: none;
 }
 
-.morkborg .items-list .item .item-name {
+.morkbork .items-list .item .item-name {
   cursor: pointer;
   max-height: 30px;
   overflow: hidden;
 }
 
-.morkborg .items-list .item .item-name .item-image {
+.morkbork .items-list .item .item-name .item-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30px;
   flex: 0 0 30px;
@@ -237,27 +237,27 @@
   margin-right: 5px;
 }
 
-.morkborg .items-list .item .item-name h4 {
+.morkbork .items-list .item .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
 
-.morkborg .items-list .item .item-properties {
+.morkbork .items-list .item .item-properties {
   margin-top: 3px;
 }
 
-.morkborg .items-list .item .action {
+.morkbork .items-list .item .action {
   color: #f142af;
 }
 
-.morkborg .items-list .item .action:hover, .morkborg .items-list .item .action:focus {
+.morkbork .items-list .item .action:hover, .morkbork .items-list .item .action:focus {
   color: white;
   text-shadow: 0 0 10px #f142af;
   cursor: pointer;
 }
 
-.morkborg .items-list .item-header {
+.morkbork .items-list .item-header {
   color: #ffe72e;
   background-color: #ffffff18;
   margin: 2px 0;
@@ -266,24 +266,24 @@
   font-weight: bold;
 }
 
-.morkborg .items-list .item-header .item-image {
+.morkbork .items-list .item-header .item-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30px;
   flex: 0 0 30px;
   margin-right: 5px;
 }
 
-.morkborg .items-list .item-header img {
+.morkbork .items-list .item-header img {
   display: block;
   border: none;
 }
 
-.morkborg .items-list .item-header .item-detail {
+.morkbork .items-list .item-header .item-detail {
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.morkborg .items-list .item-header h3 {
+.morkbork .items-list .item-header h3 {
   padding-left: 5px;
   font-family: "Rakkas", cursive, serif;
   margin: 0px;
@@ -291,7 +291,7 @@
   align-self: center;
 }
 
-.morkborg .items-list .item-detail {
+.morkbork .items-list .item-detail {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 70px;
   flex: 0 0 70px;
@@ -304,11 +304,11 @@
   overflow: hidden;
 }
 
-.morkborg .items-list .item-detail:last-child {
+.morkbork .items-list .item-detail:last-child {
   border-right: none;
 }
 
-.morkborg .items-list .item-controls {
+.morkbork .items-list .item-controls {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 55px;
   flex: 0 0 55px;
@@ -318,17 +318,17 @@
   padding-right: 10px;
 }
 
-.morkborg .items-list .item-controls a {
+.morkbork .items-list .item-controls a {
   color: #f142af;
 }
 
-.morkborg .items-list .item-controls a:hover, .morkborg .items-list .item-controls a:focus {
+.morkbork .items-list .item-controls a:hover, .morkbork .items-list .item-controls a:focus {
   color: white;
   text-shadow: 0 0 10px #f142af;
   cursor: pointer;
 }
 
-.morkborg .items-list .item-summary {
+.morkbork .items-list .item-summary {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -338,7 +338,7 @@
   border-top: 1px solid #ffffff18;
 }
 
-.morkborg .items-list .tag {
+.morkbork .items-list .tag {
   display: inline-block;
   margin: 0 2px 0 0;
   padding: 0 3px;
@@ -349,7 +349,7 @@
   background: rgba(0, 0, 0, 0.05);
 }
 
-.morkborg .char-sheet {
+.morkbork .char-sheet {
   display: grid;
   grid-template-columns: 250px 1fr 1fr 1fr 1fr;
   grid-template-rows: 180px 1fr 1fr 1fr;
@@ -358,38 +358,38 @@
   height: 100%;
 }
 
-.morkborg .char-sheet .left-column {
+.morkbork .char-sheet .left-column {
   grid-area: left-column;
   border-right: 1px solid #ffe72e;
   padding: 10px 20px;
   height: 100%;
 }
 
-.morkborg .char-sheet .left-column .left-column-title {
+.morkbork .char-sheet .left-column .left-column-title {
   margin-top: 10px;
   text-align: center;
 }
 
-.morkborg .char-sheet .left-column .left-column-input {
+.morkbork .char-sheet .left-column .left-column-input {
   min-height: 30px;
 }
 
-.morkborg .char-sheet .header {
+.morkbork .char-sheet .header {
   grid-area: header;
   padding: 10px 20px;
   text-align: left;
 }
 
-.morkborg .char-sheet .header-item {
+.morkbork .char-sheet .header-item {
   margin-bottom: 10px;
 }
 
-.morkborg .char-sheet .content {
+.morkbork .char-sheet .content {
   grid-area: content;
   padding: 10px;
 }
 
-.morkborg .char-sheet .grid-container {
+.morkbork .char-sheet .grid-container {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr;
@@ -397,29 +397,29 @@
   grid-template-areas: "check-box desc";
 }
 
-.morkborg .char-sheet .grid-container .check-box {
+.morkbork .char-sheet .grid-container .check-box {
   grid-area: check-box;
 }
 
-.morkborg .char-sheet .grid-container .desc {
+.morkbork .char-sheet .grid-container .desc {
   grid-area: desc;
   margin-bottom: 5px;
 }
 
-.morkborg .ability {
+.morkbork .ability {
   margin-bottom: 10px;
 }
 
-.morkborg .mb-label {
+.morkbork .mb-label {
   text-transform: uppercase;
   font-family: "Rakkas", cursive, serif;
 }
 
-.morkborg .small-input {
+.morkbork .small-input {
   max-width: 60px;
 }
 
-.morkborg .charname {
+.morkbork .charname {
   height: 50px;
   padding: 0px;
   margin: 5px 0;
@@ -427,7 +427,7 @@
   font-size: 25px;
 }
 
-.morkborg .charname input {
+.morkbork .charname input {
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -435,7 +435,7 @@
   text-align: left;
 }
 
-.morkborg .class-grid {
+.morkbork .class-grid {
   padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -445,70 +445,70 @@
   height: 100%;
 }
 
-.morkborg .class-grid .class-content {
+.morkbork .class-grid .class-content {
   grid-area: class-content;
 }
 
-.morkborg .class-grid .class-img {
+.morkbork .class-grid .class-img {
   grid-area: class-img;
 }
 
-.morkborg .class-grid .class-abilities {
+.morkbork .class-grid .class-abilities {
   grid-area: class-abilities;
 }
 
-.morkborg .class-grid .class-abilities .class-ability-mod {
+.morkbork .class-grid .class-abilities .class-ability-mod {
   text-align: center;
 }
 
-.morkborg .class-grid .class-items {
+.morkbork .class-grid .class-items {
   grid-area: class-items;
 }
 
-.morkborg .window-content {
+.morkbork .window-content {
   padding: 0px;
   background: black;
   color: white;
 }
 
-.morkborg .rollable {
+.morkbork .rollable {
   color: #f142af;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.morkborg .rollable:hover, .morkborg .rollable:focus {
+.morkbork .rollable:hover, .morkbork .rollable:focus {
   color: white;
   text-shadow: 0 0 10px #f142af;
   cursor: pointer;
 }
 
-.morkborg body {
+.morkbork body {
   font-family: "Inconsolata", "Signika", sans-serif;
   color: white;
 }
 
-.morkborg textarea {
+.morkbork textarea {
   background: black;
   color: white;
   border: 1px solid #ffe72e;
 }
 
-.morkborg label {
+.morkbork label {
   font-weight: bold;
   text-transform: capitalize;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.morkborg h1 {
+.morkbork h1 {
   border-bottom: none;
   font-family: "FetteTrumpDeutsch", fantasy, serif;
   font-size: 30px;
   color: #ffe72e;
 }
 
-.morkborg h2 {
+.morkbork h2 {
   border-bottom: none;
   font-family: "Rakkas", cursive, serif;
   font-size: 15px;
@@ -516,14 +516,14 @@
   margin-top: 15px;
 }
 
-.morkborg input {
+.morkbork input {
   text-align: center;
   background: black;
   color: white;
   border: 1px solid #ffe72e;
 }
 
-.morkborg button {
+.morkbork button {
   border: 1px solid;
   color: white;
   margin: 0 10px 0;
@@ -531,13 +531,13 @@
   font-weight: bold;
 }
 
-.morkborg button:hover {
+.morkbork button:hover {
   background: white;
   color: black;
   cursor: pointer;
 }
 
-.morkborg .defense {
+.morkbork .defense {
   background: #00ff4027;
   border: 1px solid;
   color: white;
@@ -546,13 +546,13 @@
   font-weight: bold;
 }
 
-.morkborg .defense:hover {
+.morkbork .defense:hover {
   background: white;
   color: black;
   cursor: pointer;
 }
 
-.morkborg .attack {
+.morkbork .attack {
   background: #4b1235;
   border: 1px solid;
   color: white;
@@ -561,13 +561,13 @@
   font-weight: bold;
 }
 
-.morkborg .attack:hover {
+.morkbork .attack:hover {
   background: white;
   color: black;
   cursor: pointer;
 }
 
-.morkborg select {
+.morkbork select {
   height: 25px;
   background: black;
   border: 1px solid #ffe72e;
@@ -578,18 +578,18 @@
   color: white;
 }
 
-.morkborg select option {
+.morkbork select option {
   margin: 40px;
   background: black;
   color: white;
   text-shadow: 0 1px 0 #f142af;
 }
 
-.morkborg .editor-content:empty:before {
+.morkbork .editor-content:empty:before {
   content: "This text is editable";
 }
 
-.morkborg .tinymcewrapper {
+.morkbork .tinymcewrapper {
   background: white;
   color: black;
 }

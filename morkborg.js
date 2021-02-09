@@ -1,9 +1,9 @@
 // Import Modules
 import { MB } from "./module/config.js";
-import { MorkBorgActor } from "./module/sheet/actor/actor.js";
-import { MorkBorgActorSheet } from "./module/sheet/actor/actor-sheet.js";
-import { MorkBorgItem } from "./module/sheet/item/item.js";
-import { MorkBorgItemSheet } from "./module/sheet/item/item-sheet.js";
+import { MorkBorkActor } from "./module/sheet/actor/actor.js";
+import { MorkBorkActorSheet } from "./module/sheet/actor/actor-sheet.js";
+import { MorkBorkItem } from "./module/sheet/item/item.js";
+import { MorkBorkItemSheet } from "./module/sheet/item/item-sheet.js";
 import { preloadHandlebarsTemplates } from "./module/templates.js";
 import * as chat from './chat.js'
 
@@ -12,9 +12,9 @@ Hooks.once('init', async function() {
 
   CONFIG.MB = MB;
 
-  game.morkborg = {
-    MorkBorgActor,
-    MorkBorgItem,
+  game.morkbork = {
+    MorkBorkActor,
+    MorkBorkItem,
     rollItemMacro,
     getMacroActor,
     rollMBWeaponAttackMacro
@@ -30,14 +30,14 @@ Hooks.once('init', async function() {
   };
 
   // Define custom Entity classes
-  CONFIG.Actor.entityClass = MorkBorgActor;
-  CONFIG.Item.entityClass = MorkBorgItem;
+  CONFIG.Actor.entityClass = MorkBorkActor;
+  CONFIG.Item.entityClass = MorkBorkItem;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("morkborg", MorkBorgActorSheet, { makeDefault: true });
+  Actors.registerSheet("morkbork", MorkBorkActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("morkborg", MorkBorgItemSheet, { makeDefault: true });
+  Items.registerSheet("morkbork", MorkBorkItemSheet, { makeDefault: true });
 
   // If you need to add Handlebars helpers, here are a few useful examples:
   Handlebars.registerHelper('concat', function() {
@@ -69,7 +69,7 @@ Hooks.once('ready', async function () {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
 });
 // Create a macro when a rollable is dropped on the hotbar
-Hooks.on("hotbarDrop", (bar, data, slot) => createMorkBorgMacro(data, slot));
+Hooks.on("hotbarDrop", (bar, data, slot) => createMorkBorkMacro(data, slot));
 
 /* -------------------------------------------- */
 /*  Other Hooks                                 */
@@ -91,7 +91,7 @@ Hooks.on('renderChatMessage', (app, html, data) => {
  * @param {number} slot     The hotbar slot to use
  * @returns {Promise}
  */
-async function createMorkBorgMacro(data, slot) {
+async function createMorkBorkMacro(data, slot) {
   const handlers = {
     Ability: _createMBAbilityMacro,
     Armor: _createMBDefenseMacro,
@@ -114,7 +114,7 @@ async function createMorkBorgMacro(data, slot) {
         type: 'script',
         img: macroData.img,
         command: macroData.command,
-        flags: { 'morkborg.itemMacro': true }
+        flags: { 'morkbork.itemMacro': true }
       })
     }
     await game.user.assignHotbarMacro(macro, slot)
@@ -135,7 +135,7 @@ function _createMBAbilityMacro (data, slot) {
   const abilityId = data.data.abilityId
   const macroData = {
     name: game.i18n.localize(CONFIG.MB.abilities[abilityId]),
-    command: `const _actor = game.morkborg.getMacroActor(); if (_actor) { _actor.rollAbilityCheck("${abilityId}") }`,
+    command: `const _actor = game.morkbork.getMacroActor(); if (_actor) { _actor.rollAbilityCheck("${abilityId}") }`,
     img: 'icons/dice/d20black.svg'
   }
   return macroData
@@ -155,12 +155,12 @@ function _createMBPowerCheckMacro (data, slot) {
   const img = data.data.img || null
   const macroData = {
     name: spell || game.i18n.localize('MB.SpellCheck'),
-    command: 'const _actor = game.morkborg.getMacroActor(); if (_actor) { _actor.rollSpellCheck() }',
+    command: 'const _actor = game.morkbork.getMacroActor(); if (_actor) { _actor.rollSpellCheck() }',
     img: img || '/systems/mb/styles/images/critical.png'
   }
 
   if (spell) {
-    macroData.command = `const _actor = game.morkborg.getMacroActor(); if (_actor) { _actor.rollSpellCheck({ spell: "${spell}" }) }`
+    macroData.command = `const _actor = game.morkbork.getMacroActor(); if (_actor) { _actor.rollSpellCheck({ spell: "${spell}" }) }`
   }
 
   return macroData
@@ -180,7 +180,7 @@ function _createMBWeaponAttackMacro (data, slot) {
 
   const macroData = {
     name: item.name,
-    command: `game.morkborg.rollMBWeaponAttackMacro("${weaponId}");`,
+    command: `game.morkbork.rollMBWeaponAttackMacro("${weaponId}");`,
     img: item.img
   }
   return macroData
@@ -199,7 +199,7 @@ function _createMBDefenseMacro (data, slot) {
 
   const macroData = {
     name: item.name,
-    command: `game.morkborg.rollMBWeaponAttackMacro("${weaponSlot}", ${JSON.stringify(options)});`,
+    command: `game.morkbork.rollMBWeaponAttackMacro("${weaponSlot}", ${JSON.stringify(options)});`,
     img: '/systems/mb/styles/images/axe-square.png'
   }
   return macroData

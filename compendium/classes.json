@@ -51,7 +51,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/Fanged_Deserter.png"
+        "img": "systems/morkbork/icons/classes/Fanged_Deserter.png"
     },
     {
         "name": "Gutterborn Scum",
@@ -104,7 +104,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/Gutterborn_Scum.png"
+        "img": "systems/morkbork/icons/classes/Gutterborn_Scum.png"
     },
     {
         "name": "Esoteric Hermit",
@@ -156,7 +156,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/Esoteric_Hermit.png"
+        "img": "systems/morkbork/icons/classes/Esoteric_Hermit.png"
     },
     {
         "name": "Wretched Royalty",
@@ -208,7 +208,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/Wretched_Royalty.png"
+        "img": "systems/morkbork/icons/classes/Wretched_Royalty.png"
     },
     {
         "name": "Heretical Priest",
@@ -260,7 +260,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/Heretical_Priest.png"
+        "img": "systems/morkbork/icons/classes/Heretical_Priest.png"
     },
     {
         "name": "Occult Herbmaster",
@@ -316,7 +316,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/Occult_Herbmaster.png"
+        "img": "systems/morkbork/icons/classes/Occult_Herbmaster.png"
     },
     {
         "name": "Cursed Skinwalker",
@@ -386,7 +386,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/Cursed_Skinwalker.png"
+        "img": "systems/morkbork/icons/classes/Cursed_Skinwalker.png"
     },
     {
         "name": "Pale One",
@@ -439,7 +439,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/Pale_One.png"
+        "img": "systems/morkbork/icons/classes/Pale_One.png"
     },
     {
         "name": "Dead God’s Prophet",
@@ -484,7 +484,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/Dead_Gods_Prophet.png"
+        "img": "systems/morkbork/icons/classes/Dead_Gods_Prophet.png"
     },
     {
         "name": "Darkshine",
@@ -538,7 +538,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/default.png"
+        "img": "systems/morkbork/icons/classes/default.png"
     },
     {
         "name": "Profane Spawn",
@@ -592,7 +592,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/default.png"
+        "img": "systems/morkbork/icons/classes/default.png"
     },
     {
         "name": "Sacrilegious Songbird",
@@ -644,7 +644,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/default.png"
+        "img": "systems/morkbork/icons/classes/default.png"
     },
     {
         "name": "Classless",
@@ -680,7 +680,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/default.png"
+        "img": "systems/morkbork/icons/classes/default.png"
     },
     {
         "name": "Landlocked Buccaneer",
@@ -730,6 +730,6 @@
             }
         },
         "flags": {},
-        "img": "systems/morkborg/icons/classes/default.png"
+        "img": "systems/morkbork/icons/classes/default.png"
     }
 ]

@@ -4,18 +4,18 @@
 
 ( async () => {
     // Reference a Compendium pack by it's collection ID
-    // const armorPack = game.packs.find(p => p.collection === `morkborg.armor`);
-    // const gearPack = game.packs.find(p => p.collection === `morkborg.gear`);
-    // const weaponsPack = game.packs.find(p => p.collection === `morkborg.weapons`);
-    // const scrollsPack = game.packs.find(p => p.collection === `morkborg.scrolls`);
-    // const classesPack = game.packs.find(p => p.collection === `morkborg.classes`);
+    // const armorPack = game.packs.find(p => p.collection === `morkbork.armor`);
+    // const gearPack = game.packs.find(p => p.collection === `morkbork.gear`);
+    // const weaponsPack = game.packs.find(p => p.collection === `morkbork.weapons`);
+    // const scrollsPack = game.packs.find(p => p.collection === `morkbork.scrolls`);
+    // const classesPack = game.packs.find(p => p.collection === `morkbork.classes`);
 
     // Load an external JSON data file which contains data for import
-    // const armorResponse = await fetch(`systems/morkborg/compendium/armor.json`);
-    // const gearResponse = await fetch(`systems/morkborg/compendium/gear.json`);
-    // const weaponsResponse = await fetch(`systems/morkborg/compendium/weapons.json`);
-    // const scrollsResponse = await fetch(`systems/morkborg/compendium/scrolls.json`);
-    // const classesResponse = await fetch(`systems/morkborg/compendium/classes.json`);
+    // const armorResponse = await fetch(`systems/morkbork/compendium/armor.json`);
+    // const gearResponse = await fetch(`systems/morkbork/compendium/gear.json`);
+    // const weaponsResponse = await fetch(`systems/morkbork/compendium/weapons.json`);
+    // const scrollsResponse = await fetch(`systems/morkbork/compendium/scrolls.json`);
+    // const classesResponse = await fetch(`systems/morkbork/compendium/classes.json`);
     
     // const armorContent = await armorResponse.json();
     // const gearContent = await gearResponse.json();
@@ -61,8 +61,8 @@
 
 // classes
 ( async () => {
-  const classesPack = game.packs.find(p => p.collection === `morkborg.classes`);
-  const classesResponse = await fetch(`systems/morkborg/compendium/classes.json`);
+  const classesPack = game.packs.find(p => p.collection === `morkbork.classes`);
+  const classesResponse = await fetch(`systems/morkbork/compendium/classes.json`);
   const classesContent = await classesResponse.json();
   const classesItems = await Item.create(classesContent, {temporary: true});
 
@@ -83,8 +83,8 @@
 
 // NPCs
 ( async () => {
-  const bestiaryPack = game.packs.find(p => p.collection === `morkborg.bestiary`);
-  const bestiaryResponse = await fetch(`systems/morkborg/compendium/bestiary.json`);
+  const bestiaryPack = game.packs.find(p => p.collection === `morkbork.bestiary`);
+  const bestiaryResponse = await fetch(`systems/morkbork/compendium/bestiary.json`);
   const bestiaryContent = await bestiaryResponse.json();
   const bestiaryItems = await Actor.create(bestiaryContent, {temporary: true});
 
@@ -97,14 +97,14 @@
 })()
 
 // async function fetchAsync () {
-//    let response = await fetch('systems/morkborg/compendium/armor.json');
+//    let response = await fetch('systems/morkbork/compendium/armor.json');
 //    let data = await response.json();
 // }
 // fetchAsync ();
 // -----------------
-// D:\FoundryVTT\Data\systems\morkborg\compendium\armor.json
+// D:\FoundryVTT\Data\systems\morkbork\compendium\armor.json
 // ( async () => {
-//     const data = await fetch("D:\FoundryVTT\Data\systems\morkborg\compendium\armor.json").then(r => r.json())
+//     const data = await fetch("D:\FoundryVTT\Data\systems\morkbork\compendium\armor.json").then(r => r.json())
 // })()
 // -----------------
 // const bestiary = await fetch("bestiare.json").then(resp => resp.json());

@@ -22,7 +22,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/armor/shield.png"
+        "img": "systems/morkbork/icons/items/armor/shield.png"
     },
     {
         "name": "Light Armor",
@@ -47,7 +47,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/armor/leather.png"
+        "img": "systems/morkbork/icons/items/armor/leather.png"
     },
     {
         "name": "Medium Armor",
@@ -72,7 +72,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/armor/scale.png"
+        "img": "systems/morkbork/icons/items/armor/scale.png"
     },
     {
         "name": "Heavy Armor",
@@ -97,6 +97,6 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkborg/icons/items/armor/plate.png"
+        "img": "systems/morkbork/icons/items/armor/plate.png"
     }
 ]

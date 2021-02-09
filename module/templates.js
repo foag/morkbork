@@ -9,12 +9,12 @@ export const preloadHandlebarsTemplates = async function() {
   const templatePaths = [
 
     // Actor Sheet Partials
-    "systems/morkborg/templates/actor/parts/actor-encumbrance.html",
+    "systems/morkbork/templates/actor/parts/actor-encumbrance.html",
     // Item Sheet Partials
-    "systems/morkborg/templates/item/parts/item-header.html",
-    "systems/morkborg/templates/item/parts/item-description.html",
-    "systems/morkborg/templates/item/parts/item-consumable.html",
-    "systems/morkborg/templates/item/parts/item-light.html"
+    "systems/morkbork/templates/item/parts/item-header.html",
+    "systems/morkbork/templates/item/parts/item-description.html",
+    "systems/morkbork/templates/item/parts/item-consumable.html",
+    "systems/morkbork/templates/item/parts/item-light.html"
   ];
 
   // Load the template parts
