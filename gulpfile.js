@@ -5,7 +5,8 @@ const prefix = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const zip = require('gulp-zip');
-const package = require('./package.json')
+const package = require('./package.json');
+const del = require('del');
 
 /* ----------------------------------------- */
 /*  Compile Sass
@@ -47,8 +48,13 @@ function watchUpdates() {
 /*  Build dist-zip
 /* ----------------------------------------- */
 
+function deleteOldDist(){
+  return del(`./dist/${package.name}.zip`)
+}
+
 function makeZip(){
-  return gulp.src('./**')
+
+  return gulp.src(['./**','!node_modules/','!node_modules/**'])
       .pipe(zip(`${package.name}.zip`))
       .pipe(gulp.dest('./dist'));
 }
@@ -65,5 +71,6 @@ exports.css = css;
 
 exports.dist = gulp.series(
   compileScss,
+  deleteOldDist,
   makeZip
 );
