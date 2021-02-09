@@ -97,6 +97,6 @@
   "secondaryTokenAttribute": null,
   "url": "https://github.com/foag/morkborkFVTT",
   "manifest": "https://raw.githubusercontent.com/foag/morkborkFVTT/main/system.json",
-  "download": "https://raw.githubusercontent.com/foag/morkborkFVTT/main/morkbork.zip",
+  "download": "https://raw.githubusercontent.com/foag/morkborkFVTT/main/dist/morkbork.zip",
   "license": null
 }
