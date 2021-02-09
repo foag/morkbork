@@ -22,10 +22,8 @@
       <h1 class="left-column-title">Abilities</h1>
       {{#each data.abilities as |ability key|}}
         <li class="ability" id="{{key}}" data-ability="{{key}}">
-          <label class="ability-name ability box-title rollable">{{localize ability.label}}</label>
-          <br/>
           <div class="ability flexrow flex-left">
-            <div class="ability-name mb-label rollable data-roll="1d20+@abilities.{{key}}.value" for="data.abilities.{{key}}.value">{{key}}</div>
+            <div class="ability-name mb-label rollable" data-roll="1d20+@abilities.{{key}}.value" data-label="Höpp" for="data.abilities.{{key}}.value">{{key}}</div>
             <div class="flexrow flex-center flex-between"></div>
             <input class="ability-score left-column-input" id="data.abilities.{{key}}.value"
                       name="data.abilities.{{key}}.value"
@@ -43,7 +41,10 @@
     <div class="header">
       <div class="grid grid-2col" style="gap: 20px;">
         <div class="flex-left">
-          <h2 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h2>
+          <h2 class="charname">
+            <span class="charsign">{{firstChar actor.name}}</span>
+            <input name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
+          </h2>
 
           <div class="header-item flexrow flex-between" style="margin-top: 10px;">
             <label class="mb-label" for="data.omens">Silver:</label> &nbsp;
@@ -185,32 +186,36 @@
 
             <div class="class-content">
               <h2>Description</h2>
-              <span>{{actor.classObj.data.description}}</span>
+              <p class="pl-2">{{actor.classObj.data.description}}</p>
       
-              <h2>Class Attributes</h2>
-              <ul>
+              <h2 class="mt-4">Class Attributes</h2>
+              <ul class="pl-2">
               {{#each actor.classObj.data.modifiers}}
                 <li>{{this}}</li>
               {{/each}}
               </ul>
 
-              <h2>{{ localize "MB.ClassFeatures" }}</h2>
-              <h3>{{actor.classObj.data.startingInfo.abilities.description}}</h3>
-              {{#each actor.classObj.data.startingInfo.abilities.options}}
-                <div class="grid-container">
-                  <input class="check-box" type="checkbox" id="{{@index}}">
-                  <label class="desc" for="{{@index}}">{{this}}</label>
-                </div>
-              {{/each}}
+              <h2 class="mt-4">{{ localize "MB.ClassFeatures" }}</h2>
+              <div class="pl-2">
+                <h3>{{actor.classObj.data.startingInfo.abilities.description}}</h3>
+                {{#each actor.classObj.data.startingInfo.abilities.options}}
+                  <div class="grid-container">
+                    <input class="check-box" type="checkbox" id="{{@index}}">
+                    <label class="desc" for="{{@index}}">{{this}}</label>
+                  </div>
+                {{/each}}
+              </div>
 
-              <h2>{{ localize "MB.ClassOrigins" }}</h2>
-              <h3>{{actor.classObj.data.startingInfo.origins.description}}</h3>
-              {{#each actor.classObj.data.startingInfo.origins.options}}
-                <div class="grid-container">
-                  <input class="check-box" type="checkbox" id="{{@index}}">
-                  <label class="desc" for="{{@index}}">{{this}}</label>
-                </div>
-              {{/each}}
+              <h2 class="mt-4">{{ localize "MB.ClassOrigins" }}</h2>
+              <div class="pl-2">
+                <h3>{{actor.classObj.data.startingInfo.origins.description}}</h3>
+                {{#each actor.classObj.data.startingInfo.origins.options}}
+                  <div class="grid-container">
+                    <input class="check-box" type="checkbox" id="{{@index}}">
+                    <label class="desc" for="{{@index}}">{{this}}</label>
+                  </div>
+                {{/each}}
+              </div>
 
             </div>
           </div>

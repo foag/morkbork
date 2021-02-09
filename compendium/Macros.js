@@ -2,7 +2,7 @@
 // systems/<your system folder>/<path to file>/<file>
 // -----------------
 
-( async () => {
+(async () => {
     // Reference a Compendium pack by it's collection ID
     // const armorPack = game.packs.find(p => p.collection === `morkbork.armor`);
     // const gearPack = game.packs.find(p => p.collection === `morkbork.gear`);
@@ -16,7 +16,7 @@
     // const weaponsResponse = await fetch(`systems/morkbork/compendium/weapons.json`);
     // const scrollsResponse = await fetch(`systems/morkbork/compendium/scrolls.json`);
     // const classesResponse = await fetch(`systems/morkbork/compendium/classes.json`);
-    
+
     // const armorContent = await armorResponse.json();
     // const gearContent = await gearResponse.json();
     // const weaponsContent = await weaponsResponse.json();
@@ -60,40 +60,39 @@
 })()
 
 // classes
-( async () => {
-  const classesPack = game.packs.find(p => p.collection === `morkbork.classes`);
-  const classesResponse = await fetch(`systems/morkbork/compendium/classes.json`);
-  const classesContent = await classesResponse.json();
-  const classesItems = await Item.create(classesContent, {temporary: true});
+(async () => {
+    const classesPack = game.packs.find(p => p.collection === 'morkbork.classes')
+    const classesResponse = await fetch('systems/morkbork/compendium/classes.json')
+    const classesContent = await classesResponse.json()
+    const classesItems = await Item.create(classesContent, { temporary: true })
 
-  console.log(classesPack);
-  let packIndex = await classesPack.getIndex();
+    console.log(classesPack)
+    const packIndex = await classesPack.getIndex()
 
-  for ( let i of classesItems ) {
-    let searchResult = packIndex.find((el) => el.name == i.name);
-    if (searchResult != undefined) {
-      console.log(`Item ${i.name} already exits, skipping`);
-    } else {
-      await classesPack.importEntity(i);
-      console.log(`Imported Item ${i.name} into Compendium classesPack ${classesPack.collection}`);
+    for (const i of classesItems) {
+        const searchResult = packIndex.find((el) => el.name == i.name)
+        if (searchResult != undefined) {
+            console.log(`Item ${i.name} already exits, skipping`)
+        } else {
+            await classesPack.importEntity(i)
+            console.log(`Imported Item ${i.name} into Compendium classesPack ${classesPack.collection}`)
+        }
     }
-
-  }
 })()
 
 // NPCs
-( async () => {
-  const bestiaryPack = game.packs.find(p => p.collection === `morkbork.bestiary`);
-  const bestiaryResponse = await fetch(`systems/morkbork/compendium/bestiary.json`);
-  const bestiaryContent = await bestiaryResponse.json();
-  const bestiaryItems = await Actor.create(bestiaryContent, {temporary: true});
+(async () => {
+    const bestiaryPack = game.packs.find(p => p.collection === 'morkbork.bestiary')
+    const bestiaryResponse = await fetch('systems/morkbork/compendium/bestiary.json')
+    const bestiaryContent = await bestiaryResponse.json()
+    const bestiaryItems = await Actor.create(bestiaryContent, { temporary: true })
 
-  console.log(bestiaryPack);
+    console.log(bestiaryPack)
 
-  for ( let i of bestiaryItems ) {
-    await bestiaryPack.importEntity(i);
-    console.log(`Imported Actor ${i.name} into Compendium bestiaryPack ${bestiaryPack.collection}`);
-  }
+    for (const i of bestiaryItems) {
+        await bestiaryPack.importEntity(i)
+        console.log(`Imported Actor ${i.name} into Compendium bestiaryPack ${bestiaryPack.collection}`)
+    }
 })()
 
 // async function fetchAsync () {
@@ -117,7 +116,7 @@
 // async function importGear(content) {
 //     // Reference a Compendium pack by it's callection ID
 //     const pack = game.packs.find(p => p.collection === `starwarsffg.gear`);
-  
+
 //     // Create temporary Actor entities which impose structure on the imported data
 //     Item.createMany(content, { temporary: true }).then(items => {
 //       // Save each temporary Actor into the Compendium pack
@@ -127,14 +126,14 @@
 //       }
 //     });
 //   }
-  
+
 //   // Load an external JSON data file which contains data for import
 //   async function fetchAsync (url) {
 //     let response = await fetch(url);
 //     let data = await response.json();
 //     return data;
 //   }
-  
+
 //   var f = fetchAsync('./Gear.json');
 //   var content = [];
 //   for (let obj of f) {
@@ -159,32 +158,32 @@
 //         content.push(gear);
 //     }
 //   }
-  
+
 //   importGear(content);
 
 // ---------------------------
 
 // getting all actors of selected tokens
-let actors = canvas.tokens.controlled.map(({ actor }) => actor);
+const actors = canvas.tokens.controlled.map(({ actor }) => actor)
 // TODO make sure only legal targets can do this.
 
 // if there are no selected tokens, roll for the player's character.
 if (actors.length < 1) {
-    actors.push(game.user.character);
+    actors.push(game.user.character)
 }
-const validActors = actors.filter(actor => actor != null);
+const validActors = actors.filter(actor => actor != null)
 
 if (validActors.length !== 1) {
-    ui.notifications.warn("No selected tokens or Charater set for user.");
+    ui.notifications.warn('No selected tokens or Charater set for user.')
 } else {
-    let actor = validActors[0];
-    let mod = actor.data.data.abilities.agility.value;
+    const actor = validActors[0]
+    const mod = actor.data.data.abilities.agility.value
 
-    let roll = new Roll("1d20+"+mod, actor.actorData);
+    const roll = new Roll('1d20+' + mod, actor.actorData)
 
     // create the message
     roll.roll().toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: actor }),
-        flavor: "<b>Rolling Defense</b>"
-    });
+        speaker: ChatMessage.getSpeaker({ actor: actor }),
+        flavor: '<b>Rolling Defense</b>'
+    })
 }

@@ -11,6 +11,20 @@ body {
   background-image: url('../img/board_bg.jpg');
 }
 
+.window-header {
+  background: #000;
+  flex: 0 0 50px!important;
+  overflow: hidden;
+  padding: 0 8px;
+  line-height: 50px!important;
+
+  .window-title {
+    padding: .5rem;
+    font-size: 30px;
+    font-family: $font-tertiary;
+  }
+}
+
 /* Styles limited to morkbork sheets */
 .morkbork {
   @import 'components/forms';
@@ -20,7 +34,8 @@ body {
 
   .window-content {
     padding: 0px;
-    background: $mb-black;
+    // background: $mb-black;
+    background-image: url('../img/dialog_bg.jpg');
     color: $mb-white;
   }
 
@@ -72,7 +87,6 @@ body {
     font-weight: bold;
     font-size: 15px;
     color: $mb-yellow;
-    margin-top: 15px;
   }
   
   input {

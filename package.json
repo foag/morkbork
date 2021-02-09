@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "CSS compiler for the Mork Borg system",
   "scripts": {
-    "build": "gulp",
+    "build": "gulp dist",
     "compile": "gulp css",
     "watch": "gulp",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "lint": "eslint --fix --ext .js ./"
   },
   "browserslist": [
     "last 3 versions"
@@ -15,6 +16,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-sourcemaps": "^2.6.5",

@@ -63,33 +63,33 @@ export const highlightCriticalSuccessFailure = function (message, html, data) {
  */
 export const addChatMessageContextOptions = function (html, options) {
     const canApply = function (li) {
-      if (canvas.tokens.controlled.length === 0) return false
-      if (li.find('.damage-applyable').length) return true
-      if (li.find('.dice-total').length) return true
+        if (canvas.tokens.controlled.length === 0) return false
+        if (li.find('.damage-applyable').length) return true
+        if (li.find('.dice-total').length) return true
     }
-  
+
     options.push(
-      {
-        name: game.i18n.localize('MB.ChatContextDamage'),
-        icon: '<i class="fas fa-user-minus"></i>',
-        condition: canApply,
-        callback: li => applyChatCardDamage(li, 1)
-      }
+        {
+            name: game.i18n.localize('MB.ChatContextDamage'),
+            icon: '<i class="fas fa-user-minus"></i>',
+            condition: canApply,
+            callback: li => applyChatCardDamage(li, 1)
+        }
     )
     options.push(
-      {
-        name: game.i18n.localize('MB.ChatContextHealing'),
-        icon: '<i class="fas fa-user-plus"></i>',
-        condition: canApply,
-        callback: li => applyChatCardDamage(li, -1)
-      }
+        {
+            name: game.i18n.localize('MB.ChatContextHealing'),
+            icon: '<i class="fas fa-user-plus"></i>',
+            condition: canApply,
+            callback: li => applyChatCardDamage(li, -1)
+        }
     )
     return options
-  }
-  
-  /* -------------------------------------------- */
-  
-  /**
+}
+
+/* -------------------------------------------- */
+
+/**
    * Apply rolled dice damage to the token or tokens which are currently controlled.
    * This allows for damage to be scaled by a multiplier to account for healing, critical hits, or resistance
    *
@@ -97,11 +97,11 @@ export const addChatMessageContextOptions = function (html, options) {
    * @param {Number} multiplier   A damage multiplier to apply to the rolled damage.
    * @return {Promise}
    */
-  function applyChatCardDamage (roll, multiplier) {
+function applyChatCardDamage (roll, multiplier) {
     const amount = roll.find('.damage-applyable').attr('data-damage') ||
                      roll.find('.dice-total').text()
     return Promise.all(canvas.tokens.controlled.map(t => {
-      const a = t.actor
-      return a.applyDamage(amount, multiplier)
+        const a = t.actor
+        return a.applyDamage(amount, multiplier)
     }))
-  }
+}

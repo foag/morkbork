@@ -41,8 +41,9 @@
         display: grid;
         grid-template-columns: auto 1fr;
         grid-template-rows: 1fr;
-        gap: 1px 1px;
+        gap: 1px 5px;
         grid-template-areas: "check-box desc";
+        margin-bottom: .5rem;
 
         .check-box { 
             grid-area: check-box; 
@@ -77,7 +78,27 @@
     max-width: 60px;
 }
 
+.charsign {
+    font-family: $font-icons;
+    height: 49px;
+    width: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $mb-yellow;
+    color: black;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
 .charname {
+    display: flex;
     height: 50px;
     padding: 0px;
     margin: 5px 0;

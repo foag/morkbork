@@ -1,13 +1,23 @@
 {
-    "env": {
-        "browser": true,
-        "es2020": true
-    },
-    "extends": "eslint:recommended",
+    "root": true,
     "parserOptions": {
         "ecmaVersion": 11,
         "sourceType": "module"
     },
+    "extends": [
+        "standard"
+    ],
     "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "multiline-ternary": [
+            "error",
+            "never"
+        ],
+        "eqeqeq": 2,
+        "no-undef": 1,
+        "no-unused-vars": 1
     }
 }

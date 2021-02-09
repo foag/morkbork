@@ -27,6 +27,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'agathodaimonregular';
+    src: url('../fonts/agathoda-webfont.woff2') format('woff2'),
+         url('../fonts/agathoda-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $font-primary: 'kingthings', "Signika", sans-serif;
 $font-secondary: 'requiem', fantasy, serif;
 $font-tertiary: 'edoregular', cursive, serif;
+$font-icons: 'agathodaimonregular';

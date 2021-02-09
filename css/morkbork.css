@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'agathodaimonregular';
+  src: url("../fonts/agathoda-webfont.woff2") format("woff2"), url("../fonts/agathoda-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .mb-0 {
   margin-bottom: 0rem;
 }
@@ -498,6 +505,22 @@ body {
   background-image: url("../img/board_bg.jpg");
 }
 
+.window-header {
+  background: #000;
+  -webkit-box-flex: 0 !important;
+  -ms-flex: 0 0 50px !important;
+  flex: 0 0 50px !important;
+  overflow: hidden;
+  padding: 0 8px;
+  line-height: 50px !important;
+}
+
+.window-header .window-title {
+  padding: .5rem;
+  font-size: 30px;
+  font-family: "edoregular", cursive, serif;
+}
+
 /* Styles limited to morkbork sheets */
 .morkbork {
   /* ----------------------------------------- */
@@ -682,6 +705,7 @@ body {
 .morkbork .items-list .item-header h3 {
   padding-left: 5px;
   font-family: "kingthings", "Signika", sans-serif;
+  text-transform: capitalize;
   margin: 0px;
   -ms-flex-item-align: center;
   align-self: center;
@@ -797,8 +821,9 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr;
-  gap: 1px 1px;
+  gap: 1px 5px;
   grid-template-areas: "check-box desc";
+  margin-bottom: .5rem;
 }
 
 .morkbork .char-sheet .grid-container .check-box {
@@ -826,7 +851,36 @@ body {
   max-width: 60px;
 }
 
+.morkbork .charsign {
+  font-family: "agathodaimonregular";
+  height: 49px;
+  width: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFE82C;
+  color: black;
+  padding: 0;
+  border-radius: 100%;
+  margin: 0;
+  line-height: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
 .morkbork .charname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 50px;
   padding: 0px;
   margin: 5px 0;
@@ -874,7 +928,7 @@ body {
 
 .morkbork .window-content {
   padding: 0px;
-  background: black;
+  background-image: url("../img/dialog_bg.jpg");
   color: white;
 }
 
@@ -924,7 +978,6 @@ body {
   font-weight: bold;
   font-size: 15px;
   color: #FFE82C;
-  margin-top: 15px;
 }
 
 .morkbork input {
