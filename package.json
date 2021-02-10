@@ -1,7 +1,7 @@
 {
   "name": "morkbork",
-  "version": "1.0.0",
-  "description": "CSS compiler for the Mork Borg system",
+  "version": "0.1.1",
+  "description": "MorkBork",
   "scripts": {
     "build": "gulp dist",
     "compile": "gulp css",
@@ -23,6 +23,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-bump": "^3.2.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-zip": "^5.0.2",
     "node-sass": "^4.14.1"

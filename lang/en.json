@@ -30,6 +30,7 @@
     "MB.ScrollUnclean": "Unclean",
     "MB.ScrollSacred": "Sacred",
     "MB.ScrollOther": "Other",
+    "MB.ScrollUnknown": "Unknown",
 
     "MB.Items": "Items",
     "MB.ItemWeaponDetails": "Weapon Details",

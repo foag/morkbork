@@ -69,7 +69,8 @@ MB.distanceUnits = {
 MB.scrollTypes = {
     unclean: 'MB.ScrollUnclean',
     sacred: 'MB.ScrollSacred',
-    other: 'MB.ScrollOther'
+    other: 'MB.ScrollOther',
+    unknown: 'MB.ScrollUnknown'
 }
 
 /* -------------------------------------------- */

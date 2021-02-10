@@ -7,6 +7,7 @@ const sass = require('gulp-sass');
 const zip = require('gulp-zip');
 const package = require('./package.json');
 const del = require('del');
+const bump = require('gulp-bump');
 
 /* ----------------------------------------- */
 /*  Compile Sass
@@ -59,6 +60,12 @@ function makeZip(){
       .pipe(gulp.dest('./dist'));
 }
 
+function bumpVersion(){
+  return gulp.src(['./package.json','./system.json'])
+    .pipe(bump({type:'appversion'}))
+    .pipe(gulp.dest('./'));
+}
+
 /* ----------------------------------------- */
 /*  Export Tasks
 /* ----------------------------------------- */
@@ -72,5 +79,6 @@ exports.css = css;
 exports.dist = gulp.series(
   compileScss,
   deleteOldDist,
-  makeZip
+  makeZip,
+  bumpVersion
 );

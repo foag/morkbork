@@ -30,6 +30,7 @@
     "MB.ScrollUnclean": "Smutsiga",
     "MB.ScrollSacred": "Rena",
     "MB.ScrollOther": "Övriga",
+    "MB.ScrollUnknown": "Okända",
 
     "MB.Items": "Utrustning",
     "MB.ItemWeaponDetails": "Vapendetaljer",

@@ -444,6 +444,12 @@
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .flex-group-center,
 .flex-group-left,
 .flex-group-right {
@@ -608,6 +614,8 @@ body {
   border-radius: 0;
   margin: 0 10px 0;
   line-height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
 }
 
 .morkbork .tabs .item:hover, .morkbork .tabs .item:focus {
@@ -864,7 +872,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #FFE82C;
+  background-image: url("../img/char_bg.svg");
   color: black;
   padding: 0;
   border-radius: 100%;
@@ -983,7 +991,7 @@ body {
 .morkbork input {
   text-align: center;
   color: white;
-  background: black;
+  background: transparent;
   border: 0;
   border-bottom: 1px dotted white;
   border-radius: 0;
@@ -1005,6 +1013,7 @@ body {
   margin: 0 10px 0;
   line-height: 30px;
   font-weight: bold;
+  font-size: 12px;
 }
 
 .morkbork button:active, .morkbork button:hover {
@@ -1023,7 +1032,7 @@ body {
   background: black;
   border: 1px solid;
   color: white;
-  margin: 0 10px 0;
+  margin: 0 5px 0;
   line-height: 30px;
   font-weight: bold;
 }
@@ -1039,7 +1048,7 @@ body {
   border: 1px solid;
   border-radius: none;
   color: black;
-  margin: 0 10px 0;
+  margin: 0 5px 0;
   line-height: 30px;
   font-weight: bold;
 }
@@ -1099,4 +1108,30 @@ body {
   color: #000;
   text-shadow: 0 0 10px red;
   cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/* Scrollbar
+/* ----------------------------------------- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 0 0 1px #999 inset;
+  box-shadow: 0 0 1px #999 inset;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  outline: none;
+  border-radius: 3px;
+  background: #FFE82C;
+  border: 1px solid #FFE82C;
+}
+
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: #FFE82C #111;
 }

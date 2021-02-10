@@ -92,7 +92,7 @@ body {
   input {
     text-align: center;
     color: $mb-white;
-    background: $mb-black;
+    background: transparent;
     border: 0;
     border-bottom: 1px dotted $mb-white;
     border-radius: 0;
@@ -113,6 +113,7 @@ body {
     margin: 0 10px 0;
     line-height: 30px;
     font-weight: bold;
+    font-size: 12px;
 
     &:active,
     &:hover {
@@ -131,7 +132,7 @@ body {
     background: $mb-black;
     border: 1px solid;
     color: $mb-white;
-    margin: 0 10px 0;
+    margin: 0 5px 0;
     line-height: 30px;
     font-weight: bold;
 
@@ -148,7 +149,7 @@ body {
     border: 1px solid;
     border-radius: none;
     color: $mb-black;
-    margin: 0 10px 0;
+    margin: 0 5px 0;
     line-height: 30px;
     font-weight: bold;
 
@@ -222,4 +223,26 @@ body {
   color: #000;
   text-shadow: 0 0 10px red;
   cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/* Scrollbar
+/* ----------------------------------------- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: 0 0 1px #999 inset;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  outline: none;
+  border-radius: 3px;
+  background: $mb-yellow;
+  border: 1px solid $mb-yellow;
+}
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: $mb-yellow #111;
 }

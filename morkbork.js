@@ -57,6 +57,14 @@ Hooks.once('init', async function () {
         return name.charAt(0)
     })
 
+    Handlebars.registerHelper('abilityLabel', function (abilityKey) {
+        return game.i18n.localize(CONFIG.MB.abilities[abilityKey])
+    })
+
+    Handlebars.registerHelper('scrollLabel', function (scrollKey) {
+        return game.i18n.localize(CONFIG.MB.scrollTypes[scrollKey])
+    })
+
     // Preload Handlebars Templates
     preloadHandlebarsTemplates()
 })
