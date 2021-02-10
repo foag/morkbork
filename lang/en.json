@@ -130,7 +130,9 @@
     "MB.Gear": "Gear",
     "MB.Qty": "Qty",
     "MB.Weight": "Weight",
-    "MB.Usage": "Usage"
+    "MB.Usage": "Usage",
+
+    "MB.UIAdd": "Add"
 
 }
     

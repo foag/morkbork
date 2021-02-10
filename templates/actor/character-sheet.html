@@ -120,10 +120,10 @@
             <div>
               <select name="data.class.name" data-type="String">
                 {{#select data.class.name}}
-                <option value="">{{localize "MB.None"}}</option>
-                {{#each actor.classNameList}}
-                <option value="{{this}}">{{this}}</option>
-                {{/each}}
+                  <option value="">{{localize "MB.None"}}</option>
+                  {{#each actor.classNameList}}
+                    <option value="{{this}}">{{this}}</option>
+                  {{/each}}
                 {{/select}}
               </select>
             </div>
@@ -243,13 +243,13 @@
           <!-- Features -->
           <ol class="items-list">
             <li class="item-header flexrow">
-              <div class="item-image"><img src="systems/morkbork/icons/ui/icon4.svg" title="Features"
-                  width="30" height="30" /></div>
+              <div class="item-image"><img src="systems/morkbork/icons/ui/icon4.svg" title="Features" width="30"
+                  height="30" /></div>
               <h3 class="item-name flexrow">{{ localize "MB.Features" }}</h3>
 
               <div class="item-controls">
                 <a class="item-control item-create" title='Create feature' data-type="feature">
-                  <i class="fas fa-plus"></i> Add
+                  <i class="fas fa-plus"></i> {{ localize "MB.UIAdd" }}
                 </a>
               </div>
             </li>
@@ -280,8 +280,8 @@
           <!-- Weapons -->
           <ol class="items-list">
             <li class="item-header flexrow">
-              <div class="item-image"><img src="systems/morkbork/icons/ui/icon2.svg" title="Weapons"
-                  width="30" height="30" /></div>
+              <div class="item-image"><img src="systems/morkbork/icons/ui/icon2.svg" title="Weapons" width="30"
+                  height="30" /></div>
               <h3 class="item-name flexrow">{{ localize "MB.Weapons" }}</h3>
 
               <div class="item-detail">{{ localize "MB.Damage" }}</div>
@@ -290,7 +290,7 @@
 
               <div class="item-controls">
                 <a class="item-control item-create" title='Create weapon' data-type="weapon">
-                  <i class="fas fa-plus"></i> Add
+                  <i class="fas fa-plus"></i> {{ localize "MB.UIAdd" }}
                 </a>
               </div>
             </li>
@@ -337,7 +337,7 @@
 
               <div class="item-controls">
                 <a class="item-control item-create" title='Create armor' data-type="armor">
-                  <i class="fas fa-plus"></i> Add
+                  <i class="fas fa-plus"></i> {{ localize "MB.UIAdd" }}
                 </a>
               </div>
             </li>
@@ -388,7 +388,7 @@
 
               <div class="item-controls">
                 <a class="item-control item-create" title='Create Gear' data-type="gear">
-                  <i class="fas fa-plus"></i> Add
+                  <i class="fas fa-plus"></i> {{ localize "MB.UIAdd" }}
                 </a>
               </div>
             </li>
@@ -445,39 +445,39 @@
 
           <ol class="items-list">
             {{#each actor.scrolls as |scrolls scrollType|}}
-            <li class="item-header flexrow">
-              <div class="item-image"><img src="systems/morkbork/icons/ui/{{ scrollType }}_scroll.svg" title="Scrolls"
-                  width="30" height="30" /></div>
-              <h3 class="item-name flexrow">{{ scrollLabel scrollType }} {{ localize "MB.Scrolls" }}</h3>
+              <li class="item-header flexrow">
+                <div class="item-image"><img src="systems/morkbork/icons/ui/{{ scrollType }}_scroll.svg" title="Scrolls"
+                    width="30" height="30" /></div>
+                <h3 class="item-name flexrow">{{ scrollLabel scrollType }} {{ localize "MB.Scrolls" }}</h3>
 
-              <div class="item-detail">{{ localize "MB.Silver" }}</div>
+                <div class="item-detail">{{ localize "MB.Silver" }}</div>
 
-              <div class="item-controls">
-                <a class="item-control item-create" title='Create Scroll' data-type="scroll"
-                  data-scroll-type="{{scrollType}}">
-                  <i class="fas fa-plus"></i> Add
-                </a>
-              </div>
-            </li>
-            {{#each scrolls as |item id|}}
-            <li class="item flexrow" data-item-id="{{item._id}}">
-              <div class="item-name flexrow rollable">
-                <div class="item-image" style="background-image: url({{item.img}})"></div>
-                <h4>
-                  {{item.name~}}
-                </h4>
-              </div>
+                <div class="item-controls">
+                  <a class="item-control item-create" title='Create Scroll' data-type="scroll"
+                    data-scroll-type="{{scrollType}}">
+                    <i class="fas fa-plus"></i> {{ localize "MB.UIAdd" }}
+                  </a>
+                </div>
+              </li>
+              {{#each scrolls as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                  <div class="item-name flexrow rollable">
+                    <div class="item-image" style="background-image: url({{item.img}})"></div>
+                    <h4>
+                      {{item.name~}}
+                    </h4>
+                  </div>
 
-              <div class="item-detail">
-                {{item.data.silver}}
-              </div>
+                  <div class="item-detail">
+                    {{item.data.silver}}
+                  </div>
 
-              <div class="item-controls">
-                <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
-                <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
-              </div>
-            </li>
-            {{/each}}
+                  <div class="item-controls">
+                    <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
+                    <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
+                  </div>
+                </li>
+              {{/each}}
             {{/each}}
           </ol>
         </div>

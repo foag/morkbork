@@ -224,6 +224,10 @@ export class MorkBorkActorSheet extends ActorSheet {
 
         const classObj = dataActor.classObjectList.find(classObject => classObject.name === dataData.class.name)
         dataActor.classObj = classObj ? classObj.data : {}
+
+        // if (confirm('hepp')) {
+        //     console.log('will set actor data to ', dataActor, classObj)
+        // }
     }
 
     /** @override */

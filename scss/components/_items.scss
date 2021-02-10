@@ -111,6 +111,10 @@
         // margin-left: .5rem;
       }
 
+      &.item-create {
+        font-size: .6rem;
+      }
+
       &:hover,
       &:focus {
         color: $mb-white;

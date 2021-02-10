@@ -130,7 +130,9 @@
     "MB.Gear": "Utrustning",
     "MB.Qty": "Kvn",
     "MB.Weight": "Vikt",
-    "MB.Usage": "Usage"
+    "MB.Usage": "Usage",
+
+    "MB.UIAdd": "Skapa"
 
 }
     

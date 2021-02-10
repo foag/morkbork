@@ -10,6 +10,7 @@ import * as chat from './chat.js'
 
 Hooks.once('init', async function () {
     CONFIG.MB = MB
+    // CONFIG.debug.hooks = true
 
     game.morkbork = {
         MorkBorkActor,

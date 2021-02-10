@@ -758,6 +758,10 @@ body {
   display: flex;
 }
 
+.morkbork .items-list .item-controls a.item-create {
+  font-size: .6rem;
+}
+
 .morkbork .items-list .item-controls a:hover, .morkbork .items-list .item-controls a:focus {
   color: white;
   text-shadow: 0 0 10px #f142af;
