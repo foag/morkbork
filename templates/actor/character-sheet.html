@@ -7,19 +7,19 @@
         <img src="{{actor.classObj.img}}" title="{{actor.classObj.name}}" height="100" width="100" class="profile-img" />
       </div>
       
-      <h1 class="left-column-title">Hit Points</h1>
+      <h1 class="left-column-title">{{ localize "MB.Hitpoints" }}</h1>
       <div class="grid grid-2col mb-2">
         <div class="flex-center">
           <input class="left-column-input" type="text" name="data.health.value" value="{{data.health.value}}" data-dtype="Number" placeholder="0"/>
-          <h4>Current</h4>
+          <h4>{{ localize "MB.Current" }}</h4>
         </div>
         <div class="flex-center">
           <input class="left-column-input" type="text" name="data.health.max" value="{{data.health.max}}" data-dtype="Number" placeholder="10"/>
-          <h4>Max</h4>
+          <h4>{{ localize "MB.Max" }}</h4>
         </div>
       </div>
 
-      <h1 class="left-column-title">Abilities</h1>
+      <h1 class="left-column-title">{{ localize "MB.Abilities" }}</h1>
       {{#each data.abilities as |ability key|}}
         <li class="ability" id="{{key}}" data-ability="{{key}}">
           <div class="ability flexrow flex-left">
@@ -35,7 +35,7 @@
           </div>
         </li>
       {{/each}}
-      <span>Defense = AGI | Ranged = PRE</span>
+      <span>{{ localize "MB.Defense" }} = {{ localize "MB.AGI" }} | {{ localize "MB.Ranged" }} = {{ localize "MB.PRE" }}</span>
     </div>
 
     <div class="header">
@@ -47,32 +47,32 @@
           </h2>
 
           <div class="header-item flexrow flex-between" style="margin-top: 10px;">
-            <label class="mb-label" for="data.omens">Silver:</label> &nbsp;
+            <label class="mb-label" for="data.omens">{{ localize "MB.Silver" }}:</label> &nbsp;
             <input class="small-input" type="text" name="data.currency.sp" value="{{data.currency.sp}}" data-dtype="Number" placeholder="Coin"/>
           </div>
 
           <div class="header-item flexrow flex-between">
-            <label class="mb-label" for="data.omens">Movement:</label>
+            <label class="mb-label" for="data.omens">{{ localize "MB.Movement" }}:</label>
             <input class="small-input" type="text" name="data.movement" value="{{data.movement}}" data-dtype="Number" placeholder="Coin"/>
           </div>
 
           <div class="header-item flexrow flex-between">
-            <label class="mb-label" for="data.inventorySlots">Inventory Slots:</label>
+            <label class="mb-label" for="data.inventorySlots">{{ localize "MB.InventorySlots" }}:</label>
             <span class="small-input">{{data.inventorySlots.value}} / {{data.inventorySlots.max}}</span>
           </div>
           
         </div>
     
         <div class="flex-left" style="margin-top: 10px;">
-          <h1 class="left-column-title">Violence</h1>
+          <h1 class="left-column-title">{{ localize "MB.Violence" }}</h1>
           <div class="header-item flexrow flex-between">
-            <button style="margin-left: 0px;" class="rollable flex-center attack" type="button" data-roll="1d20+@abilities.strength.value" data-label="Melee Attack">Melee</button>
-            <button class="rollable flex-center attack" type="button" data-roll="1d20+@abilities.presence.value" data-label="Ranged Attack">Ranged</button>
-            <button style="margin-right: 0px;" class="rollable flex-center defense" type="button" data-roll="1d20+@abilities.agility.value" data-label="Defense">Defense</button>
+            <button style="margin-left: 0px;" class="rollable flex-center attack" type="button" data-roll="1d20+@abilities.strength.value" data-label="Melee Attack">{{ localize "MB.Melee" }}</button>
+            <button class="rollable flex-center attack" type="button" data-roll="1d20+@abilities.presence.value" data-label="Ranged Attack">{{ localize "MB.Ranged" }}</button>
+            <button style="margin-right: 0px;" class="rollable flex-center defense" type="button" data-roll="1d20+@abilities.agility.value" data-label="Defense">{{ localize "MB.Defense" }}</button>
           </div>
             
           <div class="header-item flexrow flex-between items-center" style="margin-top: 10px;">
-            <label class="mb-label" for="data.powers">Powers:</label>
+            <label class="mb-label" for="data.powers">{{ localize "MB.Powers" }}:</label>
             <input class="small-input" type="text" name="data.powers" value="{{data.powers}}" data-dtype="Number" placeholder="Current"/>
             {{!-- TODO make roll update powers but only if powers are at 0 --}}
             <div class="flex-center">
@@ -81,7 +81,7 @@
           </div>
 
           <div class="header-item flexrow flex-between items-center">
-            <label class="mb-label" for="data.omens">Omens:</label>
+            <label class="mb-label" for="data.omens">{{ localize "MB.Omens" }}:</label>
             <input class="small-input" type="text" name="data.omens" value="{{data.omens}}" data-dtype="Number" placeholder="Current"/>
             <div class="flex-center">
               <span class="rollable flex-center" data-roll="{{actor.classObj.data.omensDice}}" data-label="{{actor.classObj.data.omensDice}}">{{actor.classObj.data.omensDice}}</span>
@@ -94,11 +94,11 @@
 
     <div class="content">
       <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="main">Class</a>
-        <a class="item" data-tab="features">Features</a>
-        <a class="item" data-tab="items">Items</a>
-        <a class="item" data-tab="scrolls">Scrolls</a>
-        <a class="item" data-tab="description">Character</a>
+        <a class="item" data-tab="main">{{ localize "MB.Class" }}</a>
+        <a class="item" data-tab="features">{{ localize "MB.Features" }}</a>
+        <a class="item" data-tab="items">{{ localize "MB.Items" }}</a>
+        <a class="item" data-tab="scrolls">{{ localize "MB.Scrolls" }}</a>
+        <a class="item" data-tab="description">{{ localize "MB.Character" }}</a>
       </nav>
 
       <section class="sheet-body">
@@ -118,19 +118,19 @@
             </div>
             {{!-- Level --}}
             <div>
-              <label class="mb-label"  for="data.level.value">Level</label>
+              <label class="mb-label"  for="data.level.value">{{ localize "MB.Level" }}</label>
               <input class="small-input" type="text" name="data.level.value" value="{{data.level.value}}" data-dtype="Number"/>
             </div>
             {{!-- Experiences --}}
             <div>
-              <label class="mb-label"  for="data.experiences">Experiences</label>
+              <label class="mb-label"  for="data.experiences">{{ localize "MB.Experiences" }}</label>
               <input class="small-input" type="text" name="data.experiences" value="{{data.experiences}}" data-dtype="Number"/>
             </div>
           </div>
           
           <div class="class-grid">            
             <div class="class-abilities">
-              <h2 style="margin-top: 0px;">Ability Modifiers</h2>
+              <h2 style="margin-top: 0px;">{{ localize "MB.AbilityModifiers" }}</h2>
               <div class="grid grid-2col flex">
                 <label class="mb-label">{{ localize "MB.AbilityStr" }}:</label>
                 <span class="class-ability-mod">{{actor.classObj.data.startingInfo.strMod}}</span>
@@ -154,12 +154,12 @@
             
             <div class="class-items">
               <div class="grid grid-2col flex">
-                <label class="mb-label">Omens Dice</label>
+                <label class="mb-label">{{ localize "MB.ClassOmensDice" }}</label>
                 <span>{{actor.classObj.data.omensDice}}</span>
               </div>
 
               <div class="grid grid-2col flex">
-                <label class="mb-label">Can Use Scrolls</label>
+                <label class="mb-label">{{ localize "MB.ClassCanUseScrolls" }}</label>
                 <span>{{actor.classObj.data.canUseScrolls}}</span>
               </div>
 
@@ -185,7 +185,7 @@
             </div>
 
             <div class="class-content">
-              <h2>Description</h2>
+              <h2>{{ localize "MB.Description" }}</h2>
               <p class="pl-2">{{actor.classObj.data.description}}</p>
       
               <h2 class="mt-4">Class Attributes</h2>
@@ -226,7 +226,7 @@
           <ol class="items-list">
             <li class="item-header flexrow">
               <div class="item-image"><img src="systems/morkbork/icons/ui/catagory-weapons.svg" title="Features" width="30" height="30"/></div>
-              <h3 class="item-name flexrow">Features</h3>
+              <h3 class="item-name flexrow">{{ localize "MB.Features" }}</h3>
 
               <div class="item-controls">
                   <a class="item-control item-create" title='Create feature' data-type="feature">
@@ -262,11 +262,11 @@
           <ol class="items-list">
             <li class="item-header flexrow">
               <div class="item-image"><img src="systems/morkbork/icons/ui/catagory-weapons.svg" title="Weapons" width="30" height="30"/></div>
-              <h3 class="item-name flexrow">Weapons</h3>
+              <h3 class="item-name flexrow">{{ localize "MB.Weapons" }}</h3>
 
-              <div class="item-detail">Damage</div>
-              <div class="item-detail">Range</div>
-              <div class="item-detail">Type</div>
+              <div class="item-detail">{{ localize "MB.Damage" }}</div>
+              <div class="item-detail">{{ localize "MB.Ranged" }}</div>
+              <div class="item-detail">{{ localize "MB.Type" }}</div>
 
               <div class="item-controls">
                   <a class="item-control item-create" title='Create weapon' data-type="weapon">
@@ -309,10 +309,10 @@
               <div class="item-image"><img src="systems/morkbork/icons/ui/catagory-armor.svg" title="Armor" width="30" height="30"/></div>
               <h3 class="item-name flexrow">Armor</h3>
 
-              <div class="item-detail">Tier</div>
-              <div class="item-detail">Dice</div>
-              <div class="item-detail">AGI</div>
-              <div class="item-detail">DEF</div>
+              <div class="item-detail">{{ localize "MB.Tier" }}</div>
+              <div class="item-detail">{{ localize "MB.Dice" }}</div>
+              <div class="item-detail">{{ localize "MB.AGI" }}</div>
+              <div class="item-detail">{{ localize "MB.DEF" }}</div>
 
               <div class="item-controls">
                   <a class="item-control item-create" title='Create armor' data-type="armor">
@@ -357,12 +357,12 @@
           <ol class="items-list">
             <li class="item-header flexrow">
               <div class="item-image"><img src="systems/morkbork/icons/ui/catagory-gear.svg" title="Gear" width="30" height="30"/></div>
-              <h3 class="item-name flexrow">Gear</h3>
+              <h3 class="item-name flexrow">{{ localize "MB.Gear" }}</h3>
 
-              <div class="item-detail">Qty</div>
-              <div class="item-detail">Weight</div>
-              <div class="item-detail">Usage</div>
-              <div class="item-detail">Silver</div>
+              <div class="item-detail">{{ localize "MB.Qty" }}</div>
+              <div class="item-detail">{{ localize "MB.Weight" }}</div>
+              <div class="item-detail">{{ localize "MB.Usage" }}</div>
+              <div class="item-detail">{{ localize "MB.Silver" }}</div>
 
               <div class="item-controls">
                   <a class="item-control item-create" title='Create Gear' data-type="gear">
@@ -425,9 +425,9 @@
             {{#each actor.scrolls as |scrolls scrollType|}}
               <li class="item-header flexrow">
                 <div class="item-image"><img src="systems/morkbork/icons/ui/catagory-scrolls.svg" title="Scrolls" width="30" height="30"/></div>
-                <h3 class="item-name flexrow">{{scrollType}} Scrolls</h3>
+                <h3 class="item-name flexrow">{{scrollType}} {{ localize "MB.Scrolls" }}</h3>
 
-                <div class="item-detail">Silver</div>
+                <div class="item-detail">{{ localize "MB.Silver" }}</div>
 
                 <div class="item-controls">
                     <a class="item-control item-create" title='Create Scroll' data-type="scroll" data-scroll-type="{{scrollType}}">

@@ -26,10 +26,12 @@
     "MB.DistFar": "Far Away",
     "MB.DistNearby": "Nearby",
 
+    "MB.Scrolls": "Scrolls",
     "MB.ScrollUnclean": "Unclean",
     "MB.ScrollSacred": "Sacred",
     "MB.ScrollOther": "Other",
 
+    "MB.Items": "Items",
     "MB.ItemWeaponDetails": "Weapon Details",
     "MB.ItemArmorDetails": "Armor Details",
     "MB.ItemGearDetails": "Gear Details",
@@ -74,6 +76,7 @@
 
     "MB.ItemQuantity": "Quantity",
 
+    "MB.Class": "Class",
     "MB.ClassSourceCustom": "Custom",
     "MB.ClassSourceCore": "Core",
     "MB.ClassSourceMbc": "MBC",
@@ -94,6 +97,39 @@
     "MB.AttackRollEmote" : "Attack Roll: {rollHTML} </br>Weapon: {weaponName} </br> Damage: {damageRollHTML}",
     "MB.AttackCritEmote" : "Crits with {weaponName} for {damageRollHTML} damage!",
     "MB.AttackFumbleEmote" : "Fumbled and broke their {weaponName} like an idiot",
-    "MB.Check" : "Check"
+    "MB.Check" : "Check",
+
+    "MB.Hitpoints": "Hit Points",
+    "MB.Current": "Current",
+    "MB.Max": "Max",
+    "MB.Abilities": "Abilities",
+    "MB.Defense": "Defense",
+    "MB.AGI": "AGI",
+    "MB.Ranged": "Ranged",
+    "MB.PRE": "PRE",
+    "MB.Silver": "Silver",
+    "MB.Movement": "Movement",
+    "MB.InventorySlots": "Inventory Slots",
+    "MB.Violence": "Violence",
+    "MB.Powers": "Powers",
+    "MB.Omens": "Omens",
+    "MB.AbilityModifiers": "Ability Modifiers",
+    "MB.Features": "Features",
+    "MB.Character": "Character",
+    "MB.Level": "Level",
+    "MB.Experiences": "Experiences",
+    "MB.Description": "Description",
+    "MB.Weapons": "Weapons",
+    "MB.Damage": "Damage",
+    "MB.Type": "Type",
+    "MB.Tier": "Tier",
+    "MB.Dice": "Dice",
+    "MB.Melee": "Melee",
+    "MB.DEF": "DEF",
+    "MB.Gear": "Gear",
+    "MB.Qty": "Qty",
+    "MB.Weight": "Weight",
+    "MB.Usage": "Usage"
+
 }
     
