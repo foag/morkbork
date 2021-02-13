@@ -56,7 +56,7 @@
         "img": "systems/morkbork/icons/items/weapons/bow-short.jpg"
     },
     {
-        "name": "Composite Bow",
+        "name": "Kompositbåge",
         "permission": {
             "default": 0
         },

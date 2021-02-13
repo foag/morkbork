@@ -62,12 +62,12 @@
         "type": "class",
         "data": {
             "type": "core",
-            "description": "An ill star smiled upon your birth. Poverty, crime and bad parenting didn’t help either. In your community an honest day’s work was never an option. Not that you ever tried, what are you, some kind of mug? A razor blade and a moonless night are worth a week of chump-work.",
+            "description": "Stjärnorna stod inte rätt när slusken blev till och växte upp. I städers mindre kultiverade kvarter har ett vanligt dagsknäck aldrig varit aktuellt. Utan kärlek blir skuggan en trygg vän.",
             "baseOmensDice": "1d2",
             "canUseScrolls": true,
             "modifiers": [
-                "Stealthy, all Presence and Agility tests have their DR reduced by 2 (normal tests are DR10 instead of DR12).",
-                "The first time the Scum gets better another specialty is rolled. From the second time the Scum gets better it’s possible to reroll these two specialities or just one."
+                "Alltid SG-2 vid test mot Närvaro och Smidighet, exempelvis görs normala (SG12) tester mot SG10.",
+                "När slusken första gången blir bättre (se Att bli bättre på sidan 33) slumpas ytterligare en specialitet fram. Maxantalet är just två, men varje gång slusken hädanefter blir bättre är det tillåtet att slumpa om båda specialiteterna, eller bara en."
             ],
             "startingInfo": {
               "startingSilverDice": "1d6",
@@ -93,14 +93,14 @@
                 ]
               },
               "origins": {
-                "description": "Bad Birth",
+                "description": "Född",
                 "options": [
-                    "Dumped onto a moving shit-cart still in your birth caul.",
-                    "Mother hanged from a tree outside of Galgenbeck, you fell from the corpse.",
-                    "Raised by rats in the gutters of Grift.",
-                    "Kicked and beaten beneath a baker’s table in Schleswig.",
-                    "Escaped the Tvelandian orphanarium.",
-                    "Educated by outlaws in a hovel south of Alliáns."
+                    "hatad och föräldralös från början, oklart var.",
+                    "i ett dike utanför Galgenbeck.",
+                    "i en rännsten i Grift.",
+                    "med sparkar under bagarens bord i Schleswig.",
+                    "en olycklig dag i Tvelands värsta håla.",
+                    "i laglösas ruckel på Alliáns södra slätt."
                 ]
               }
             }
