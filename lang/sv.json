@@ -27,10 +27,11 @@
     "MB.DistNearby": "I närheten",
 
     "MB.Scrolls": "Pergamentrullar",
-    "MB.ScrollUnclean": "Smutsiga",
-    "MB.ScrollSacred": "Rena",
-    "MB.ScrollOther": "Övriga",
-    "MB.ScrollUnknown": "Okända",
+    "MB.Scroll": "pergamentrulle",
+    "MB.ScrollUnclean": "smutsig",
+    "MB.ScrollSacred": "ren",
+    "MB.ScrollOther": "övrig",
+    "MB.ScrollUnknown": "okänd",
 
     "MB.Items": "Utrustning",
     "MB.ItemWeaponDetails": "Vapendetaljer",

@@ -1,13 +1,15 @@
 // Import utilities.
+@import 'tailwind.css';
 @import 'utils/typography';
 @import 'utils/colors';
 @import 'utils/mixins';
 @import 'utils/variables';
-@import 'utils/grid';
+
 
 
 body {
   font-family: $font-primary; 
+  font-size: 13px;
   background-image: url('../img/board_bg.jpg');
 }
 
@@ -19,10 +21,14 @@ body {
   line-height: 50px!important;
 
   .window-title {
-    padding: .5rem;
-    font-size: 30px;
-    font-family: $font-tertiary;
+    // padding: .5rem;
+    // font-size: 30px;
+    // font-family: $font-tertiary;
   }
+}
+
+.text-mb-yellow {
+  color: $mb-yellow;
 }
 
 /* Styles limited to morkbork sheets */
@@ -42,7 +48,6 @@ body {
   .rollable {
     color: $mb-white;
     border-bottom: 1px dashed $mb-white;
-    display: inline-block;
 
     &:hover,
     &:focus {
@@ -71,6 +76,18 @@ body {
     align-self: center;
   }
   
+  .font-secondary {
+    font-family: $font-secondary;
+  }
+
+  .character-name {
+    height: auto;
+    width: 100%;
+    text-align: left;
+    border: none;
+    text-indent: 1rem;
+  }
+
   h1 {
     border-bottom: none;
     font-family: $font-secondary;
@@ -96,6 +113,8 @@ body {
     border: 0;
     border-bottom: 1px dotted $mb-white;
     border-radius: 0;
+    padding: 0; 
+    height: 1.4rem;
 
     &:focus {
       color: $mb-black;

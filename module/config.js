@@ -102,7 +102,7 @@ MB.classSources = {
 /* break into 2 functions */
 export class MbClassList {
     static async getClasses (labels_only = true) {
-        const pack = game.packs.find(p => p.metadata.label === 'Classes')
+        const pack = game.packs.find(p => p.metadata.name === 'classes')
         let classes = pack ? await pack.getContent() : []
 
         const charClassNames = []
@@ -151,8 +151,8 @@ export class MbClassList {
 }
 
 export class MbEntityList {
-    static async getEntities (type, labels_only = true) {
-        const pack = game.packs.find(p => p.metadata.label === type)
+    static async getEntities (type, labels_only = false) {
+        const pack = game.packs.find(p => p.metadata.name === type)
         let mbEntities = pack ? await pack.getContent() : []
 
         const mbEntityNames = []

@@ -1,11 +1,12 @@
 /* eslint-disable no-undef */
 // Import Modules
 import { MB } from './module/config.js'
-import { MorkBorkActor } from './module/sheet/actor/actor.js'
-import { MorkBorkActorSheet } from './module/sheet/actor/actor-sheet.js'
+import { MorkBorkActor } from './module/actor/actor.js'
+import { MorkBorkActorSheet } from './module/actor/actor-sheet.js'
 import { MorkBorkItem } from './module/sheet/item/item.js'
 import { MorkBorkItemSheet } from './module/sheet/item/item-sheet.js'
 import { preloadHandlebarsTemplates } from './module/templates.js'
+import * as initActorHooks from './module/hooks/actor.js'
 import * as chat from './chat.js'
 
 Hooks.once('init', async function () {
@@ -39,6 +40,8 @@ Hooks.once('init', async function () {
     Items.unregisterSheet('core', ItemSheet)
     Items.registerSheet('morkbork', MorkBorkItemSheet, { makeDefault: true })
 
+    initActorHooks.default()
+
     // If you need to add Handlebars helpers, here are a few useful examples:
     Handlebars.registerHelper('concat', function () {
         let outStr = ''
@@ -66,6 +69,13 @@ Hooks.once('init', async function () {
         return game.i18n.localize(CONFIG.MB.scrollTypes[scrollKey])
     })
 
+    Handlebars.registerHelper('is', function (v1, v2, options) {
+        return v1 == v2
+    })
+
+    Handlebars.registerHelper('notIs', function (v1, v2, options) {
+        return v1 != v2
+    })
     // Preload Handlebars Templates
     preloadHandlebarsTemplates()
 })
@@ -278,4 +288,20 @@ function rollMBWeaponAttackMacro (itemId, options = {}) {
 
     // Trigger the weapon roll
     return actor.rollWeaponAttack(itemId, options)
+}
+
+window.importCompendium = async function (name) {
+    const pack = game.packs.find(p => p.collection === `morkbork.${name}`)
+    pack.locked = false
+
+    const response = await fetch(`systems/morkbork/compendium/${name}.json`)
+    const content = await response.json()
+    const items = await Item.create(content, { temporary: true })
+
+    console.log(pack)
+
+    for (const i of items) {
+        await pack.importEntity(i)
+        console.log(`Imported Item ${i.name} into Compendium classesPack ${pack.collection}`)
+    }
 }

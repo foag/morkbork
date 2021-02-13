@@ -13,7 +13,7 @@
   "packs": [
     {
       "name": "gear",
-      "label": "Gear",
+      "label": "Utrustning",
       "system": "morkbork",
       "module": "morkbork",
       "path": "./packs/gear.db",
@@ -21,7 +21,7 @@
     },
     {
       "name": "features",
-      "label": "Features",
+      "label": "Egenskaper",
       "system": "morkbork",
       "module": "morkbork",
       "path": "./packs/features.db",
@@ -29,7 +29,7 @@
     },
     {
       "name": "armor",
-      "label": "Armor",
+      "label": "Rustningar",
       "system": "morkbork",
       "module": "morkbork",
       "path": "./packs/armor.db",
@@ -37,7 +37,7 @@
     },
     {
       "name": "weapons",
-      "label": "Weapons",
+      "label": "Vapen",
       "system": "morkbork",
       "module": "morkbork",
       "path": "./packs/weapon.db",
@@ -45,7 +45,7 @@
     },
     {
       "name": "scrolls",
-      "label": "Scrolls",
+      "label": "Pergamentrullar",
       "system": "morkbork",
       "module": "morkbork",
       "path": "./packs/scrolls.db",
@@ -53,7 +53,7 @@
     },
     {
       "name": "classes",
-      "label": "Classes",
+      "label": "Klasser",
       "system": "morkbork",
       "module": "morkbork",
       "path": "./packs/classes.db",
@@ -85,11 +85,6 @@
     }
   ],
   "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    },
     {
       "lang": "sv",
       "name": "Svenska",

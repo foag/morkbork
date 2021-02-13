@@ -1,494 +1,181 @@
 <form class="{{cssClass}}" autocomplete="off">
 
-  <div class="char-sheet">
-    <div class="left-column">
-      <!-- <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" /> -->
-      <div class="profile-img-wrapper">
-        <img src="{{actor.classObj.img}}" title="{{actor.classObj.name}}" height="100" width="100"
-          class="profile-img" />
-      </div>
-
-      <h1 class="left-column-title">{{ localize "MB.Hitpoints" }}</h1>
-      <div class="grid grid-2col mb-2">
-        <div class="flex-center">
-          <input class="left-column-input" type="text" name="data.health.value" value="{{data.health.value}}"
-            data-dtype="Number" placeholder="0" />
-          <h4>{{ localize "MB.Current" }}</h4>
-        </div>
-        <div class="flex-center">
-          <input class="left-column-input" type="text" name="data.health.max" value="{{data.health.max}}"
-            data-dtype="Number" placeholder="10" />
-          <h4>{{ localize "MB.Max" }}</h4>
-        </div>
-      </div>
-
-      <h1 class="left-column-title">{{ localize "MB.Abilities" }}</h1>
-
-      {{#each data.abilities as |ability key|}}
-      <li class="ability" id="{{key}}" data-ability="{{key}}">
-        <div class="ability flexrow flex-left">
-          <div class="ability-name mb-label rollable" data-roll="1d20+@abilities.{{key}}.value"
-            for="data.abilities.{{key}}.value">{{ abilityLabel key }}</div>
-          <div class="flexrow flex-center flex-between"></div>
-          <input class="ability-score left-column-input" id="data.abilities.{{key}}.value"
-            name="data.abilities.{{key}}.value" type="text" value="{{numberFormat ability.value decimals=0 sign=true}}"
-            data-dtype="Number" placeholder="0" />
-        </div>
-      </li>
-      {{/each}}
-      <span>{{ localize "MB.Defense" }} = {{ localize "MB.AGI" }} | {{ localize "MB.Ranged" }} = {{ localize "MB.PRE"
-        }}</span>
-    </div>
-
-    <div class="header">
-      <div class="grid grid-2col" style="gap: 20px;">
-        <div class="flex-left">
-          <h2 class="charname">
-            <span class="charsign">{{firstChar actor.name}}</span>
-            <input name="name" type="text" value="{{actor.name}}" placeholder="Name" />
-          </h2>
-
-          <div class="header-item flexrow flex-between" style="margin-top: 10px;">
-            <label class="mb-label" for="data.omens">{{ localize "MB.Silver" }}:</label> &nbsp;
-            <input class="small-input" type="text" name="data.currency.sp" value="{{data.currency.sp}}"
-              data-dtype="Number" placeholder="Coin" />
+  <div class="flex">
+    <div class="w-full px-8 h-full">
+      <div class="w-full flex items-center justify-center flex-col">
+        <div class="w-full grid grid-cols-3">
+          <div class="flex items-center">
+            <input class="text-6xl mb-2 color-white font-secondary character-name" name="name" value="{{ actor.name }}">
+          </div>
+          <div>
+            <div class="char-sign text-6xl text-black w-20 h-20 flex items-center justify-center my-4 mx-auto">
+              {{firstChar actor.name}}</div>
           </div>
 
-          <div class="header-item flexrow flex-between">
-            <label class="mb-label" for="data.omens">{{ localize "MB.Movement" }}:</label>
-            <input class="small-input" type="text" name="data.movement" value="{{data.movement}}" data-dtype="Number"
-              placeholder="Coin" />
-          </div>
-
-          <div class="header-item flexrow flex-between">
-            <label class="mb-label" for="data.inventorySlots">{{ localize "MB.InventorySlots" }}:</label>
-            <span class="small-input">{{data.inventorySlots.value}} / {{data.inventorySlots.max}}</span>
-          </div>
-
+          <ul class="pt-2 pl-8">
+            <li class="flex justify-between mb-1">
+              <span>{{ localize "MB.Hitpoints" }}:</span>
+              <div>
+                <span class="inline-block w-8">
+                  <input type="text" name="data.health.value" value="{{data.health.value}}" data-dtype="Number"
+                    placeholder="0" />
+                </span>
+                / {{data.health.max}}
+              </div>
+            </li>
+            <li class="flex justify-between mb-1">
+              <span>{{ localize "MB.Omens" }}:</span>
+              <div>
+                <span class="inline-block w-8">
+                  <input type="text" name="data.omens.value" value="{{data.omens.value}}" data-dtype="Number"
+                    placeholder="Current" />
+                </span>
+                / {{data.omens.max}}
+              </div>
+            </li>
+            <li class="flex justify-between mb-1">
+              <span class="rollable" data-roll="1d4+{{data.abilities.presence.value}}">{{ localize "MB.Powers" }}:</span>
+              <div>
+                <span class="inline-block w-8">
+                  <input type="text" name="data.powers.value" value="{{data.powers.value}}" data-dtype="Number"
+                    placeholder="Current" />
+                </span>
+                / {{data.powers.value}}
+              </div>
+            </li>
+            <li class="flex justify-between mb-1">
+              <span>{{ localize "MB.ItemSilver" }}:</span>
+              <div>
+                <span class="inline-block w-16">
+                  <input type="text" name="data.currency.sp" value="{{data.currency.sp}}" data-dtype="Number"
+                    placeholder="Current" />
+                </span>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <div class="flex-left" style="margin-top: 10px;">
-          <h1 class="left-column-title">{{ localize "MB.Violence" }}</h1>
-          <div class="header-item flexrow flex-between">
-            <button style="margin-left: 0px;" class="rollable flex-center attack" type="button"
-              data-roll="1d20+@abilities.strength.value" data-label="Melee Attack">{{ localize "MB.Melee" }}</button>
-            <button class="rollable flex-center attack" type="button" data-roll="1d20+@abilities.presence.value"
-              data-label="Ranged Attack">{{ localize "MB.Ranged" }}</button>
-            <button style="margin-right: 0px;" class="rollable flex-center defense" type="button"
-              data-roll="1d20+@abilities.agility.value" data-label="Defense">{{ localize "MB.Defense" }}</button>
-          </div>
-
-          <div class="header-item flexrow flex-between items-center" style="margin-top: 10px;">
-            <label class="mb-label" for="data.powers">{{ localize "MB.Powers" }}:</label>
-            <input class="small-input" type="text" name="data.powers" value="{{data.powers}}" data-dtype="Number"
-              placeholder="Current" />
-            {{!-- TODO make roll update powers but only if powers are at 0 --}}
-            <div class="flex-center">
-              <span class="rollable flex-center" data-roll="1d4+@abilities.presence.value"
-                data-label="Powers">Roll</span>
+        <!-- ABILITIES -->
+        <div class="w-full border-t border-b border-white py-4 flex justify-around py-4">
+          {{#each data.abilities as |ability key|}}
+          <div class="ability flex" id="{{key}}" data-ability="{{key}}">
+            <div class="rollable" data-roll="1d20+@abilities.{{key}}.value" data-label="{{ abilityLabel key }}">
+              {{ abilityLabel key }}
+            </div>
+            <div class="w-8 ml-2">
+              <input class="ability-score" id="data.abilities.{{key}}.value" name="data.abilities.{{key}}.value"
+                type="text" value="{{numberFormat ability.value decimals=0 sign=true}}" data-dtype="Number"
+                placeholder="0" />
             </div>
           </div>
-
-          <div class="header-item flexrow flex-between items-center">
-            <label class="mb-label" for="data.omens">{{ localize "MB.Omens" }}:</label>
-            <input class="small-input" type="text" name="data.omens" value="{{data.omens}}" data-dtype="Number"
-              placeholder="Current" />
-            <div class="flex-center">
-              <span class="rollable flex-center" data-roll="{{actor.classObj.data.omensDice}}"
-                data-label="{{actor.classObj.data.omensDice}}">{{actor.classObj.data.omensDice}}</span>
-            </div>
-          </div>
-
+          {{/each}}
         </div>
-      </div>
-    </div>
+        <!-- /ABILITIES -->
 
-    <div class="content">
-      <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="main">{{ localize "MB.Class" }}</a>
-        <a class="item" data-tab="features">{{ localize "MB.Features" }}</a>
-        <a class="item" data-tab="items">{{ localize "MB.Items" }}</a>
-        <a class="item" data-tab="scrolls">{{ localize "MB.Scrolls" }}</a>
-        <a class="item" data-tab="description">{{ localize "MB.Character" }}</a>
-      </nav>
+        <div class="character-grid w-full grid grid-cols-2">
+          <div class="border-r">
+            <h1>{{ actor.classObj.name }}</h1>
+            {{ log actor.features }}
 
-      <section class="sheet-body">
-        {{!-- Class Tab --}}
-
-        <div class="tab class pl-2 pr-2  mt-4" data-group="primary" data-tab="main">
-          <div class="flex flex-between pr-2">
-            <div>
-              <select name="data.class.name" data-type="String">
-                {{#select data.class.name}}
-                  <option value="">{{localize "MB.None"}}</option>
-                  {{#each actor.classNameList}}
-                    <option value="{{this}}">{{this}}</option>
-                  {{/each}}
-                {{/select}}
-              </select>
-            </div>
-            {{!-- Level --}}
-            <div>
-              <label class="mb-label" for="data.level.value">{{ localize "MB.Level" }}</label>
-              <input class="small-input" type="text" name="data.level.value" value="{{data.level.value}}"
-                data-dtype="Number" />
-            </div>
-            {{!-- Experiences --}}
-            <div>
-              <label class="mb-label" for="data.experiences">{{ localize "MB.Experiences" }}</label>
-              <input class="small-input" type="text" name="data.experiences" value="{{data.experiences}}"
-                data-dtype="Number" />
-
-            </div>
-          </div>
-
-          <div class="class-grid">
-            <div class="class-abilities">
-              <h2 style="margin-top: 0px;">{{ localize "MB.AbilityModifiers" }}</h2>
-              <div class="pl-2">
-                <div class="grid grid-2col">
-                  <label class="mb-label">{{ localize "MB.AbilityStr" }}:</label>
-                  <span class="class-ability-mod">{{actor.classObj.data.startingInfo.strMod}}</span>
-                </div>
-
-                <div class="grid grid-2col">
-                  <label class="mb-label">{{ localize "MB.AbilityAgi" }}:</label>
-                  <span class="class-ability-mod">{{actor.classObj.data.startingInfo.agiMod}}</span>
-                </div>
-
-                <div class="grid grid-2col">
-                  <label class="mb-label">{{ localize "MB.AbilityPre" }}:</label>
-                  <span class="class-ability-mod">{{actor.classObj.data.startingInfo.preMod}}</span>
-                </div>
-
-                <div class="grid grid-2col">
-                  <label class="mb-label">{{ localize "MB.AbilityTou" }}:</label>
-                  <span class="class-ability-mod">{{actor.classObj.data.startingInfo.touMod}}</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="class-items">
-              <div class="grid grid-2col">
-                <label class="mb-label">{{ localize "MB.ClassOmensDice" }}</label>
-                <span>{{actor.classObj.data.omensDice}}</span>
-              </div>
-
-              <div class="grid grid-2col">
-                <label class="mb-label">{{ localize "MB.ClassCanUseScrolls" }}</label>
-                <span>{{actor.classObj.data.canUseScrolls}}</span>
-              </div>
-
-              <div class="grid grid-2col">
-                <label class="mb-label">{{ localize "MB.ClassWeaponTableDice" }}:</label>
-                <span>{{actor.classObj.data.startingInfo.weaponsDice}}</span>
-              </div>
-
-              <div class="grid grid-2col">
-                <label class="mb-label">{{ localize "MB.ClassArmorTableDice" }}:</label>
-                <span>{{actor.classObj.data.startingInfo.armorDice}}</span>
-              </div>
-
-              <div class="grid grid-2col">
-                <label class="mb-label">{{ localize "MB.ClassStartingSilver" }}</label>
-                <span>{{actor.classObj.data.startingInfo.startingSilverDice}} x
-                  {{actor.classObj.data.startingInfo.startingSilverMod}}</span>
-              </div>
-
-              <div class="grid grid-2col">
-                <label class="mb-label">{{ localize "MB.ClassStartingHP" }}</label>
-                <span>{{actor.classObj.data.startingInfo.startingHitPointDice}} +
-                  {{actor.classObj.data.startingInfo.startingHitPointAtt}}</span>
-              </div>
-            </div>
-
-            <div class="class-content">
-              <h2>{{ localize "MB.Description" }}</h2>
-              <p class="pl-2">{{actor.classObj.data.description}}</p>
-
-              <h2 class="mt-4">Class Attributes</h2>
-              <ul class="pl-2">
-                {{#each actor.classObj.data.modifiers}}
-                <li>{{this}}</li>
-                {{/each}}
-              </ul>
-
-              <h2 class="mt-4">{{ localize "MB.ClassFeatures" }}</h2>
-              <div class="pl-2">
-                <h3>{{actor.classObj.data.startingInfo.abilities.description}}</h3>
-                {{#each actor.classObj.data.startingInfo.abilities.options}}
-                <div class="grid-container">
-                  <input class="check-box" type="checkbox" id="{{@index}}">
-                  <label class="desc" for="{{@index}}">{{this}}</label>
-                </div>
-                {{/each}}
-              </div>
-
-              <h2 class="mt-4">{{ localize "MB.ClassOrigins" }}</h2>
-              <div class="pl-2">
-                <h3>{{actor.classObj.data.startingInfo.origins.description}}</h3>
-                {{#each actor.classObj.data.startingInfo.origins.options}}
-                <div class="grid-container">
-                  <input class="check-box" type="checkbox" id="{{@index}}">
-                  <label class="desc" for="{{@index}}">{{this}}</label>
-                </div>
-                {{/each}}
-              </div>
-
-            </div>
-          </div>
-        </div>
-        {{!-- Features Tab --}}
-        <div class="tab features pl-2 pr-2  mt-4" data-group="primary" data-tab="features">
-          <!-- Features -->
-          <ol class="items-list">
-            <li class="item-header flexrow">
-              <div class="item-image"><img src="systems/morkbork/icons/ui/icon4.svg" title="Features" width="30"
-                  height="30" /></div>
-              <h3 class="item-name flexrow">{{ localize "MB.Features" }}</h3>
-
-              <div class="item-controls">
-                <a class="item-control item-create" title='Create feature' data-type="feature">
-                  <i class="fas fa-plus"></i> {{ localize "MB.UIAdd" }}
-                </a>
-              </div>
-            </li>
-            {{#each actor.features as |item id|}}
-            <li class="item flexrow" data-item-id="{{item._id}}">
-              <div class="item-name flexrow rollable">
-                <div class="item-image" style="background-image: url({{item.img}})"></div>
-                <h4>
-                  {{item.name~}}
-                </h4>
-              </div>
-
-              <div class="item-controls">
-                <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
-                <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
-              </div>
-            </li>
-            {{/each}}
-          </ol>
-        </div>
-
-        {{!-- Owned Items Tab --}}
-        <div class="tab items pl-2 pr-2  mt-4" data-group="primary" data-tab="items">
-
-          {{!-- encumbrance --}}
-          {{> "systems/morkbork/templates/actor/parts/actor-encumbrance.html"}}
-
-          <!-- Weapons -->
-          <ol class="items-list">
-            <li class="item-header flexrow">
-              <div class="item-image"><img src="systems/morkbork/icons/ui/icon2.svg" title="Weapons" width="30"
-                  height="30" /></div>
-              <h3 class="item-name flexrow">{{ localize "MB.Weapons" }}</h3>
-
-              <div class="item-detail">{{ localize "MB.Damage" }}</div>
-              <div class="item-detail">{{ localize "MB.Ranged" }}</div>
-              <div class="item-detail">{{ localize "MB.Type" }}</div>
-
-              <div class="item-controls">
-                <a class="item-control item-create" title='Create weapon' data-type="weapon">
-                  <i class="fas fa-plus"></i> {{ localize "MB.UIAdd" }}
-                </a>
-              </div>
-            </li>
-            {{#each actor.weapons as |item id|}}
-            <li class="item flexrow" data-item-id="{{item._id}}">
-              <div class="item-name flexrow rollable">
-                <div class="item-image" style="background-image: url({{item.img}})"></div>
-                <h4>
-                  {{item.name~}}
-                </h4>
-              </div>
-
-              <div class="item-detail action">
-                {{item.data.damageDice}}
-              </div>
-
-              <div class="item-detail">
-                {{item.data.rangeType}}
-              </div>
-
-              <div class="item-detail">
-                {{item.data.damageType}}
-              </div>
-
-              <div class="item-controls">
-                <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
-                <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
-              </div>
-            </li>
-            {{/each}}
-          </ol>
-
-          <!-- Armor -->
-          <ol class="items-list">
-            <li class="item-header flexrow">
-              <div class="item-image"><img src="systems/morkbork/icons/ui/armor.svg" title="Armor" width="30"
-                  height="30" /></div>
-              <h3 class="item-name flexrow">Armor</h3>
-
-              <div class="item-detail">{{ localize "MB.Tier" }}</div>
-              <div class="item-detail">{{ localize "MB.Dice" }}</div>
-              <div class="item-detail">{{ localize "MB.AGI" }}</div>
-              <div class="item-detail">{{ localize "MB.DEF" }}</div>
-
-              <div class="item-controls">
-                <a class="item-control item-create" title='Create armor' data-type="armor">
-                  <i class="fas fa-plus"></i> {{ localize "MB.UIAdd" }}
-                </a>
-              </div>
-            </li>
-            {{#each actor.armors as |item id|}}
-            <li class="item flexrow" data-item-id="{{item._id}}">
-              <div class="item-name flexrow rollable">
-                <div class="item-image" style="background-image: url({{item.img}})"></div>
-                <h4>
-                  {{item.name~}}
-                </h4>
-              </div>
-
-              <div class="item-detail">
-                {{item.data.tier}}
-              </div>
-
-              <div class="item-detail action">
-                {{item.data.damageReductionDice}}
-              </div>
-
-              <div class="item-detail">
-                {{item.data.agilityPenalty}}
-              </div>
-
-              <div class="item-detail">
-                {{item.data.defencePenalty}}
-              </div>
-
-              <div class="item-controls">
-                <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
-                <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
-              </div>
-            </li>
-            {{/each}}
-          </ol>
-
-          <!-- Gear -->
-          <ol class="items-list">
-            <li class="item-header flexrow">
-              <div class="item-image"><img src="systems/morkbork/icons/ui/gear.svg" title="Gear" width="30"
-                  height="30" /></div>
-              <h3 class="item-name flexrow">{{ localize "MB.Gear" }}</h3>
-
-              <div class="item-detail">{{ localize "MB.Qty" }}</div>
-              <div class="item-detail">{{ localize "MB.Weight" }}</div>
-              <div class="item-detail">{{ localize "MB.Usage" }}</div>
-              <div class="item-detail">{{ localize "MB.Silver" }}</div>
-
-              <div class="item-controls">
-                <a class="item-control item-create" title='Create Gear' data-type="gear">
-                  <i class="fas fa-plus"></i> {{ localize "MB.UIAdd" }}
-                </a>
-              </div>
-            </li>
-            {{#each actor.gears as |item id|}}
-            <li class="item flexrow" data-item-id="{{item._id}}">
-              <div class="item-name flexrow rollable">
-                <div class="item-image" style="background-image: url({{item.img}})"></div>
-                <h4>
-                  {{item.name~}}
-                </h4>
-              </div>
-
-              <div class="item-detail">
-                {{item.data.quantity}}
-              </div>
-
-              <div class="item-detail">
-                {{!-- TODO build an encumbance value on the item --}}
-                {{#if item.data.encumbrance.sacks}}
-                {{item.data.encumbrance.sacks}} sack(s)
-                {{/if}}
-                {{#if item.data.encumbrance.stones}}
-                {{item.data.encumbrance.stones}} stone(s)
-                {{/if}}
-                {{#if item.data.encumbrance.soaps}}
-                {{item.data.encumbrance.soaps}} soap(s)
-                {{/if}}
-              </div>
-
-              <div class="item-detail">
-                {{#if item.data.isConsumable}}
-                {{item.data.usageDie}} {{item.data.usageDieType}}
-                {{/if}}
-              </div>
-
-              <div class="item-detail">
-                {{item.data.silver}}
-              </div>
-
-              <div class="item-controls">
-                <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
-                <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
-              </div>
-            </li>
-            {{/each}}
-          </ol>
-        </div>
-
-        {{!-- Owned Scrolls Tab --}}
-        <div class="tab scrolls pl-2 pr-2  mt-4" data-group="primary" data-tab="scrolls">
-
-          {{!-- encumbrance --}}
-          {{> "systems/morkbork/templates/actor/parts/actor-encumbrance.html"}}
-
-          <ol class="items-list">
-            {{#each actor.scrolls as |scrolls scrollType|}}
-              <li class="item-header flexrow">
-                <div class="item-image"><img src="systems/morkbork/icons/ui/{{ scrollType }}_scroll.svg" title="Scrolls"
-                    width="30" height="30" /></div>
-                <h3 class="item-name flexrow">{{ scrollLabel scrollType }} {{ localize "MB.Scrolls" }}</h3>
-
-                <div class="item-detail">{{ localize "MB.Silver" }}</div>
-
-                <div class="item-controls">
-                  <a class="item-control item-create" title='Create Scroll' data-type="scroll"
-                    data-scroll-type="{{scrollType}}">
-                    <i class="fas fa-plus"></i> {{ localize "MB.UIAdd" }}
-                  </a>
-                </div>
+            <ul class="pt-2">
+              {{#each actor.classObj.data.modifiers as |item id|}}
+              <li class="item flex flex-col" data-item-id="{{item._id}}">
+                    {{item}}
               </li>
-              {{#each scrolls as |item id|}}
-                <li class="item flexrow" data-item-id="{{item._id}}">
-                  <div class="item-name flexrow rollable">
-                    <div class="item-image" style="background-image: url({{item.img}})"></div>
-                    <h4>
-                      {{item.name~}}
-                    </h4>
-                  </div>
-
-                  <div class="item-detail">
-                    {{item.data.silver}}
-                  </div>
-
-                  <div class="item-controls">
-                    <a class="item-control item-edit" title='ItemEdit'><i class="fas fa-edit"></i></a>
-                    <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
-                  </div>
-                </li>
               {{/each}}
-            {{/each}}
-          </ol>
-        </div>
+            </ul>
 
-        {{!-- Biography Tab --}}
-        <div class="tab description  pl-2 pr-2  mt-4" data-group="primary" data-tab="description">
-          <div style="background:#c5c5c5; color:black; height:100%; margin: 10px;">
-            {{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
+            <ul class="pt-2">
+              {{#each data.class.abilities as |item id|}}
+              <li class="item flex flex-col" data-item-id="{{item._id}}">
+                    {{item}}
+              </li>
+              {{/each}}
+            </ul>
+
+            <ul>
+              {{#each actor.features as |item id|}}
+              <li class="item flex flex-col" data-item-id="{{item._id}}">
+                <strong class="mr-1">
+                  {{item.name~}}
+                </strong>
+                {{ item.data.description }}
+              </li>
+              {{/each}}
+            </ul>
           </div>
+          <div>
+            <h1>Utrustning</h1>
+            <ul class="mt-2">
+              {{#each actor.carriables as |item id|}}
+
+
+              <li class="item flex mb-1" data-item-id="{{item._id}}">
+                {{ log item }}
+
+                {{#if (is item.type "gear")}}
+                  {{#if (notIs item.data.quantity 0)}}
+                    <span class="mr-1">{{item.data.quantity}}</span>
+                  {{/if}}
+                  <span class="text-mb-yellow"> {{item.data.description}}.</span>
+                {{/if}}
+
+                {{#if (is item.type "weapon")}}
+                <span class="rollable mr-1" data-roll="{{item.data.damageDice}}" data-label="{{item.name~}}">
+                  {{item.name~}}
+                </span>
+                <span class="text-mb-yellow">{{item.data.damageDice}} skada.</span>
+                {{/if}}
+
+                {{#if (is item.type "scroll")}}
+                <div>
+                  <span class="rollable mr-1" data-roll="1d10" data-label="{{item.name~}}">{{item.name}} ({{ scrollLabel
+                    item.data.scrollType }} {{ localize "MB.Scroll" }})</span>
+                  <span class="text-mb-yellow">{{item.data.description}}</span>
+                </div>
+                {{/if}}
+
+                {{#if (is item.type "armor")}}
+                <div>
+                  <span class="rollable mr-1" data-roll="{{ item.data.damageReductionDice }}"
+                    data-label="{{item.name~}}">{{item.name}}</span><span class="text-mb-yellow">{{
+                    item.data.damageReductionDice }} skada. Nivå {{ item.data.tier }}. 
+
+                    {{#if item.data.agilityPenalty}}
+                      <span> SG+{{item.data.agilityPenalty}} för tester som rör Smidighet.</span>
+                    {{/if}}
+        
+                    {{#if item.data.defencePenalty}}
+                        <span> SG+{{item.data.defencePenalty}} för tester som rör Försvar.</span>
+                    {{/if}}</span>
+                </div>
+                {{/if}}
+
+                {{#if (notIs item.type "feature")}}
+                <div class="item-controls ml-auto">
+                  <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
+                </div>
+                {{/if}}
+              </li>
+              {{/each}}
+            </ul>
+
+          </div>
+
+          <div class="border-r">
+            <h1>Sorgligt ursprung</h1>
+
+            <ul class="pt-2">
+              {{#each data.class.origins as |origin id|}}
+              <li class="item flex flex-col" data-item-id="{{item._id}}">
+                  {{origin}}
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+          <div>What should we do with the drunken sailor?</div>
         </div>
-      </section>
+      </div>
     </div>
   </div>
 

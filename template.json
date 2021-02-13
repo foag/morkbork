@@ -46,7 +46,11 @@
           "min":1,
           "max":10
         },
-        "omens": 0,
+        "omens": {
+          "value": 1,
+          "min":0,
+          "max":6
+        },
         "inventorySlots": {
           "value":0,
           "max":20
@@ -81,7 +85,8 @@
         "class": {
           "name": "Classless",
           "abilities": [],
-          "origins": []
+          "origins": [],
+          "modifiers": []
         }
       }
     },

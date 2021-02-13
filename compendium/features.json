@@ -6,7 +6,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Strikes primitive fear into lesser creatures like goblins, gnoums and children. While worn, they check Morale every round.</p>"
+			"description": "Strikes primitive fear into lesser creatures like goblins, gnoums and children. While worn, they check Morale every round."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -18,7 +18,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> A stinking sword you pulled from a military shit-ditch. D6 damage. DR10 attack and defence while you wield it. 1 in 6 chance a wounded enemy is smitten with potent sepsis, dying in 10 minutes.</p>"
+			"description": "A stinking sword you pulled from a military shit-ditch. D6 damage. DR10 attack and defence while you wield it. 1 in 6 chance a wounded enemy is smitten with potent sepsis, dying in 10 minutes."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -30,7 +30,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Four weird teeth rattle within a blackened pouch. Before battle roll a d6 for each one. For every 6 one of your attacks deals maximum damage.</p>"
+			"description": "Four weird teeth rattle within a blackened pouch. Before battle roll a d6 for each one. For every 6 one of your attacks deals maximum damage."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -42,7 +42,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Sig'rd was the strongest man whose throat you ever gnawed. Woven from his long grey hair, this sling has never failed you. 2d4 damage, requires fist-sized rocks which, perhaps regrettably, are everywhere.</p>"
+			"description": "Sig'rd was the strongest man whose throat you ever gnawed. Woven from his long grey hair, this sling has never failed you. 2d4 damage, requires fist-sized rocks which, perhaps regrettably, are everywhere."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -54,7 +54,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Asthmatic, deluded and on its last legs, this wizened creature still has a superb nose and can sniffle up treasure in the most disgusting debris. Attacks with DR10 (bite d6). Defends with DR12, 10 HP. Becomes frenzied around goblins and berserkers.</p>"
+			"description": "Asthmatic, deluded and on its last legs, this wizened creature still has a superb nose and can sniffle up treasure in the most disgusting debris. Attacks with DR10 (bite d6). Defends with DR12, 10 HP. Becomes frenzied around goblins and berserkers."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -66,7 +66,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> It looks normal but since finding it in an obscure crypt you are convinced this shoe came from the horse of Death himself. In your hands it hits with DR10, d4 damage. 1 in 6 chance the shoe smashes the skull, instantly killing small-to-medium sized creatures. The shoe returns to your hand like a boomerang.</p>"
+			"description": "It looks normal but since finding it in an obscure crypt you are convinced this shoe came from the horse of Death himself. In your hands it hits with DR10, d4 damage. 1 in 6 chance the shoe smashes the skull, instantly killing small-to-medium sized creatures. The shoe returns to your hand like a boomerang."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -78,7 +78,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> When attacking by surprise test Agility DR10. On a success you automatically hit once with a light one-handed weapon, dealing normal damage +3.</p>"
+			"description": "When attacking by surprise test Agility DR10. On a success you automatically hit once with a light one-handed weapon, dealing normal damage +3."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -90,7 +90,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Your snaky little digits get into pockets and pick locks with a DR8 Agility test. You also begin with lockpicks!</p>"
+			"description": "Your snaky little digits get into pockets and pick locks with a DR8 Agility test. You also begin with lockpicks!"
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -102,7 +102,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Your phlegm is viscous, lumpy, vile and ballistically accurate at short range. You can spit d2 times during a fight. Roll a DR8 Presence test for accuracy. Targets are blinded, retching and vomiting for d4 rounds. Anyone witnessing this 'friend and foe' must make a Toughness test to not also vomit. PCs test DR10 and enemies DR12.</p>"
+			"description": "Your phlegm is viscous, lumpy, vile and ballistically accurate at short range. You can spit d2 times during a fight. Roll a DR8 Presence test for accuracy. Targets are blinded, retching and vomiting for d4 rounds. Anyone witnessing this 'friend and foe' must make a Toughness test to not also vomit. PCs test DR10 and enemies DR12."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -114,7 +114,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Every time you use an omen there is a 50% chance it is not spent.</p>"
+			"description": "Every time you use an omen there is a 50% chance it is not spent."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -126,7 +126,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You have an astounding, almost preternatural ability to hide in muck, debris and filth. When hidden in these conditions a DR16 Presence test is required to notice you.</p>"
+			"description": "You have an astounding, almost preternatural ability to hide in muck, debris and filth. When hidden in these conditions a DR16 Presence test is required to notice you."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -138,7 +138,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You are so unpleasant, irrelevant, disgusting and vile even Death would rather avoid you if it can. On death, if there is even the slightest possibility that you survived, there is a 50% chance that you did. If successful, after 10 rounds you pop back up with d4 HP and an unlikely explanation of your escape.</p>"
+			"description": "You are so unpleasant, irrelevant, disgusting and vile even Death would rather avoid you if it can. On death, if there is even the slightest possibility that you survived, there is a 50% chance that you did. If successful, after 10 rounds you pop back up with d4 HP and an unlikely explanation of your escape."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -150,7 +150,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> What use are maps when the substance of causality itself is open to you? You know the right way with a DR8 Presence test.</p>"
+			"description": "What use are maps when the substance of causality itself is open to you? You know the right way with a DR8 Presence test."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -162,7 +162,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You may open and read from this book once a day. Your enemy must make a DR12 test to prevent this. If they fail D2 Berserker-slayers (see page 60) appear from the depths of a forgotten dimension of blood. Roll a D6. On a 1-4 these creatures fight alongside you. On a 5-6 they turn on you, attempting to kill you and destroy the book. After the battle they return to their imprisonment.</p>"
+			"description": "You may open and read from this book once a day. Your enemy must make a DR12 test to prevent this. If they fail D2 Berserker-slayers (see page 60) appear from the depths of a forgotten dimension of blood. Roll a D6. On a 1-4 these creatures fight alongside you. On a 5-6 they turn on you, attempting to kill you and destroy the book. After the battle they return to their imprisonment."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -174,7 +174,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Twice per day use your wisdom, knowledge, advice and inner calm to bring clarity to a creature of your choice. The DR of the next test they undertake is lowered by 4.</p>"
+			"description": "Twice per day use your wisdom, knowledge, advice and inner calm to bring clarity to a creature of your choice. The DR of the next test they undertake is lowered by 4."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -186,7 +186,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Once per day you may summon D2 scrolls, whose power can be used only once. Roll a d4, on a 1-2 the scrolls are sacred, on a 3-4, unclean. If the scrolls are not used before sunrise they turn to ash.</p>"
+			"description": "Once per day you may summon D2 scrolls, whose power can be used only once. Roll a d4, on a 1-2 the scrolls are sacred, on a 3-4, unclean. If the scrolls are not used before sunrise they turn to ash."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -198,7 +198,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You learnt your melodies in the Otherworld. The music of your Harp gives +D4 on reaction rolls.</p>"
+			"description": "You learnt your melodies in the Otherworld. The music of your Harp gives +D4 on reaction rolls."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -210,7 +210,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Your crafty almost-intelligent hawk is loyal only to you. Even without shared language, you understand its cries as it keeps watch, scouts and swoops to attack foes. Attacks/ defence DR10 (claws/bite D4), HP 8.</p>"
+			"description": "Your crafty almost-intelligent hawk is loyal only to you. Even without shared language, you understand its cries as it keeps watch, scouts and swoops to attack foes. Attacks/ defence DR10 (claws/bite D4), HP 8."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -222,7 +222,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> This magnificent and clearly magical talking sword is foppish, unreliable and quietly despises you. It taunts your failures and, if continually disappointed, develops a 1 in 6 chance to 'accidentally' attack you or your companions. Deals d6+1 damage. Attack/Defence DR is 10.</p>"
+			"description": "This magnificent and clearly magical talking sword is foppish, unreliable and quietly despises you. It taunts your failures and, if continually disappointed, develops a 1 in 6 chance to 'accidentally' attack you or your companions. Deals d6+1 damage. Attack/Defence DR is 10."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -234,7 +234,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> While practically useless, personally irritating and an emotional drain, Poltroon's capering actually makes enemies lose their focus in combat. For the first two rounds you and your allies get +2 on attack/defence.</p>"
+			"description": "While practically useless, personally irritating and an emotional drain, Poltroon's capering actually makes enemies lose their focus in combat. For the first two rounds you and your allies get +2 on attack/defence."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -246,7 +246,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Barbarister is magical, intelligent, arrogant and vain. He can also talk. If you can persuade him to care, Barbarister occasionally adds +2 to Presence tests involving logic and intellect. The horse may be smarter than you and is quite aware of this.</p>"
+			"description": "Barbarister is magical, intelligent, arrogant and vain. He can also talk. If you can persuade him to care, Barbarister occasionally adds +2 to Presence tests involving logic and intellect. The horse may be smarter than you and is quite aware of this."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -258,7 +258,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> This intensely cowardly servant acts only as guardian for the scabbard of the cursed sword Eurekia. Once per combat, if Ham can be found, Eurekia may be drawn. The sword does 2d6 damage, and for every swing of Eurekia roll a d6. On a 1 the squire is slain and Eurekia vanishes forever.</p>"
+			"description": "This intensely cowardly servant acts only as guardian for the scabbard of the cursed sword Eurekia. Once per combat, if Ham can be found, Eurekia may be drawn. The sword does 2d6 damage, and for every swing of Eurekia roll a d6. On a 1 the squire is slain and Eurekia vanishes forever."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -270,7 +270,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> An expensive sandalwood box bound in snakeskin. It contains a seemingly ordinary dagger, wrapped in silk. The dagger does d4 damage but on a 1 the target dies immediately of deadly poison weeping from the blade.</p>"
+			"description": "An expensive sandalwood box bound in snakeskin. It contains a seemingly ordinary dagger, wrapped in silk. The dagger does d4 damage but on a 1 the target dies immediately of deadly poison weeping from the blade."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -282,7 +282,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Once per day release a blare from this dented old trumpet and test Presence DR12. One creature may make their next non-combat test an automatic success.</p>"
+			"description": "Once per day release a blare from this dented old trumpet and test Presence DR12. One creature may make their next non-combat test an automatic success."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -294,7 +294,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Its head a hook of human bone inscribed with overlapping anti-prayers. This crook hooks through other worlds. Staff does 2d4 damage except to faithless humans.</p>"
+			"description": "Its head a hook of human bone inscribed with overlapping anti-prayers. This crook hooks through other worlds. Staff does 2d4 damage except to faithless humans."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -306,7 +306,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> While wearing this holy hat the priest's vile body fades, becoming hard to hit in combat (Defence DR10). If pulled over the ears outside of battle the priest becomes nearly invisible, testing stealth against DR8.</p>"
+			"description": "While wearing this holy hat the priest's vile body fades, becoming hard to hit in combat (Defence DR10). If pulled over the ears outside of battle the priest becomes nearly invisible, testing stealth against DR8."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -318,7 +318,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> A long and accurate document cross-referenced against reality to discover unseen evil-doers. Successful Presence DR10= A strange light surrounds evil creatures. The list's owner defends with +2 against any being discovered this way.</p>"
+			"description": "A long and accurate document cross-referenced against reality to discover unseen evil-doers. Successful Presence DR10= A strange light surrounds evil creatures. The list's owner defends with +2 against any being discovered this way."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -330,7 +330,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> So intensely blasphemous even the Priests themselves can only peruse it once per day. When read, roll a die. Even result= For the rest of the day PCs heal d4 HP after just five minutes of rest. Odd result= The priest is plagued by demonic hallucinations. The DM may invent d3 things that only the Priest can see and describe them to the player as if true.</p>"
+			"description": "So intensely blasphemous even the Priests themselves can only peruse it once per day. When read, roll a die. Even result= For the rest of the day PCs heal d4 HP after just five minutes of rest. Odd result= The priest is plagued by demonic hallucinations. The DM may invent d3 things that only the Priest can see and describe them to the player as if true."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -342,7 +342,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Cast the stones on the ground. Their pattern reveals if danger lurks in an adjacent room. The stones can lie. The priest tests Presence DR10 to see if they are true but after failing they cannot test again until the sun has set.</p>"
+			"description": "Cast the stones on the ground. Their pattern reveals if danger lurks in an adjacent room. The stones can lie. The priest tests Presence DR10 to see if they are true but after failing they cannot test again until the sun has set."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -354,7 +354,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> The crucifix can be used in encounters with the undead as well as lesser trolls and goblins. Check morale (add or subtract the priest's Presence modifier) to see if the creatures bow and kindly remove themselves.</p>"
+			"description": "The crucifix can be used in encounters with the undead as well as lesser trolls and goblins. Check morale (add or subtract the priest's Presence modifier) to see if the creatures bow and kindly remove themselves."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -366,7 +366,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Tiny= Agility tests, including defence, are DR8. Your bite (d4) carries disease, victims test DR14 Presence or attack their closest ally, until either is dead.</p>"
+			"description": "Tiny= Agility tests, including defence, are DR8. Your bite (d4) carries disease, victims test DR14 Presence or attack their closest ally, until either is dead."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -378,7 +378,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Ferocious, attacks are DR10. Your fangs (d6) crit on a natural 19 as well as a 20. On a crit, all enemies test Morale. Slick from blood, -d2 incoming damage.</p>"
+			"description": "Ferocious, attacks are DR10. Your fangs (d6) crit on a natural 19 as well as a 20. On a crit, all enemies test Morale. Slick from blood, -d2 incoming damage."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -390,7 +390,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Fast and flying, defence is DR10. Make two attacks per round with your claws (d4). Your bony scalp (d6) acts as a weapon and a shield= -1 damage and you may choose to ignore all damage from one attack. The skull will heal in d6 days.</p>"
+			"description": "Fast and flying, defence is DR10. Make two attacks per round with your claws (d4). Your bony scalp (d6) acts as a weapon and a shield= -1 damage and you may choose to ignore all damage from one attack. The skull will heal in d6 days."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -402,7 +402,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Hulking and massive= tests for Strength and Toughness, as well as attacks, are DR10. Defence is DR14. Thick hide, -d4 incoming damage. Your claws and bite deal d8 damage.</p>"
+			"description": "Hulking and massive= tests for Strength and Toughness, as well as attacks, are DR10. Defence is DR14. Thick hide, -d4 incoming damage. Your claws and bite deal d8 damage."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -414,7 +414,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Regenerate d4 HP per round. Bite (d6) or spit acid (d4, 1 in 4 chance armor is lowered one tier). Scaly skin, -d2 incoming damage.</p>"
+			"description": "Regenerate d4 HP per round. Bite (d6) or spit acid (d4, 1 in 4 chance armor is lowered one tier). Scaly skin, -d2 incoming damage."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -426,7 +426,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p>  Dextrous= Agility tests, including defence, are DR10. Light armor and weapons remain Usable. Your third eye allows you to read unclean scrolls at DR10.</p>"
+			"description": " Dextrous= Agility tests, including defence, are DR10. Light armor and weapons remain Usable. Your third eye allows you to read unclean scrolls at DR10."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -438,7 +438,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You can Ram for d8. On a 1-2 form a d6 the creature is toppled over and cant attack for a turn. Thick Black Fleece -d4 Hell's Bells, You have a Cursed bell around your neck and it rings with dread. Once a round you can make a creature test for Morale.</p>"
+			"description": "You can Ram for d8. On a 1-2 form a d6 the creature is toppled over and cant attack for a turn. Thick Black Fleece -d4 Hell's Bells, You have a Cursed bell around your neck and it rings with dread. Once a round you can make a creature test for Morale."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -450,7 +450,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> In the shape of this single-headed sacred beast you can fool the simple into devotion and worship (+5 to reaction checks) but scholars and priests will likely see through the fa'ade (-5 to reaction checks).</p>"
+			"description": "In the shape of this single-headed sacred beast you can fool the simple into devotion and worship (+5 to reaction checks) but scholars and priests will likely see through the fa'ade (-5 to reaction checks)."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -462,7 +462,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> d4 damage and Stone Peck Stone Peck= 1. On the first successful attack, DR to defend decreases by 2 2. On the second successful attack, DR to attack decreases by 2 3. On third successful hit, target turns to stone for d4 days</p>"
+			"description": "d4 damage and Stone Peck Stone Peck= 1. On the first successful attack, DR to defend decreases by 2 2. On the second successful attack, DR to attack decreases by 2 3. On third successful hit, target turns to stone for d4 days"
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -474,7 +474,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Make two attacks per round with your Bite (d4). - Thick Hide= -d4 incoming damage Slop= Incoming melee attacks are -2. Failed Morale checks cause Infection.</p>"
+			"description": "Make two attacks per round with your Bite (d4). - Thick Hide= -d4 incoming damage Slop= Incoming melee attacks are -2. Failed Morale checks cause Infection."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -486,7 +486,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Enormous Horns d8 , Golden Fleece -d6 Holy Light= You emit a blinding light. Creatures cannot come near you unless they pass a Morale if they pass you become their sole target. They want that Fleece. Healing Light= Allies near you gain d2 hp on your turn.</p>"
+			"description": "Enormous Horns d8 , Golden Fleece -d6 Holy Light= You emit a blinding light. Creatures cannot come near you unless they pass a Morale if they pass you become their sole target. They want that Fleece. Healing Light= Allies near you gain d2 hp on your turn."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -498,7 +498,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Bite d4, mottled fur -d2 Keen Nose= You can Sniff out Goblins in an adjacent room to you. Alarming Bark</p>"
+			"description": "Bite d4, mottled fur -d2 Keen Nose= You can Sniff out Goblins in an adjacent room to you. Alarming Bark"
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -510,7 +510,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You can dig a 6 feet deep hole per turn, but you are blind in daylight.</p>"
+			"description": "You can dig a 6 feet deep hole per turn, but you are blind in daylight."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -522,7 +522,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Has extremely sharp pinchers (d6 damage). Suffocates if not in water for longer than 2 hours at a time.</p>"
+			"description": "Has extremely sharp pinchers (d6 damage). Suffocates if not in water for longer than 2 hours at a time."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -534,7 +534,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> your eyes distract any human near giving you a +2 on attack/defence for 3 turns.</p>"
+			"description": "your eyes distract any human near giving you a +2 on attack/defence for 3 turns."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -546,7 +546,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> bite d6. Your raging sounds force a morale roll.</p>"
+			"description": "bite d6. Your raging sounds force a morale roll."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -558,7 +558,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> fists d8. Thick hide -2. Coward</p>"
+			"description": "fists d8. Thick hide -2. Coward"
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -570,7 +570,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Not affected by piercing attacks or razor weapons. +2 on attack/defence for 2 turns. Can't hold anything.</p>"
+			"description": "Not affected by piercing attacks or razor weapons. +2 on attack/defence for 2 turns. Can't hold anything."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -582,7 +582,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> d6 throwing spikes. 1 on 6 chances of piercing yourself with these.</p>"
+			"description": "d6 throwing spikes. 1 on 6 chances of piercing yourself with these."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -594,7 +594,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Can instantly teleport to a spot within 30 feet in a flash of sparking electricity. d8 (nasty bite). If your victim is wearing armor, they take an additional d4 damage from sparks that fly from your teeth (ignoring armor). Can't survive out of water for long.</p>"
+			"description": "Can instantly teleport to a spot within 30 feet in a flash of sparking electricity. d8 (nasty bite). If your victim is wearing armor, they take an additional d4 damage from sparks that fly from your teeth (ignoring armor). Can't survive out of water for long."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -606,7 +606,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> This turtle can hide in its iron-like shell to become impervious to all damage. Doing so takes 5 minutes (during which the turtle can do nothing else). Emerging again takes 15 minutes. It is immobile and cannot act while hiding.</p>"
+			"description": "This turtle can hide in its iron-like shell to become impervious to all damage. Doing so takes 5 minutes (during which the turtle can do nothing else). Emerging again takes 15 minutes. It is immobile and cannot act while hiding."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -618,7 +618,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> A shuddering beast covered in hanging icicles. d6 (frost bite). Can unleash a cone of freezing breath</p>"
+			"description": "A shuddering beast covered in hanging icicles. d6 (frost bite). Can unleash a cone of freezing breath"
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -630,7 +630,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> A wound made by this pincer-assed insect will fill it's victim with primal fear. Bite/forceps d4 + Test Presence DR10 or flee/cower in fear for d10 rounds.</p>"
+			"description": "A wound made by this pincer-assed insect will fill it's victim with primal fear. Bite/forceps d4 + Test Presence DR10 or flee/cower in fear for d10 rounds."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -642,7 +642,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Roll d4+2 for omens. Say something cryptic every time you use one.</p>"
+			"description": "Roll d4+2 for omens. Say something cryptic every time you use one."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -654,7 +654,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You can fly short distances, but cannot wear armor. Birds seem to dislike you.</p>"
+			"description": "You can fly short distances, but cannot wear armor. Birds seem to dislike you."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -666,7 +666,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You can draw nourishment from soil, but normal food makes you sick. You smell like mushrooms.</p>"
+			"description": "You can draw nourishment from soil, but normal food makes you sick. You smell like mushrooms."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -678,7 +678,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Spend a use of your Powers to create food for d6 people. It is weirdly delicious, but unsettling.</p>"
+			"description": "Spend a use of your Powers to create food for d6 people. It is weirdly delicious, but unsettling."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -690,7 +690,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p>  You can escape any bindings, and fit through tiny spaces. Tests involving flexibility are -4 DR.</p>"
+			"description": " You can escape any bindings, and fit through tiny spaces. Tests involving flexibility are -4 DR."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -702,7 +702,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Just way too many. You cannot be attacked from surprise. You can spend a use of your Powers to leave an eye behind, and spy on a remote area. If anyone squishes the eye, you take d2 damage.</p>"
+			"description": "Just way too many. You cannot be attacked from surprise. You can spend a use of your Powers to leave an eye behind, and spy on a remote area. If anyone squishes the eye, you take d2 damage."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -714,7 +714,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> A flagellant, you regularly beat yourself to awaken your lost god. If you inflict d3 HP of damage to yourself prior to combat, you gain +2 to a number of rolls equal to the HP lost.</p>"
+			"description": "A flagellant, you regularly beat yourself to awaken your lost god. If you inflict d3 HP of damage to yourself prior to combat, you gain +2 to a number of rolls equal to the HP lost."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -726,7 +726,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You wear a bizarre arrangement of garments and scraps that make you look like the parody of a king or queen. Still, you gain +2 to rolls to impress the easily fooled.</p>"
+			"description": "You wear a bizarre arrangement of garments and scraps that make you look like the parody of a king or queen. Still, you gain +2 to rolls to impress the easily fooled."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -738,7 +738,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Not only is your god dead, but their odour of decay pervades you. Tests to defend against attacks have a +2 bonus due to the gut-wrenching stench.</p>"
+			"description": "Not only is your god dead, but their odour of decay pervades you. Tests to defend against attacks have a +2 bonus due to the gut-wrenching stench."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -750,7 +750,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Concentrate to babble an ungodly litany. So disconcerting is this chant that those who hear it must pass a DR10 Presence test or lose their next action.</p>"
+			"description": "Concentrate to babble an ungodly litany. So disconcerting is this chant that those who hear it must pass a DR10 Presence test or lose their next action."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -762,7 +762,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> The foul fluids of your god's rot run from your hands-a black stigmata. As an DR12 attack you can wipe your hands on the bare skin of your assailants, who must then pass a DR12 Toughness test or descend into frothing spasms for two turns.</p>"
+			"description": "The foul fluids of your god's rot run from your hands-a black stigmata. As an DR12 attack you can wipe your hands on the bare skin of your assailants, who must then pass a DR12 Toughness test or descend into frothing spasms for two turns."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -774,7 +774,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Your god may be dead, but what is death to a god? Once a day you may allow the ghost of you god to enter your flesh and reveal a truth. Ask the GM one yes/no question that they must answer truthfully. The god then departs, leaving you weakened and frail.</p>"
+			"description": "Your god may be dead, but what is death to a god? Once a day you may allow the ghost of you god to enter your flesh and reveal a truth. Ask the GM one yes/no question that they must answer truthfully. The god then departs, leaving you weakened and frail."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -786,7 +786,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> When you die, make a DR14 Presence test. If you pass, your god refuses you into the afterlife and you recover with 1HP. If you fail, your body is consumed in holy flames.</p>"
+			"description": "When you die, make a DR14 Presence test. If you pass, your god refuses you into the afterlife and you recover with 1HP. If you fail, your body is consumed in holy flames."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -798,7 +798,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Your pupils burn with the soul of your lord. Once per combat you may make an attack (DR10), as fire spurts from your eyes, d6 damage. You are left blinded for the rest of the fight.</p>"
+			"description": "Your pupils burn with the soul of your lord. Once per combat you may make an attack (DR10), as fire spurts from your eyes, d6 damage. You are left blinded for the rest of the fight."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -810,7 +810,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> The ability to project your consciousness allowing for remote viewing or sensing.</p>"
+			"description": "The ability to project your consciousness allowing for remote viewing or sensing."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -822,7 +822,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> The ability to heal with one's own empathic, mental energy. With one whom you are touching either heal them for d6 HP or remove one disease, infection, poison or disorder from their body via an energetic incision that heals immediately (you cannot heal yourself). In place of 'catching your breath' you can choose to meditate and restore d6 HP.</p>"
+			"description": "The ability to heal with one's own empathic, mental energy. With one whom you are touching either heal them for d6 HP or remove one disease, infection, poison or disorder from their body via an energetic incision that heals immediately (you cannot heal yourself). In place of 'catching your breath' you can choose to meditate and restore d6 HP."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -834,7 +834,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> The ability to float or fly. Movement is the same as walking. Lose 1 HP every round you continuously levitate past the first.</p>"
+			"description": "The ability to float or fly. Movement is the same as walking. Lose 1 HP every round you continuously levitate past the first."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -846,7 +846,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> The ability to obtain information about a person or an object by touch. Ask the DM a question.</p>"
+			"description": "The ability to obtain information about a person or an object by touch. Ask the DM a question."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -858,7 +858,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> The ability to manipulate objects by the mind. Move or manipulate small or medium sized objects that are within your line of sight. Lose 1 HP every round you continue the action.</p>"
+			"description": "The ability to manipulate objects by the mind. Move or manipulate small or medium sized objects that are within your line of sight. Lose 1 HP every round you continue the action."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -870,7 +870,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> A wordless, mind to mind communication in which one person, almost becomes another, seeing through their eyes and feeling through their senses. Once linked, the two people intuitively know the meaning of what the other is telling them. Requires consent or a second Presence DR14 to force the Kything. Lose d2 HP every round you continue to stay connected.</p>"
+			"description": "A wordless, mind to mind communication in which one person, almost becomes another, seeing through their eyes and feeling through their senses. Once linked, the two people intuitively know the meaning of what the other is telling them. Requires consent or a second Presence DR14 to force the Kything. Lose d2 HP every round you continue to stay connected."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -882,7 +882,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You can bring forth the spirits of the dead and speak with them. Test Presence DR12 to convince them to fight by your side. They'll never go far from where their body is resting. Their HP as a spirit is 1/3 of their normal HP.</p>"
+			"description": "You can bring forth the spirits of the dead and speak with them. Test Presence DR12 to convince them to fight by your side. They'll never go far from where their body is resting. Their HP as a spirit is 1/3 of their normal HP."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -894,7 +894,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Open wounds from a past torture. You can touch the flesh of a foe with your palms to cause d6 damage. It cannot be healed, as it doesn't wound their body, but their soul.</p>"
+			"description": "Open wounds from a past torture. You can touch the flesh of a foe with your palms to cause d6 damage. It cannot be healed, as it doesn't wound their body, but their soul."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -906,7 +906,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> You can possess a target. Test Presence DR12 to succeed. Its body becomes paralyzed, but you can also control it with a result of 16+. Meanwhile, your own body will stay still and vulnerable, and if injured the bond will break. If the target is hurt, test Presence again to maintain the possession. Once inside their mind you can search for a specific memory. GM rolls a d6, on 1-2 the memory is distorted.</p>"
+			"description": "You can possess a target. Test Presence DR12 to succeed. Its body becomes paralyzed, but you can also control it with a result of 16+. Meanwhile, your own body will stay still and vulnerable, and if injured the bond will break. If the target is hurt, test Presence again to maintain the possession. Once inside their mind you can search for a specific memory. GM rolls a d6, on 1-2 the memory is distorted."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -918,7 +918,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> If you are Broken or your HP drops to -1, you come back alive with d4 HP. You cannot resuscitate again until 2d4 days have passed.</p>"
+			"description": "If you are Broken or your HP drops to -1, you come back alive with d4 HP. You cannot resuscitate again until 2d4 days have passed."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -930,7 +930,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Consuming your meat has healing effects. You can cut a small piece of yourself to give to someone else. You lose d2 HP and they recover d4 HP. If they had an illness, test Toughness DR12. On a crit, they are healed; on a success, they are cured but you get the disease; on a fail, nothing changes; on a fumble, both of you are ill.</p>"
+			"description": "Consuming your meat has healing effects. You can cut a small piece of yourself to give to someone else. You lose d2 HP and they recover d4 HP. If they had an illness, test Toughness DR12. On a crit, they are healed; on a success, they are cured but you get the disease; on a fail, nothing changes; on a fumble, both of you are ill."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -942,7 +942,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Your messianic aura attracts devotees to your person. D4 disciples follow and obey you. (2 HP, punch/club d4) If you are in danger they will put their bodies between you and any harm coming your way. If one dies, a new one will occupy their spot in a couple of days. The first time the Unholy Spawn gets better add another d4 disciples to your following.</p>"
+			"description": "Your messianic aura attracts devotees to your person. D4 disciples follow and obey you. (2 HP, punch/club d4) If you are in danger they will put their bodies between you and any harm coming your way. If one dies, a new one will occupy their spot in a couple of days. The first time the Unholy Spawn gets better add another d4 disciples to your following."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -954,7 +954,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> This amalgamation of sown, hairygutsacks feature extruding bone pipes for you to blow on. When doing so, listeners of your choosing are filled with unearthly hunger, as if they hadn't eaten for a week.</p>"
+			"description": "This amalgamation of sown, hairygutsacks feature extruding bone pipes for you to blow on. When doing so, listeners of your choosing are filled with unearthly hunger, as if they hadn't eaten for a week."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -966,7 +966,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Cranking this stringed thing of wood and gore emits a droning sound that hurts the ears of creatures that fail a Presence test against DR12. The first round played, it deals d2 damage, increasing to a d4 and beyond on subsequent rounds.</p>"
+			"description": "Cranking this stringed thing of wood and gore emits a droning sound that hurts the ears of creatures that fail a Presence test against DR12. The first round played, it deals d2 damage, increasing to a d4 and beyond on subsequent rounds."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -978,7 +978,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> When beating this drum made from a hellion's shell, roll 2d6</p>"
+			"description": "When beating this drum made from a hellion's shell, roll 2d6"
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -990,7 +990,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> The horn of a beelzebubonic creature from the deepest depths of the Endless Sea. When blown, the lungs of your enemies fill with seawater, should they fail a Toughness test against DR14; a round must be spent expelling it before doing anything else.</p>"
+			"description": "The horn of a beelzebubonic creature from the deepest depths of the Endless Sea. When blown, the lungs of your enemies fill with seawater, should they fail a Toughness test against DR14; a round must be spent expelling it before doing anything else."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -1002,7 +1002,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Play this bony mouth harp to make a broken listener instantly recover d4 HP. They cannot speak until their HP is fully recovered.</p>"
+			"description": "Play this bony mouth harp to make a broken listener instantly recover d4 HP. They cannot speak until their HP is fully recovered."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -1014,7 +1014,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> When strummed, the sound of this axe- shaped (d8 damage) instrument makes the  Strength and Presence score of anyone hearing it swap scores for the next d6 days. Repeated listening has no effect.</p>"
+			"description": "When strummed, the sound of this axe- shaped (d8 damage) instrument makes the  Strength and Presence score of anyone hearing it swap scores for the next d6 days. Repeated listening has no effect."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -1026,7 +1026,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> After losing your leg to the sea, a half-fish-half-man took pity and proffered this substitute of carved whale's bone. Its hollowed out base fills with concentrated brine overnight. Pouring the eroding liquid on a solid surface will make a hole - five feet wide and just as deep - within minutes. Don't drink it</p>"
+			"description": "After losing your leg to the sea, a half-fish-half-man took pity and proffered this substitute of carved whale's bone. Its hollowed out base fills with concentrated brine overnight. Pouring the eroding liquid on a solid surface will make a hole - five feet wide and just as deep - within minutes. Don't drink it"
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -1038,7 +1038,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> An ancient gold coin taken from heretics on the isle of Cr'lut. Until you return it, you are doomed to a cursed fate</p>"
+			"description": "An ancient gold coin taken from heretics on the isle of Cr'lut. Until you return it, you are doomed to a cursed fate"
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -1050,7 +1050,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> A scavenger pelican took your eye one night, but left something in its place. Your crusty socket itches constantly, but stings when danger is about to strike. Defence is DR10 and crits on a natural 19 as well as 20.</p>"
+			"description": "A scavenger pelican took your eye one night, but left something in its place. Your crusty socket itches constantly, but stings when danger is about to strike. Defence is DR10 and crits on a natural 19 as well as 20."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -1062,7 +1062,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> A mangy yet murderous parrot friend. Throw it at an enemy and the bird attacks against DR10, dealing d4 damage. On a 4, it continues its deadly trajectory, instantly making an attack against another enemy. Can and will repeat things it hears. HP d6+1</p>"
+			"description": "A mangy yet murderous parrot friend. Throw it at an enemy and the bird attacks against DR10, dealing d4 damage. On a 4, it continues its deadly trajectory, instantly making an attack against another enemy. Can and will repeat things it hears. HP d6+1"
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -1074,7 +1074,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> Attacks and defends against DR10. Damage is d6 and on a 6, a wave of seawater erupts from the blade. Creatures in front of you must test Strength against DR12 or be knocked off their feet, taking d4 damage.</p>"
+			"description": "Attacks and defends against DR10. Damage is d6 and on a 6, a wave of seawater erupts from the blade. Creatures in front of you must test Strength against DR12 or be knocked off their feet, taking d4 damage."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"
@@ -1086,7 +1086,7 @@
 		},
 		"type": "feature",
 		"data": {
-			"description": "<p> These boots allow you to walk on water as if it were a beach. As you move, you leave floating footsteps, lasting a round. Others may test Agility against DR10 to follow behind.</p>"
+			"description": "These boots allow you to walk on water as if it were a beach. As you move, you leave floating footsteps, lasting a round. Others may test Agility against DR10 to follow behind."
 		},
 		"flags": {},
 		"img": "systems/morkbork/icons/bestiary/default.png"

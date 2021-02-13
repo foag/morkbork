@@ -1,3 +1,4 @@
+@import url(tailwind.css);
 @font-face {
   font-family: 'edoregular';
   src: url("../fonts/edo-webfont.woff") format("woff");
@@ -385,129 +386,9 @@
   padding-right: 5rem;
 }
 
-.grid,
-.grid-2col {
-  display: grid;
-  grid-column: span 2 / span 2;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  padding: 0;
-}
-
-.grid-3col {
-  grid-column: span 3 / span 3;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-4col {
-  grid-column: span 4 / span 4;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-5col {
-  grid-column: span 5 / span 5;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-6col {
-  grid-column: span 5 / span 5;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-7col {
-  grid-column: span 7 / span 7;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.grid-8col {
-  grid-column: span 8 / span 8;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
-.grid-9col {
-  grid-column: span 9 / span 9;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
-}
-
-.grid-10col {
-  grid-column: span 10 / span 10;
-  grid-template-columns: repeat(10, minmax(0, 1fr));
-}
-
-.grid-11col {
-  grid-column: span 11 / span 11;
-  grid-template-columns: repeat(11, minmax(0, 1fr));
-}
-
-.grid-12col {
-  grid-column: span 12 / span 12;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.flex-group-center,
-.flex-group-left,
-.flex-group-right {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  padding: 5px;
-  border: 1px solid #999;
-}
-
-.flex-group-left {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: left;
-}
-
-.flex-group-right {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  text-align: right;
-}
-
-.flex-center {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.flex-between {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.items-center {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.justify-center {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 body {
   font-family: "kingthings", "Signika", sans-serif;
+  font-size: 13px;
   background-image: url("../img/board_bg.jpg");
 }
 
@@ -521,10 +402,8 @@ body {
   line-height: 50px !important;
 }
 
-.window-header .window-title {
-  padding: .5rem;
-  font-size: 30px;
-  font-family: "edoregular", cursive, serif;
+.text-mb-yellow {
+  color: #FFE82C;
 }
 
 /* Styles limited to morkbork sheets */
@@ -789,153 +668,13 @@ body {
   background: rgba(0, 0, 0, 0.05);
 }
 
-.morkbork .char-sheet {
-  display: grid;
-  grid-template-columns: 250px 1fr 1fr 1fr 1fr;
-  grid-template-rows: 180px 1fr 1fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "left-column header header header header" "left-column content content content content" "left-column content content content content" "left-column content content content content";
-  height: 100%;
-}
-
-.morkbork .char-sheet .left-column {
-  grid-area: left-column;
-  border-right: 1px solid white;
-  padding: 10px 20px;
-  height: 100%;
-}
-
-.morkbork .char-sheet .left-column .left-column-title {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.morkbork .char-sheet .left-column .left-column-input {
-  min-height: 30px;
-}
-
-.morkbork .char-sheet .header {
-  grid-area: header;
-  padding: 10px 20px;
-  text-align: left;
-}
-
-.morkbork .char-sheet .header-item {
-  margin-bottom: 10px;
-}
-
-.morkbork .char-sheet .content {
-  grid-area: content;
-  padding: 10px;
-}
-
-.morkbork .char-sheet .grid-container {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr;
-  gap: 1px 5px;
-  grid-template-areas: "check-box desc";
-  margin-bottom: .5rem;
-}
-
-.morkbork .char-sheet .grid-container .check-box {
-  grid-area: check-box;
-}
-
-.morkbork .char-sheet .grid-container .desc {
-  grid-area: desc;
-  margin-bottom: 5px;
-}
-
-.morkbork .ability {
-  margin-bottom: 10px;
-}
-
-.morkbork .ability-name {
-  text-transform: capitalize;
-}
-
-.morkbork .mb-label + span {
-  color: #FFE82C;
-}
-
-.morkbork .small-input {
-  max-width: 60px;
-}
-
-.morkbork .charsign {
+.morkbork .char-sign {
   font-family: "agathodaimonregular";
-  height: 49px;
-  width: 49px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background-image: url("../img/char_bg.svg");
-  color: black;
-  padding: 0;
-  border-radius: 100%;
-  margin: 0;
-  line-height: 1;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-right: 1rem;
-  text-align: center;
-  font-size: 2.5rem;
 }
 
-.morkbork .charname {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50px;
-  padding: 0px;
-  margin: 5px 0;
-  border-bottom: none;
-  font-size: 25px;
-}
-
-.morkbork .charname input {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  margin: 0;
-  text-align: left;
-}
-
-.morkbork .class-grid {
-  padding-top: 20px;
-  display: grid;
-  grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
-  grid-template-rows: 125px 1fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "class-abilities class-img class-items class-items" "class-content class-content class-content class-content" "class-content class-content class-content class-content";
-  height: 100%;
-}
-
-.morkbork .class-grid .class-content {
-  grid-area: class-content;
-}
-
-.morkbork .class-grid .class-img {
-  grid-area: class-img;
-}
-
-.morkbork .class-grid .class-abilities {
-  grid-area: class-abilities;
-}
-
-.morkbork .class-grid .class-abilities .class-ability-mod {
-  text-align: center;
-}
-
-.morkbork .class-grid .class-items {
-  grid-area: class-items;
+.morkbork .character-grid > div {
+  padding: 1rem;
 }
 
 .morkbork .window-content {
@@ -947,7 +686,6 @@ body {
 .morkbork .rollable {
   color: white;
   border-bottom: 1px dashed white;
-  display: inline-block;
   -ms-flex-item-align: center;
   align-self: center;
 }
@@ -972,6 +710,18 @@ body {
 .morkbork label {
   -ms-flex-item-align: center;
   align-self: center;
+}
+
+.morkbork .font-secondary {
+  font-family: "requiem", fantasy, serif;
+}
+
+.morkbork .character-name {
+  height: auto;
+  width: 100%;
+  text-align: left;
+  border: none;
+  text-indent: 1rem;
 }
 
 .morkbork h1 {
@@ -999,6 +749,8 @@ body {
   border: 0;
   border-bottom: 1px dotted white;
   border-radius: 0;
+  padding: 0;
+  height: 1.4rem;
 }
 
 .morkbork input:focus {
