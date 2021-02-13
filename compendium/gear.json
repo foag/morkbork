@@ -1,12 +1,12 @@
 [
     {
-        "name": "Bear trap",
+        "name": "Saxfälla",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "PRESENCE DR14 to spot, d8 damage",
+            "description": "Sg14 för att upptäcka, t8 skada",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -25,13 +25,13 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Bedroll, Blanket",
+        "name": "Filt",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "A night's rest heals at +1",
+            "description": "",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -50,13 +50,13 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Caltrops",
+        "name": "Fotanglar",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "d4 damage + infection on 1 in 6",
+            "description": "t4 skada + infektion vid 1 på t6",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 0,
@@ -75,7 +75,7 @@
         "img": "systems/morkbork/icons/items/gear/caltrop.jpg"
     },
     {
-        "name": "Chalk",
+        "name": "Krita",
         "permission": {
             "default": 0
         },
@@ -100,7 +100,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Pipe & tobacco",
+        "name": "Tuggtobak",
         "permission": {
             "default": 0
         },
@@ -125,13 +125,13 @@
         "img": "systems/morkbork/icons/items/gear/pipe.jpg"
     },
     {
-        "name": "Crowbar",
+        "name": "Bräckjärn",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "Damage as a club (1d6)",
+            "description": "",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -150,7 +150,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Crucifix, silver",
+        "name": "Krucifix, silver",
         "permission": {
             "default": 0
         },
@@ -175,7 +175,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Crucifix, wood",
+        "name": "Krucifix, trä",
         "permission": {
             "default": 0
         },
@@ -200,7 +200,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Exquisite perfume",
+        "name": "Dyrbar perfym",
         "permission": {
             "default": 0
         },
@@ -225,7 +225,7 @@
         "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
     },
     {
-        "name": "Firesteel",
+        "name": "Eldstål",
         "permission": {
             "default": 0
         },
@@ -250,7 +250,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Grappling hook",
+        "name": "Änterhake",
         "permission": {
             "default": 0
         },
@@ -275,7 +275,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Hammer",
+        "name": "Hammare",
         "permission": {
             "default": 0
         },
@@ -300,13 +300,13 @@
         "img": "systems/morkbork/icons/items/gear/hammer.jpg"
     },
     {
-        "name": "Heavy chain",
+        "name": "Tung kätting",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "15 feet",
+            "description": "5 meter",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -325,13 +325,13 @@
         "img": "systems/morkbork/icons/items/gear/chain.jpg"
     },
     {
-        "name": "Iron nails",
+        "name": "Järnspikar",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "10 nails",
+            "description": "10 stycken",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 0,
@@ -350,7 +350,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Ladder",
+        "name": "Stege",
         "permission": {
             "default": 0
         },
@@ -400,7 +400,7 @@
         "img": "systems/morkbork/icons/items/gear/lock.jpg"
     },
     {
-        "name": "Large iron hook",
+        "name": "Stor järnkrok",
         "permission": {
             "default": 0
         },
@@ -425,7 +425,7 @@
         "img": "systems/morkbork/icons/items/gear/tool-hook.jpg"
     },
     {
-        "name": "Lockpicks",
+        "name": "Dyrkar",
         "permission": {
             "default": 0
         },
@@ -450,7 +450,7 @@
         "img": "systems/morkbork/icons/items/gear/lockpick.jpg"
     },
     {
-        "name": "Magnesium strip",
+        "name": "Magnesiumremsa",
         "permission": {
             "default": 0
         },
@@ -475,7 +475,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Manacles",
+        "name": "Handklovar",
         "permission": {
             "default": 0
         },
@@ -500,13 +500,13 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Meat cleaver",
+        "name": "Köttyxa",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "Damage as an axe (d6)",
+            "description": "",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -525,13 +525,13 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Medicine bag",
+        "name": "Förbandslåda",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "Stops bleeding/infection and +d6 HP.",
+            "description": "Stoppar blödning/infektion och +t6 TP. Närvaro + 4 användningar",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 0,
@@ -550,7 +550,7 @@
         "img": "systems/morkbork/icons/items/gear/herb-bag.jpg"
     },
     {
-        "name": "Metal file",
+        "name": "Metallfil",
         "permission": {
             "default": 0
         },
@@ -575,7 +575,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Mirror",
+        "name": "Spegel",
         "permission": {
             "default": 0
         },
@@ -600,13 +600,13 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Poison (black)",
+        "name": "Flaska svart gift",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "TOUGHNESS DR14 or d6 damage + blind for one hour.",
+            "description": "Tålighet mot SG14 eller t6 skada + blind en timme. 3 doser",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 0,
@@ -625,13 +625,13 @@
         "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
     },
     {
-        "name": "Poison (red)",
+        "name": "Flaska rött gift",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "TOUGHNESS DR12 or d10 damage.",
+            "description": "Tålighet mot SG12 eller t10 skada. 3 doser",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 0,
@@ -650,13 +650,13 @@
         "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
     },
     {
-        "name": "Rope",
+        "name": "Rep",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "30 feet",
+            "description": "10 meter",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -675,13 +675,13 @@
         "img": "systems/morkbork/icons/items/gear/rope.jpg"
     },
     {
-        "name": "Tent",
+        "name": "Tält",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "A night's rest heals at +1",
+            "description": "",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -700,13 +700,13 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Toolbox",
+        "name": "Verktygslåda",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "10 nails, hammer, small saw, tongs",
+            "description": "inkl. 10 spikar, hammare, liten såg, tång",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 2,
@@ -750,7 +750,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Scissors",
+        "name": "Sax",
         "permission": {
             "default": 0
         },
@@ -775,7 +775,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Sharp needle",
+        "name": "Vass nål",
         "permission": {
             "default": 0
         },
