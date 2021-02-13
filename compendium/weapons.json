@@ -28,7 +28,7 @@
         "img": "systems/morkbork/icons/items/weapons/axe-battle.png"
     },
     {
-        "name": "Bow",
+        "name": "Pilbåge",
         "permission": {
             "default": 0
         },
@@ -84,13 +84,13 @@
         "img": "systems/morkbork/icons/items/weapons/bow-long.jpg"
     },
     {
-        "name": "Sling",
+        "name": "Slunga",
         "permission": {
             "default": 0
         },
         "type": "weapon",
         "data": {
-            "description": "Infinite supply, if stones are around",
+            "description": "Obegränsad många knytnävsstora stenar",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 0,
@@ -112,7 +112,7 @@
         "img": "systems/morkbork/icons/items/weapons/sling.jpg"
     },
     {
-        "name": "Crossbow",
+        "name": "Armborst",
         "permission": {
             "default": 0
         },
@@ -140,7 +140,7 @@
         "img": "systems/morkbork/icons/items/weapons/crossbow.jpg"
     },
     {
-        "name": "Heavy Crossbow",
+        "name": "Tungt armborst",
         "permission": {
             "default": 0
         },
@@ -168,7 +168,7 @@
         "img": "systems/morkbork/icons/items/weapons/crossbow.jpg"
     },
     {
-        "name": "Club",
+        "name": "Klubba",
         "permission": {
             "default": 0
         },
@@ -196,7 +196,7 @@
         "img": "systems/morkbork/icons/items/weapons/club.jpg"
     },
     {
-        "name": "Flail",
+        "name": "Stridsgissel",
         "permission": {
             "default": 0
         },

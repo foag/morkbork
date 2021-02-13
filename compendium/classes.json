@@ -1,13 +1,13 @@
 [
     {
-        "name": "Fanged Deserter",
+        "name": "Brigadör med hörntänder",
         "permission": {
             "default": 0
         },
         "type": "class",
         "data": {
             "type": "core",
-            "description": "You have thirty or so friends who never let you down: YOUR TEETH. Disloyal, deranged or simply uncontrollable, any group that didn’t boot you out you left anyway. But your parliament of teeth—enormous, protruding, thick and sharp—have always been your allies.",
+            "description": "Utkastad ur armén, alltför il lojal och oberäknelig. Brigadören har inslag av tjurhuvud och i käften sitter enorma hörntänder (SG10 i anfall, t6 skada) som allt som oftast kommer väl till pass.",
             "baseOmensDice": "1d2",
             "canUseScrolls": false,
             "modifiers": [
@@ -28,25 +28,25 @@
               "armorDice": "1d4",
               "startingAbilities": 1,
               "abilities": {
-                  "description": "You also begin with one of the following:",
+                  "description": "Brigadören börjar också med ett av följande:",
                   "options": [
-                      "Crumpled Monster Mask: Strikes primitive fear into lesser creatures like goblins, gnoums and children. While worn, they check Morale every round.",
-                      "The Brown Scimitar of Galgenbeck: A stinking sword you pulled from a military shit-ditch. D6 damage. DR10 attack and defence while you wield it. 1 in 6 chance a wounded enemy is smitten with potent sepsis, dying in 10 minutes.",
-                      "Wizard Teeth: Four weird teeth rattle within a blackened pouch. Before battle roll a d6 for each one. For every 6 one of your attacks deals maximum damage.",
-                      "Old Sigûrd’s sling: Sigûrd was the strongest man whose throat you ever gnawed. Woven from his long grey hair, this sling has never failed you. 2d4 damage, requires fist-sized rocks which, perhaps regrettably, are everywhere.",
-                      "Ancient Gore-Hound: Asthmatic, deluded and on its last legs, this wizened creature still has a superb nose and can sniffle up treasure in the most disgusting debris. Attacks with DR10 (bite d6). Defends with DR12, 10 HP. Becomes frenzied around goblins and berserkers.",
-                      "The Shoe of Death’s Horse: It looks normal but since finding it in an obscure crypt you are convinced this shoe came from the horse of Death himself. In your hands it hits with DR10, d4 damage. 1 in 6 chance the shoe smashes the skull, instantly killing small-to-medium sized creatures. The shoe returns to your hand like a boomerang."
+                      "Tilltufsat, löstagbart tryne. Upplevs som skrämmande bland mindre varelser som gobliner, svartdvärgar och barn. De är därför tvungna att testa Moral varje runda i strid.",
+                      "Nedsmutsad kroksabel funnen nära Galgenbeck. Utöver att göra skada t6 och att Brigadören är skicklig med sabeln (SG10 anfall/försvar) finns en risk om 1 på 6 att fienden drabbas av extremt snabbverkande blodförgiftning. Den som drabbas dör inom 10 minuter",
+                      "Tygpåse med utdragna tänder. Tänderna är fyra till antalet och för varje tand slås en t6 inför strid. Dela ut en maxskada per 6:a vid valfritt anfall i striden. De kommer inte att förlora sin kraft.",
+                      "Gammelgubben Sigûrds slunga. Ett riktigt kraftfullt vapen som gör 2t4 i skada. I en hård värld som den i MÖRK BORG finns det obegränsat med knytnävsstora stenar.",
+                      "Åldrad flåsande blodhund. Det gamla åbäket har trots allt ett förträffligt luktsinne och sniffar enkelt upp skatter bland skräp. Blir också fullkomligt vansinnig i möten med bärsärkar och gobliner: går till anfall med SG10 (bett t6), Försvar SG12 och TP 10.",
+                      "Hästsko från obskyr krypta. Utmärkt kastvapen som brigadören mot SG10 lyckas träffa med. 6 på t6 innebär träff i huvudet vilket dödar små och medelstora varelser. Hästskon återvänder sedan till handen. t4 TP i skada."
                   ]
               },
               "origins": {
-                  "description": "EARLIEST MEMORIES",
+                  "description": "VÄXTE UPP",
                   "options": [
-                      "A burnt-black building in Sarkash. Your home?",
-                      "A derelict rotting ship rolling endlessly across a grey sea.",
-                      "A brothel in Schleswig. Quite a friendly environment.",
-                      "Sleeping with dogs in the corner of an inn, waiting for someone to return.",
-                      "Following an army in eastern Wästland.",
-                      "Suckling a wolf in the wild of Bergen Chrypt."
+                      "i bränd del av Sarkash.",
+                      "på förlist, rutten skuta.",
+                      "på bordell i Schleswig.",
+                      "på okänd plats utan föräldrar.",
+                      "i ett armétält i östra Wästland.",
+                      "bland vilda djurs spenar i Bergen Chrypt."
                   ]
               }
             }
@@ -55,7 +55,7 @@
         "img": "systems/morkbork/icons/classes/Fanged_Deserter.png"
     },
     {
-        "name": "Gutterborn Scum",
+        "name": "Slusk skapad i dike",
         "permission": {
             "default": 0
         },
@@ -109,7 +109,7 @@
         "img": "systems/morkbork/icons/classes/Gutterborn_Scum.png"
     },
     {
-        "name": "Esoteric Hermit",
+        "name": "Esoterisk eremit",
         "permission": {
             "default": 0
         },
@@ -162,7 +162,7 @@
         "img": "systems/morkbork/icons/classes/Esoteric_Hermit.png"
     },
     {
-        "name": "Wretched Royalty",
+        "name": "Krossad kunglighet",
         "permission": {
             "default": 0
         },
@@ -215,7 +215,7 @@
         "img": "systems/morkbork/icons/classes/Wretched_Royalty.png"
     },
     {
-        "name": "Heretical Priest",
+        "name": "Präst med fördömd tro",
         "permission": {
             "default": 0
         },
@@ -268,14 +268,14 @@
         "img": "systems/morkbork/icons/classes/Heretical_Priest.png"
     },
     {
-        "name": "Occult Herbmaster",
+        "name": "Ockult örtmästare",
         "permission": {
             "default": 0
         },
         "type": "class",
         "data": {
             "type": "core",
-            "description": "Born of the mushroom, raised in the glade, watched by the eye of the moon in a silverblack pool.",
+            "description": "Uppväxt i skogens gläntor bland märkliga svampar och silversvart vatten.",
             "baseOmensDice": "1d2",
             "canUseScrolls": true,
             "modifiers": [

@@ -1,12 +1,12 @@
 [
     {
-        "name": "Shield",
+        "name": "Sköld",
         "permission": {
             "default": 0
         },
         "type": "armor",
         "data": {
-            "description": "<p>You can choose to ignore all damage from one attack but shield breaks.</p>",
+            "description": "<p>Det går att ignorera all skada från en attack och istället förstöra skölden.</p>",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -25,13 +25,13 @@
         "img": "systems/morkbork/icons/items/armor/shield.png"
     },
     {
-        "name": "Light Armor",
+        "name": "Lätt rustning",
         "permission": {
             "default": 0
         },
         "type": "armor",
         "data": {
-            "description": "<p>(fur, padded cloth, leather, etc...)</p>",
+            "description": "<p>(päls, tjockt tyg, läder etc...)</p>",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -50,13 +50,13 @@
         "img": "systems/morkbork/icons/items/armor/leather.png"
     },
     {
-        "name": "Medium Armor",
+        "name": "Medeltung rustning",
         "permission": {
             "default": 0
         },
         "type": "armor",
         "data": {
-            "description": "<p>(scale, mail, etc...) Scrolls will never work when wearing medium armor.</p>",
+            "description": "<p>(fjällpansar, ringbrynja etc...) Pergamentrullar fungerar aldrig i kombination med medeltunga rustningar.</p>",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 2,
@@ -75,13 +75,13 @@
         "img": "systems/morkbork/icons/items/armor/scale.png"
     },
     {
-        "name": "Heavy Armor",
+        "name": "Tung rustning",
         "permission": {
             "default": 0
         },
         "type": "armor",
         "data": {
-            "description": "<p>(splint, plate, etc...) Scrolls will never work when wearing heavy armor.</p>",
+            "description": "<p>(lamellpansar, plåt etc...) Pergamentrullar fungerar aldrig i kombination med tunga rustningar.</p>",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 3,

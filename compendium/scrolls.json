@@ -1,12 +1,12 @@
 [
     {
-        "name": "Palms Open the Southern Gate",
+        "name": "Portarna Söderut står vidöppna i din hand",
         "permission": {
             "default": 0
         },
         "type": "scroll",
         "data": {
-            "description": "A ball of fire hits d2 creatures dealing d8 damage per creature.",
+            "description": "Eldklot träffar t2 varelser och gör t8 skada per varelse.",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -19,13 +19,13 @@
         "img": "systems/morkbork/icons/items/scrolls/unclean_scroll.jpg"
     },
     {
-        "name": "Tongue of Eris",
+        "name": "Ingenting är enkelt",
         "permission": {
             "default": 0
         },
         "type": "scroll",
         "data": {
-            "description": "A creature of your choice is confused for 10 minutes.",
+            "description": "Utvald varelse blir fullständigt förvirrad, 10 minuter.",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -44,7 +44,7 @@
         },
         "type": "scroll",
         "data": {
-            "description": "Move an object up 1d10×10 feet for d6 minutes.",
+            "description": "Flytta ett objekt maximalt 3t10 meter under t6 minuter",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -57,13 +57,13 @@
         "img": "systems/morkbork/icons/items/scrolls/unclean_scroll.jpg"
     },
     {
-        "name": "Lucy-Fires Levitation",
+        "name": "Lucy-fires levitation",
         "permission": {
             "default": 0
         },
         "type": "scroll",
         "data": {
-            "description": "Hover for Presence + d10 rounds.",
+            "description": "Sväva Närvaro + t10 rundor",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -76,13 +76,13 @@
         "img": "systems/morkbork/icons/items/scrolls/unclean_scroll.jpg"
     },
     {
-        "name": "Daemon of Capillaries",
+        "name": "Luften är svår att andas",
         "permission": {
             "default": 0
         },
         "type": "scroll",
         "data": {
-            "description": "One creature suffocates for d6 rounds, losing d4 HP per round.",
+            "description": "En varelse kvävs under t6 rundor och tappar t4 TP/runda",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -95,13 +95,13 @@
         "img": "systems/morkbork/icons/items/scrolls/unclean_scroll.jpg"
     },
     {
-        "name": "Nine Violet Signs Unknot the Storm",
+        "name": "Krafter från violetta skyar en regntung natt",
         "permission": {
             "default": 0
         },
         "type": "scroll",
         "data": {
-            "description": "Produce d2 lightning bolts dealing d6 damage each.",
+            "description": "t2 blixtar som gör t6 skada vardera.",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -114,13 +114,13 @@
         "img": "systems/morkbork/icons/items/scrolls/unclean_scroll.jpg"
     },
     {
-        "name": "Metzhuotl Blind Your Eye",
+        "name": "Det som inte syns skadar desto mer",
         "permission": {
             "default": 0
         },
         "type": "scroll",
         "data": {
-            "description": "A creature becomes invisible for d6 rounds or until it is damaged, attacking/defending with DR6.",
+            "description": "Utvald blir osynlig under t6 rundor eller tills den blir skadad, och får också SG6 på anfall och försvar.",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -133,13 +133,13 @@
         "img": "systems/morkbork/icons/items/scrolls/unclean_scroll.jpg"
     },
     {
-        "name": "Foul Psychopomp",
+        "name": "Utnyttja odöda",
         "permission": {
             "default": 0
         },
         "type": "scroll",
         "data": {
-            "description": "Summon (d6): 1–3 d4 skeletons, 4–6 d4 zombies.",
+            "description": "Åkalla (t6): 1–3 skelett eller 4–6 zombies. t4 till antal.",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -152,13 +152,13 @@
         "img": "systems/morkbork/icons/items/scrolls/unclean_scroll.jpg"
     },
     {
-        "name": "Eyelid Blinds the Mind",
+        "name": "Trött kropp, tungt ögonlock",
         "permission": {
             "default": 0
         },
         "type": "scroll",
         "data": {
-            "description": "d4 creatures fall asleep for one hour unless they succeed a DR14 test.",
+            "description": "t4 varelser somnar om de misslyckas mot SG14. Sover i en timme.",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -171,13 +171,13 @@
         "img": "systems/morkbork/icons/items/scrolls/unclean_scroll.jpg"
     },
     {
-        "name": "Death",
+        "name": "Död",
         "permission": {
             "default": 0
         },
         "type": "scroll",
         "data": {
-            "description": "All creatures within 30 feet lose a total of 4d10 HP.",
+            "description": "Alla varelser inom 10 m förlorar totalt 4t10 TP.",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
