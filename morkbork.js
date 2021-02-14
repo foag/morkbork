@@ -69,6 +69,12 @@ Hooks.once('init', async function () {
         return game.i18n.localize(CONFIG.MB.scrollTypes[scrollKey])
     })
 
+    Handlebars.registerHelper('for', function (from, to, incr, block) {
+        let accum = ''
+        for (let i = from; i < to; i += incr) { accum += block.fn(i) }
+        return accum
+    })
+
     Handlebars.registerHelper('is', function (v1, v2, options) {
         return v1 == v2
     })

@@ -1,4 +1,4 @@
-import { MbClassList, MbEntityList } from '../config.js'
+import { MbClassList, MbEntityList, MB } from '../config.js'
 
 export const generateCharacter = async function () {
     const name = await getName()
@@ -37,14 +37,16 @@ export const generateCharacter = async function () {
     }
 }
 
-export const generateItems = async function () {
+export const generateItems = async function (baseData) {
+    const mbClass = baseData.data.class.mbClass
+    const abilities = baseData.data.abilities
     const items = []
 
-    const supplies = await getSuppliesAndGear()
-    const weapon = await getWeapon()
-    const armor = await getArmor()
+    const supplies = await getSuppliesAndGear(mbClass, abilities)
+    const weapon = await getWeapon(mbClass, abilities)
+    const armor = await getArmor(mbClass, abilities)
 
-    return [...supplies, weapon, armor]
+    return [...supplies, weapon, armor].filter(item => item !== null)
 }
 
 function roller (die, mod = 0) {
@@ -52,7 +54,7 @@ function roller (die, mod = 0) {
     const roll = new Roll('@die+@mod', { die, mod })
 
     roll.roll()
-    console.log('ROLL', roll.results, roll.total)
+    MB.log('ROLL', roll.results, roll.total)
     return roll.total
 }
 
@@ -72,13 +74,15 @@ function getPowers (abilities) {
 
 function getHitPoints (mbClass, abilities) {
     const startingInfo = mbClass.data.data.startingInfo
-    console.log('Hit points', startingInfo.startingHitPointDice, abilities[startingInfo.startingHitPointAtt])
 
     const hitPointRoll = roller(startingInfo.startingHitPointDice, abilities[startingInfo.startingHitPointAtt].value)
+    const hitPoint = Math.max(1, hitPointRoll)
+
+    MB.log('HIT POINTS', hitPoint, startingInfo.startingHitPointDice, startingInfo.startingHitPointAtt, abilities[startingInfo.startingHitPointAtt].value)
 
     return {
-        value: hitPointRoll,
-        max: hitPointRoll
+        value: hitPoint,
+        max: hitPoint
     }
 }
 
@@ -88,36 +92,80 @@ function getSilver (mbClass) {
     const silverRoll = roller(startingInfo.startingSilverDice)
     const silver = silverRoll * startingInfo.startingSilverMod
 
-    console.log('Silver', silver, silverRoll, startingInfo.startingSilverMod)
+    MB.log('Silver', silver, silverRoll, startingInfo.startingSilverMod)
     return silver
 }
 
-async function getSuppliesAndGear () {
-    // TODO consider weaponsDice and allow for expansion weapons?
-    const gear = await MbEntityList.getEntities('gear')
-    const supplyRoll = roller('1d4')
+function getItem (list, group, order, abilities) {
+    const gearItem = list.find(item => item.data.data.startingEquipment.group === group && item.data.data.startingEquipment.order === order)
 
-    const supplies = gear.find(gearItem => gearItem._id == 'v9sax820KDDdIkR7')
-    supplies.data.data.quantity = supplyRoll
+    if (!gearItem) {
+        MB.log(group, order)
+        return null
+    }
 
-    return [supplies.data]
+    MB.log('GEAR ITEM', gearItem.data.data.startingEquipment)
+
+    if (gearItem.data.data.startingEquipment.quantity) {
+        gearItem.data.data.quantity = gearItem.data.data.startingEquipment.quantity
+    }
+
+    if (gearItem.data.data.startingEquipment.modAbility) {
+        gearItem.data.data.quantity = gearItem.data.data.quantity + abilities[gearItem.data.data.startingEquipment.modAbility].value
+    }
+
+    return gearItem
 }
 
-async function getWeapon () {
-    // TODO consider weaponsDice and allow for expansion weapons?
-    const weapons = await MbEntityList.getEntities('weapons')
-    const weaponRoll = roller(`1d${weapons.length}`)
-    const weapon = weapons[weaponRoll - 1].data
+async function getScroll (scrollType) {
+    const scrollList = await MbEntityList.getEntities('scrolls')
+    const scrolls = scrollList.filter(item => item.data.data.scrollType === scrollType)
+
+    const scrollsRoll = roller(`1d${scrolls.length}`)
+
+    return scrolls[scrollsRoll - 1]
+}
+
+async function getSuppliesAndGear (mbClass, abilities) {
+    const gearList = await MbEntityList.getEntities('gear')
+    const gear = gearList.filter(item => item.data.data.startingEquipment)
+    const supplyRoll = roller('1d4')
+    const items = []
+
+    const startingGearRoll1 = roller('1d6')
+    const startingGear1 = getItem(gear, 1, startingGearRoll1, abilities)
+
+    const startingGearRoll2 = roller('1d12')
+    const startingGear2 = startingGearRoll2 !== 5 ? getItem(gear, 2, startingGearRoll2, abilities) : await getScroll('unclean')
+
+    const startingGearRoll3 = roller('1d12')
+    const startingGear3 = startingGearRoll3 !== 2 ? getItem(gear, 3, startingGearRoll3, abilities) : await getScroll('sacred')
+
+    console.log('startingGear1', startingGearRoll1, startingGear1)
+    console.log('startingGear2', startingGearRoll2, startingGear2)
+    console.log('startingGear3', startingGearRoll3, startingGear3)
+
+    return [startingGear1, startingGear2, startingGear3]
+}
+
+async function getWeapon (mbClass) {
+    const startingInfo = mbClass.data.data.startingInfo
+    const weaponsList = await MbEntityList.getEntities('weapons')
+    const weapons = weaponsList.filter(item => item.data.data.startingEquipment)
+
+    const weaponRoll = roller(startingInfo.weaponsDice)
+    const weapon = getItem(weapons, 1, weaponRoll)
     console.log('WEAPONS', weapon, weaponRoll)
 
     return weapon
 }
 
-async function getArmor () {
-    // TODO consider weaponsDice and allow for expansion weapons?
+async function getArmor (mbClass) {
+    const startingInfo = mbClass.data.data.startingInfo
     const armors = await MbEntityList.getEntities('armor')
-    const armorRoll = roller('1d4')
-    const armor = armors[armorRoll - 1].data
+
+    const armorRoll = roller(startingInfo.armorDice)
+    const armor = armors[armorRoll - 1]
     console.log('ARMOR', armor, armorRoll)
 
     return armor
@@ -141,18 +189,19 @@ function getClassAttributes (mbClass) {
     const originRoll = startingInfo.origins ? roller(`1d${startingInfo.origins.options.length}`) : 0
     const origin = startingInfo.origins ? startingInfo.origins.options[originRoll - 1] : []
 
-    console.log('ABILITY ROLL', startingInfo.startingAbilities, abilities)
-    console.log('ORIGINS ROLL', origin)
+    MB.log('ABILITY ROLL', startingInfo.startingAbilities, abilities)
+    MB.log('ORIGINS ROLL', origin)
 
     return {
         abilities,
         name: mbClass.data.name,
-        origins: [origin]
+        origins: [origin],
+        mbClass
     }
 }
 
 async function getAbilities (mbClass) {
-    console.log('CLASS', mbClass.data.name, mbClass)
+    MB.log('CLASS', mbClass.data.name, mbClass)
     const startingInfo = mbClass.data.data.startingInfo
 
     const strength = getAbilityPoint(startingInfo.strMod)
@@ -204,3 +253,13 @@ async function getName () {
 }
 
 window.generateCharacter = generateCharacter
+window.generateItems = generateItems
+
+window.mockCharacter = async function () {
+    const data = await generateCharacter()
+    const items = await generateItems(data)
+
+    data.items = items
+
+    console.log(data, items)
+}

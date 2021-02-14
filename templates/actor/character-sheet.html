@@ -138,10 +138,14 @@
 
               <li class="item flex mb-1" data-item-id="{{item._id}}">
                 {{#if (is item.type "gear")}}
-                  {{#if (notIs item.data.quantity 0)}}
-                  <span class="mr-1">{{item.data.quantity}}</span>
-                  {{/if}}
-                  <span class="text-mb-yellow"> {{item.data.description}}.</span>
+                  <div>
+                    {{#if (notIs item.data.quantity 0)}}
+                    <span>{{item.data.quantity}}</span>
+                    {{/if}}
+                    
+                    {{item.name}}
+                    <span class="text-mb-yellow">{{item.data.description}}</span>
+                </div>
                 {{/if}}
 
                 {{#if (is item.type "weapon")}}

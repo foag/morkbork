@@ -16,7 +16,7 @@ export class MorkBorkItem extends Item {
         const C = CONFIG.MB
 
         if (itemData.type === 'armor') {
-            switch (Number(data.tier)) {
+            switch (Number(data.tier.value)) {
             case 0:
                 data.damageReductionDice = '-1'
                 data.agilityPenalty = null

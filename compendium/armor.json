@@ -1,43 +1,22 @@
 [
     {
-        "name": "Sköld",
-        "permission": {
-            "default": 0
-        },
-        "type": "armor",
-        "data": {
-            "description": "<p>Det går att ignorera all skada från en attack och istället förstöra skölden.</p>",
-            "encumbrance": {
-                "sacks": 0,
-                "stones": 1,
-                "soaps": 0
-            },
-            "tier": 0,
-            "silver": 20,
-            "damageReductionDice": "1d1",
-            "agilityPenalty": 0,
-            "defencePenalty": 0,
-            "hasLight": false,
-            "lightRadius": null,
-            "lightStrength": null
-        },
-        "flags": {},
-        "img": "systems/morkbork/icons/items/armor/shield.png"
-    },
-    {
         "name": "Lätt rustning",
         "permission": {
             "default": 0
         },
         "type": "armor",
         "data": {
-            "description": "<p>(päls, tjockt tyg, läder etc...)</p>",
+            "description": "(päls, tjockt tyg, läder etc...)",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
                 "soaps": 0
             },
-            "tier": 1,
+            "tier": {
+                "value": 1,
+                "max": 1,
+                "min": 0
+            },
             "silver": 20,
             "damageReductionDice": "1d2",
             "agilityPenalty": 0,
@@ -56,13 +35,17 @@
         },
         "type": "armor",
         "data": {
-            "description": "<p>(fjällpansar, ringbrynja etc...) Pergamentrullar fungerar aldrig i kombination med medeltunga rustningar.</p>",
+            "description": "(fjällpansar, ringbrynja etc...) Pergamentrullar fungerar aldrig i kombination med medeltunga rustningar.",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 2,
                 "soaps": 0
             },
-            "tier": 2,
+            "tier": {
+                "value": 2,
+                "max": 2,
+                "min": 0
+            },
             "silver": 100,
             "damageReductionDice": "1d4",
             "agilityPenalty": 2,
@@ -81,13 +64,17 @@
         },
         "type": "armor",
         "data": {
-            "description": "<p>(lamellpansar, plåt etc...) Pergamentrullar fungerar aldrig i kombination med tunga rustningar.</p>",
+            "description": "(lamellpansar, plåt etc...) Pergamentrullar fungerar aldrig i kombination med tunga rustningar.",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 3,
                 "soaps": 0
             },
-            "tier": 3,
+            "tier": {
+                "value": 3,
+                "max": 3,
+                "min": 0
+            },
             "silver": 200,
             "damageReductionDice": "1d6",
             "agilityPenalty": 4,

@@ -254,6 +254,8 @@ export class MorkBorkActorSheet extends ActorSheet {
         // Allow increase/decrease for values
         html.find('.increase, .decrease').click(this._onIncreaseDecrease.bind(this))
 
+        html.find('.armor-tier').click(this._onSetArmorTier.bind(this))
+
         // Update Inventory Item
         html.find('.item-edit').click(ev => {
             const li = $(ev.currentTarget).parents('.item')
@@ -324,6 +326,18 @@ export class MorkBorkActorSheet extends ActorSheet {
         }
 
         this.actor.update(data)
+    }
+
+    async _onSetArmorTier (event) {
+        event.preventDefault()
+        const armor = $(event.currentTarget).parent()[0]
+        const tier = event.currentTarget.dataset.tier
+
+        const item = this.actor.items.get(armor.dataset.itemId)
+
+        await item.update({
+            'data.tier.value': tier
+        })
     }
 
     /* -------------------------------------------- */

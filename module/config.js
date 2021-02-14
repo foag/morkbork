@@ -3,6 +3,8 @@ export const MB = {}
 
 /* -------------------------------------------- */
 
+MB.debug = false
+
 /**
  * The set of Ability Scores used within the system
  * @type {Object}
@@ -95,6 +97,12 @@ MB.classSources = {
     custom: 'MB.ClassSourceCustom',
     core: 'MB.ClassSourceCore',
     mbc: 'MB.ClassSourceMbc'
+}
+
+MB.log = function () {
+    if (this.debug) {
+        console.log('MorkBork', ...arguments)
+    }
 }
 
 /* -------------------------------------------- */

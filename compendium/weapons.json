@@ -1,12 +1,12 @@
 [
     {
-        "name": "Battle Axe",
+        "name": "Stridsyxa",
         "permission": {
             "default": 0
         },
         "type": "weapon",
         "data": {
-            "description": "Versatile (used two-handed deals more damage)",
+            "description": "",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -50,7 +50,11 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 7
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/weapons/bow-short.jpg"
@@ -134,7 +138,11 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 9
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/weapons/crossbow.jpg"
@@ -180,7 +188,7 @@
                 "stones": 1,
                 "soaps": 0
             },
-            "silver": 5,
+            "silver": 10,
             "usageDie": null,
             "damageDice": "1d6",
             "hands": 1,
@@ -218,13 +226,17 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 8
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/weapons/flail.png"
     },
     {
-        "name": "Femur",
+        "name": "Lårben",
         "permission": {
             "default": 0
         },
@@ -246,19 +258,23 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 1
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/weapons/femur.jpg"
     },
     {
-        "name": "Handaxe",
+        "name": "Handyxa",
         "permission": {
             "default": 0
         },
         "type": "weapon",
         "data": {
-            "description": "Combine with a shield for best effect.",
+            "description": "",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -280,7 +296,7 @@
         "img": "systems/morkbork/icons/items/weapons/axe-hand.jpg"
     },
     {
-        "name": "Dagger, Knife",
+        "name": "Kniv",
         "permission": {
             "default": 0
         },
@@ -302,19 +318,23 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 4
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/weapons/knife.png"
     },
     {
-        "name": "Mace",
+        "name": "Spikklubba",
         "permission": {
             "default": 0
         },
         "type": "weapon",
         "data": {
-            "description": "Blunty and bashy. A symbol of chaos.",
+            "description": "",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -336,7 +356,7 @@
         "img": "systems/morkbork/icons/items/weapons/mace.png"
     },
     {
-        "name": "Shortsword",
+        "name": "Kortsvärd",
         "permission": {
             "default": 0
         },
@@ -350,7 +370,7 @@
             },
             "silver": 20,
             "usageDie": null,
-            "damageDice": "1d6",
+            "damageDice": "1d4",
             "hands": 1,
             "rangeType": "melee",
             "rangeDistance": "close",
@@ -358,13 +378,17 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 3
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/weapons/sword-short.jpg"
     },
     {
-        "name": "Staff",
+        "name": "Stav",
         "permission": {
             "default": 0
         },
@@ -378,7 +402,7 @@
             },
             "silver": 5,
             "usageDie": null,
-            "damageDice": "1d6",
+            "damageDice": "1d4",
             "hands": 2,
             "rangeType": "melee",
             "rangeDistance": "close",
@@ -386,13 +410,17 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 2
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/weapons/staff.jpg"
     },
     {
-        "name": "Longsword",
+        "name": "Svärd",
         "permission": {
             "default": 0
         },
@@ -404,9 +432,9 @@
                 "stones": 1,
                 "soaps": 0
             },
-            "silver": 40,
+            "silver": 30,
             "usageDie": null,
-            "damageDice": "1d8",
+            "damageDice": "1d6",
             "hands": 1,
             "rangeType": "melee",
             "rangeDistance": "close",
@@ -414,19 +442,23 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 6
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/weapons/sword-long.jpg"
     },
     {
-        "name": "Warhammer",
+        "name": "Hjälmkrossare",
         "permission": {
             "default": 0
         },
         "type": "weapon",
         "data": {
-            "description": "Versatile (used two-handed deals more damage).",
+            "description": "",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -442,13 +474,17 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 5
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/weapons/hammer-war.png"
     },
     {
-        "name": "Whip",
+        "name": "Piska",
         "permission": {
             "default": 0
         },
@@ -462,7 +498,7 @@
             },
             "silver": 5,
             "usageDie": null,
-            "damageDice": "1d4",
+            "damageDice": "1d2",
             "hands": 1,
             "rangeType": "melee",
             "rangeDistance": "close",
@@ -504,7 +540,7 @@
         "img": "systems/morkbork/icons/items/weapons/spear.jpg"
     },
     {
-        "name": "Great Sword",
+        "name": "Zweihänder",
         "permission": {
             "default": 0
         },
@@ -516,9 +552,9 @@
                 "stones": 2,
                 "soaps": 0
             },
-            "silver": 150,
+            "silver": 60,
             "usageDie": null,
-            "damageDice": "2d6",
+            "damageDice": "1d10",
             "hands": 2,
             "rangeType": "melee",
             "rangeDistance": "close",
@@ -526,7 +562,11 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 10
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/weapons/sword-great.png"

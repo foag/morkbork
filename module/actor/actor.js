@@ -16,7 +16,7 @@ export class MorkBorkActor extends Actor {
         const characterData = await generateCharacter()
         data = mergeObject(data, characterData)
 
-        const characterItems = await generateItems()
+        const characterItems = await generateItems(data)
         data.items = characterItems
 
         console.log(data, options)

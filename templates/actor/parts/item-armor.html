@@ -1,17 +1,22 @@
 <div>
     <span class="action mr-1" data-roll="{{ item.data.damageReductionDice }}"
-      data-label="{{item.name~}}">{{item.name}}</span><span class="text-mb-yellow">{{
-      item.data.damageReductionDice }} skada.
-      {{#if (notIs item.data.tier 0)}}
-        Nivå {{ item.data.tier }}.
-      {{/if}}
+      data-label="{{item.name~}}">{{item.name}}</span>
+      <span class="text-mb-yellow armor" data-item-id="{{ item._id }}">
+        {{item.data.damageReductionDice }} skada.
+        
+        <a data-tier="1" class="text-xs armor-tier {{#if (is 1 item.data.tier.value)}}white{{/if}}">1</a>
+        <a data-tier="2" class="text-xs armor-tier {{#if (is 2 item.data.tier.value)}}white{{/if}} {{#if (is 1 item.data.tier.max)}}hidden{{/if}}">2</a>
+        <a data-tier="3" class="text-xs armor-tier {{#if (is 3 item.data.tier.value)}}white{{/if}} {{#if (is 2 item.data.tier.max)}}hidden{{/if}}">3</a>
+        <br>
 
+        <small>
+          {{#if item.data.agilityPenalty}}
+            <span> SG+{{item.data.agilityPenalty}} för tester som rör Smidighet.</span>
+          {{/if}}
 
-      {{#if item.data.agilityPenalty}}
-      <span> SG+{{item.data.agilityPenalty}} för tester som rör Smidighet.</span>
-      {{/if}}
-
-      {{#if item.data.defencePenalty}}
-      <span> SG+{{item.data.defencePenalty}} för tester som rör Försvar.</span>
-      {{/if}}</span>
+          {{#if item.data.defencePenalty}}
+            <span> SG+{{item.data.defencePenalty}} för tester som rör Försvar.</span>
+          {{/if}}
+        </small>
+    </span>
   </div>

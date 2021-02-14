@@ -80,7 +80,7 @@ body {
     font-family: $font-secondary;
   }
 
-  .increase, .decrease, .item-remove, .item-edit {
+  .increase, .decrease, .item-remove, .item-edit, .armor-tier {
     border: none;
     border-radius: 100%;
     display: inline-block;
@@ -94,7 +94,21 @@ body {
     color: $mb-black;
     font-size: 1.2rem;
     background-image: url(../img/char_bg.svg);
+
+    &.white {
+      background-image: url(../img/char_bg_white.svg);
+    }
   }
+
+  .armor-tier {
+    font-weight: bold !important;
+    font-size: 0.7rem;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    line-height: 18px; 
+  }
+  
 
   .character-name {
     height: auto;

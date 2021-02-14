@@ -1,12 +1,164 @@
 [
     {
+        "name": "Fackla",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 2,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 2,
+                "modAbility": "presence",
+                "quantity": 4
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/lantern.jpg"
+    },
+    {
+        "name": "Oljelampa",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 10,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 3,
+                "modAbility": "presence",
+                "quantity": 6
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/lantern.jpg"
+    },
+    {
+        "name": "Ryggsäck",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "rymmer 7 normalstora föremål",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "carryCapacity": 7,
+            "silver": 6,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 3
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Säck",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "rymmer 10 normalstora föremål",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "carryCapacity": 10,
+            "silver": 3,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 4
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Liten vagn",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "rymmer 20 normalstora föremål",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "carryCapacity": 20,
+            "silver": 25,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 5
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/generic.jpg"
+    },
+    {
         "name": "Saxfälla",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "Sg14 för att upptäcka, t8 skada",
+            "description": "SG14 för att upptäcka, t8 skada",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 1,
@@ -19,7 +171,13 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 9,
+                "modAbility": null,
+                "quantity": 1
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
@@ -144,7 +302,11 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 3,
+                "order": 10
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
@@ -169,7 +331,13 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 12,
+                "modAbility": null,
+                "quantity": 1
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
@@ -200,7 +368,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Dyrbar perfym",
+        "name": "Dyrbar parfym",
         "permission": {
             "default": 0
         },
@@ -219,7 +387,11 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 3,
+                "order": 5
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
@@ -269,7 +441,11 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 3,
+                "order": 8
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
@@ -319,7 +495,11 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 3,
+                "order": 7
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/chain.jpg"
@@ -444,7 +624,13 @@
             "isConsumable": true,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 8,
+                "modAbility": null,
+                "quantity": 1
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/lockpick.jpg"
@@ -469,7 +655,13 @@
             "isConsumable": true,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 4,
+                "modAbility": null,
+                "quantity": 1
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
@@ -544,7 +736,13 @@
             "isConsumable": true,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 7,
+                "modAbility": "presence",
+                "quantity": 4
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/herb-bag.jpg"
@@ -569,7 +767,13 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 8,
+                "modAbility": null,
+                "quantity": 1
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
@@ -600,7 +804,7 @@
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
-        "name": "Flaska svart gift",
+        "name": "Svart gift",
         "permission": {
             "default": 0
         },
@@ -613,7 +817,7 @@
                 "soaps": 5
             },
             "silver": 20,
-            "usageDie": "Ud4",
+            "usageDie": "1d6",
             "quantity": 1,
             "usageDieType": "uses",
             "isConsumable": true,
@@ -625,7 +829,7 @@
         "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
     },
     {
-        "name": "Flaska rött gift",
+        "name": "Rött gift",
         "permission": {
             "default": 0
         },
@@ -638,13 +842,19 @@
                 "soaps": 5
             },
             "silver": 20,
-            "usageDie": "Ud4",
+            "usageDie": "1d10",
             "quantity": 1,
             "usageDieType": "uses",
             "isConsumable": true,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 11,
+                "modAbility": null,
+                "quantity": 1
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
@@ -669,35 +879,14 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 1
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/rope.jpg"
-    },
-    {
-        "name": "Tält",
-        "permission": {
-            "default": 0
-        },
-        "type": "gear",
-        "data": {
-            "description": "",
-            "encumbrance": {
-                "sacks": 0,
-                "stones": 1,
-                "soaps": 0
-            },
-            "silver": 12,
-            "usageDie": null,
-            "quantity": 1,
-            "usageDieType": null,
-            "isConsumable": false,
-            "hasLight": false,
-            "lightRadius": null,
-            "lightStrength": null
-        },
-        "flags": {},
-        "img": "systems/morkbork/icons/items/gear/generic.jpg"
     },
     {
         "name": "Verktygslåda",
@@ -719,7 +908,11 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 3,
+                "order": 6
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
@@ -794,7 +987,71 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 6,
+                "modAbility": null,
+                "quantity": 1
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Vattenskinn",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "inkl. 4 dygns vatten",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 4,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 0,
+                "order": 1
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/generic.jpg"
+    },
+    {
+        "name": "Torkad mat",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "räcker 1 dag",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 1
+            },
+            "silver": 4,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 0,
+                "order": 2
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/generic.jpg"
@@ -819,7 +1076,13 @@
             "isConsumable": false,
             "hasLight": false,
             "lightRadius": null,
-            "lightStrength": null
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 2,
+                "order": 10,
+                "modAbility": null,
+                "quantity": 1
+            }
         },
         "flags": {},
         "img": "systems/morkbork/icons/items/gear/bomb.jpg"
@@ -1000,20 +1263,152 @@
         "img": "systems/morkbork/icons/items/gear/dice.jpg"
     },
     {
-        "name": "Life Elixir",
+        "name": "Elixir Vitalis",
         "permission": {
             "default": 0
         },
         "type": "gear",
         "data": {
-            "description": "Heals d6 HP And Removes Infection",
+            "description": "Läker t6 TP och häver infektion. Kan vara beroendeframkallande.",
             "encumbrance": {
                 "sacks": 0,
                 "stones": 0,
                 "soaps": 5
             },
             "silver": 100,
-            "usageDie": "Ud6",
+            "usageDie": "1d6",
+            "quantity": 1,
+            "usageDieType": "doses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 3,
+                "order": 1,
+                "modAbility": null,
+                "quantity": 1,
+                "quantityDice": "1d4"
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
+    },
+    {
+        "name": "Ezumiels ånga",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Svåra hallucinationer under t4 timmar om Tålighet mot SG14 misslyckas.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 100,
+            "usageDie": "1d4",
+            "quantity": 1,
+            "usageDieType": "doses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
+    },
+    {
+        "name": "Sydländsk grodlårsröra",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Offret kräks djävulskt mycket under t4 timmar, kan inte göra något annat, om test mot SG14 misslyckas.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 100,
+            "usageDie": "1d4",
+            "quantity": 1,
+            "usageDieType": "doses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
+    },
+    {
+        "name": "Spindelugglans soppa",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Se i mörker och klättra på väggar under 30 minuter.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 100,
+            "usageDie": "1d4",
+            "quantity": 1,
+            "usageDieType": "doses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
+    },
+    {
+        "name": "Fernors filter",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Genomskinlig olja, måste strykas direkt på ögat. Renar infektion och ger +2 vid Närvarotest i t4 timmar.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 100,
+            "usageDie": "1d4",
+            "quantity": 1,
+            "usageDieType": "doses",
+            "isConsumable": true,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/gear/bottle-empty.jpg"
+    },
+    {
+        "name": "Hyperhs pulver",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "Måste sniffas, orsakar rejäla nysningar. Bärsärkseffekt! Två anfall per runda men SG14 i försvar. Varar en strid.",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 5
+            },
+            "silver": 100,
+            "usageDie": "1d4",
             "quantity": 1,
             "usageDieType": "doses",
             "isConsumable": true,
@@ -1498,5 +1893,212 @@
         },
         "flags": {},
         "img": "systems/morkbork/icons/classes/Cursed_Skinwalker.png"
+    },
+    {
+        "name": "Åsna",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 0
+            },
+            "silver": 10,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 6
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/classes/generic.png"
+    },
+    {
+        "name": "Åsna",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 0
+            },
+            "silver": 10,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 1,
+                "order": 6
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/classes/generic.png"
+    },
+    {
+        "name": "Loppäten hund",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "t6+2 TP, bett t4, lyder bara dig",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 0
+            },
+            "silver": 10,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 3,
+                "order": 3
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/classes/generic.png"
+    },
+    {
+        "name": "apor",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "som ignorerar men älskar dig (t4+2 TP, slag/ bett t4)",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 0,
+                "soaps": 0
+            },
+            "silver": 10,
+            "usageDie": "1d4",
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 3,
+                "order": 4,
+                "quantity": 4,
+                "quantityDice": "1d4"
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/classes/generic.png"
+    },
+    {
+        "name": "Tält",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 12,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 3,
+                "order": 12
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/classes/generic.png"
+    },
+    {
+        "name": "Ister",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 5,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "startingEquipment": {
+                "group": 3,
+                "order": 11,
+                "quantity": 5
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/classes/generic.png"
+    },
+    {
+        "name": "Sköld",
+        "permission": {
+            "default": 0
+        },
+        "type": "gear",
+        "data": {
+            "description": "<p>Det går att ignorera all skada från en attack och istället förstöra skölden.</p>",
+            "encumbrance": {
+                "sacks": 0,
+                "stones": 1,
+                "soaps": 0
+            },
+            "silver": 5,
+            "usageDie": null,
+            "quantity": 1,
+            "usageDieType": null,
+            "isConsumable": false,
+            "hasLight": false,
+            "lightRadius": null,
+            "lightStrength": null,
+            "damageReductionDice": "1d1",
+            "startingEquipment": {
+                "group": 3,
+                "order": 9
+            }
+        },
+        "flags": {},
+        "img": "systems/morkbork/icons/items/armor/shield.png"
     }
 ]

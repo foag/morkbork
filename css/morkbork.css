@@ -716,7 +716,7 @@ body {
   font-family: "requiem", fantasy, serif;
 }
 
-.morkbork .increase, .morkbork .decrease, .morkbork .item-remove, .morkbork .item-edit {
+.morkbork .increase, .morkbork .decrease, .morkbork .item-remove, .morkbork .item-edit, .morkbork .armor-tier {
   border: none;
   border-radius: 100%;
   display: inline-block;
@@ -730,6 +730,19 @@ body {
   color: black;
   font-size: 1.2rem;
   background-image: url(../img/char_bg.svg);
+}
+
+.morkbork .increase.white, .morkbork .decrease.white, .morkbork .item-remove.white, .morkbork .item-edit.white, .morkbork .armor-tier.white {
+  background-image: url(../img/char_bg_white.svg);
+}
+
+.morkbork .armor-tier {
+  font-weight: bold !important;
+  font-size: 0.7rem;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  line-height: 18px;
 }
 
 .morkbork .character-name {
