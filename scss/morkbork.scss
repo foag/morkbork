@@ -45,7 +45,7 @@ body {
     color: $mb-white;
   }
 
-  .rollable {
+  .rollable, .item .action {
     color: $mb-white;
     border-bottom: 1px dashed $mb-white;
 
@@ -78,6 +78,22 @@ body {
   
   .font-secondary {
     font-family: $font-secondary;
+  }
+
+  .increase, .decrease, .item-remove, .item-edit {
+    border: none;
+    border-radius: 100%;
+    display: inline-block;
+    width: 14px;
+    background: transparent;
+    height: 14px;
+    line-height: 0.8rem;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    color: $mb-black;
+    font-size: 1.2rem;
+    background-image: url(../img/char_bg.svg);
   }
 
   .character-name {

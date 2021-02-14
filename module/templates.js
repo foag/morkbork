@@ -9,6 +9,8 @@ export const preloadHandlebarsTemplates = async function () {
 
         // Actor Sheet Partials
         'systems/morkbork/templates/actor/parts/actor-encumbrance.html',
+        'systems/morkbork/templates/actor/parts/item-armor.html',
+        'systems/morkbork/templates/actor/parts/item-controls.html',
         // Item Sheet Partials
         'systems/morkbork/templates/item/parts/item-header.html',
         'systems/morkbork/templates/item/parts/item-description.html',

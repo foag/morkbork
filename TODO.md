@@ -4,3 +4,6 @@
 - More translations
 - Template localization
 - Rundown of all packs (do we have MBC for controls?)
+- Roll power (Presence DR12 or -d2 HP (and no powers for 1hr))
+- Leveling
+- Resting system

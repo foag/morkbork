@@ -1,4 +1,5 @@
 import { MbClassList } from '../config.js'
+import { objValueFromPath } from '../utils.js'
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -250,6 +251,9 @@ export class MorkBorkActorSheet extends ActorSheet {
         // Add Inventory Item
         html.find('.item-create').click(this._onItemCreate.bind(this))
 
+        // Allow increase/decrease for values
+        html.find('.increase, .decrease').click(this._onIncreaseDecrease.bind(this))
+
         // Update Inventory Item
         html.find('.item-edit').click(ev => {
             const li = $(ev.currentTarget).parents('.item')
@@ -292,6 +296,34 @@ export class MorkBorkActorSheet extends ActorSheet {
                 li.addEventListener('dragstart', handler, false)
             })
         }
+    }
+
+    _onIncreaseDecrease (event) {
+        event.preventDefault()
+
+        const data = {}
+        const target = event.currentTarget
+        const updatePath = target.dataset.value
+        const value = target.classList.contains('increase') ? 1 : -1
+
+        const updateObj = objValueFromPath(this.actor.data, updatePath)
+
+        if (updateObj.max !== undefined) {
+            // Target has max/min/value structure
+            const newValue = updateObj.value + value
+            if (value > 0) {
+                data[updatePath + '.value'] = Math.min(updateObj.max, newValue)
+            } else {
+                data[updatePath + '.value'] = Math.max(updateObj.min, newValue)
+            }
+            console.log('IncDec Object', updateObj, updatePath, value, data)
+        } else {
+            // Target is a basic Number
+            data[updatePath] = updateObj + value
+            console.log('IncDec Number', updateObj, updatePath, value, updateObj + value)
+        }
+
+        this.actor.update(data)
     }
 
     /* -------------------------------------------- */

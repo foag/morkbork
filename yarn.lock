@@ -91,6 +91,11 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@typhonjs-fvtt/eslint-foundry.js@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@typhonjs-fvtt/eslint-foundry.js/-/eslint-foundry.js-0.3.1.tgz#130d5d1d51e0ad7ae843a6a45d9abfa0ab12d46a"
+  integrity sha512-xsSGEVRSGkTX9YEhUmeteXY2xFybmXWaMmdPhMQzAjkFqz/jO/7Y+6u/EPjrzr9Qw5sMTOaRziqWHvjcGf16eg==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"

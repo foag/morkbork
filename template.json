@@ -40,7 +40,11 @@
       "character": {
         "templates": ["base"],
         "experiences": 0,
-        "powers": 0,
+        "powers": {
+          "value": 0,
+          "min":0,
+          "max":0
+        },
         "level": {
           "value": 1,
           "min":1,

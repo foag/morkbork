@@ -12,9 +12,11 @@
               {{firstChar actor.name}}</div>
           </div>
 
-          <ul class="pt-2 pl-8">
-            <li class="flex justify-between mb-1">
-              <span>{{ localize "MB.Hitpoints" }}:</span>
+          <ul class=" pl-8">
+            <li class="flex mb-1">
+              <div class="w-24">
+                <span>{{ localize "MB.Hitpoints" }}:</span>
+              </div>
               <div>
                 <span class="inline-block w-8">
                   <input type="text" name="data.health.value" value="{{data.health.value}}" data-dtype="Number"
@@ -22,9 +24,16 @@
                 </span>
                 / {{data.health.max}}
               </div>
+              <div class="ml-auto">
+                <span class="decrease ml-1" data-value="data.health">-</span>
+                <span class="increase" data-value="data.health">+</span>
+              </div>
             </li>
-            <li class="flex justify-between mb-1">
-              <span>{{ localize "MB.Omens" }}:</span>
+
+            <li class="flex mb-1">
+              <div class="w-24">
+                <span class="rollable" >{{ localize "MB.Omens" }}:</span>
+              </div>
               <div>
                 <span class="inline-block w-8">
                   <input type="text" name="data.omens.value" value="{{data.omens.value}}" data-dtype="Number"
@@ -32,24 +41,42 @@
                 </span>
                 / {{data.omens.max}}
               </div>
+              <div class="ml-auto">
+                <span class="decrease ml-1" data-value="data.omens">-</span>
+                <span class="increase" data-value="data.omens">+</span>
+              </div>
             </li>
-            <li class="flex justify-between mb-1">
-              <span class="rollable" data-roll="1d4+{{data.abilities.presence.value}}">{{ localize "MB.Powers" }}:</span>
+
+            <li class="flex mb-1">
+              <div class="w-24">
+                <span class="rollable" data-roll="1d4+{{data.abilities.presence.value}}">{{ localize "MB.Powers"}}:</span>
+              </div>
               <div>
                 <span class="inline-block w-8">
                   <input type="text" name="data.powers.value" value="{{data.powers.value}}" data-dtype="Number"
                     placeholder="Current" />
                 </span>
-                / {{data.powers.value}}
+                / {{data.powers.max}}
+              </div>
+              <div class="ml-auto">
+                <span class="decrease ml-1" data-value="data.powers">-</span>
+                <span class="increase" data-value="data.powers">+</span>
               </div>
             </li>
-            <li class="flex justify-between mb-1">
-              <span>{{ localize "MB.ItemSilver" }}:</span>
+
+            <li class="flex mb-1">
+              <div class="w-24">
+                <span>{{ localize "MB.ItemSilver" }}:</span>
+              </div>
               <div>
-                <span class="inline-block w-16">
+                <span class="inline-block w-8">
                   <input type="text" name="data.currency.sp" value="{{data.currency.sp}}" data-dtype="Number"
                     placeholder="Current" />
                 </span>
+              </div>
+              <div class="ml-auto">
+                <span class="decrease ml-1" data-value="data.currency.sp">-</span>
+                <span class="increase" data-value="data.currency.sp">+</span>
               </div>
             </li>
           </ul>
@@ -75,12 +102,11 @@
         <div class="character-grid w-full grid grid-cols-2">
           <div class="border-r">
             <h1>{{ actor.classObj.name }}</h1>
-            {{ log actor.features }}
 
             <ul class="pt-2">
               {{#each actor.classObj.data.modifiers as |item id|}}
               <li class="item flex flex-col" data-item-id="{{item._id}}">
-                    {{item}}
+                {{item}}
               </li>
               {{/each}}
             </ul>
@@ -88,7 +114,7 @@
             <ul class="pt-2">
               {{#each data.class.abilities as |item id|}}
               <li class="item flex flex-col" data-item-id="{{item._id}}">
-                    {{item}}
+                {{item}}
               </li>
               {{/each}}
             </ul>
@@ -111,17 +137,15 @@
 
 
               <li class="item flex mb-1" data-item-id="{{item._id}}">
-                {{ log item }}
-
                 {{#if (is item.type "gear")}}
                   {{#if (notIs item.data.quantity 0)}}
-                    <span class="mr-1">{{item.data.quantity}}</span>
+                  <span class="mr-1">{{item.data.quantity}}</span>
                   {{/if}}
                   <span class="text-mb-yellow"> {{item.data.description}}.</span>
                 {{/if}}
 
                 {{#if (is item.type "weapon")}}
-                <span class="rollable mr-1" data-roll="{{item.data.damageDice}}" data-label="{{item.name~}}">
+                <span class="action mr-1" data-roll="{{item.data.damageDice}}" data-label="{{item.name~}}">
                   {{item.name~}}
                 </span>
                 <span class="text-mb-yellow">{{item.data.damageDice}} skada.</span>
@@ -136,26 +160,10 @@
                 {{/if}}
 
                 {{#if (is item.type "armor")}}
-                <div>
-                  <span class="rollable mr-1" data-roll="{{ item.data.damageReductionDice }}"
-                    data-label="{{item.name~}}">{{item.name}}</span><span class="text-mb-yellow">{{
-                    item.data.damageReductionDice }} skada. Nivå {{ item.data.tier }}. 
-
-                    {{#if item.data.agilityPenalty}}
-                      <span> SG+{{item.data.agilityPenalty}} för tester som rör Smidighet.</span>
-                    {{/if}}
-        
-                    {{#if item.data.defencePenalty}}
-                        <span> SG+{{item.data.defencePenalty}} för tester som rör Försvar.</span>
-                    {{/if}}</span>
-                </div>
+                  {{> "systems/morkbork/templates/actor/parts/item-armor.html" item = item}}
                 {{/if}}
 
-                {{#if (notIs item.type "feature")}}
-                <div class="item-controls ml-auto">
-                  <a class="item-control item-delete" title='ItemDelete'><i class="fas fa-trash"></i></a>
-                </div>
-                {{/if}}
+                {{> "systems/morkbork/templates/actor/parts/item-controls.html" item = item}}
               </li>
               {{/each}}
             </ul>
@@ -168,7 +176,7 @@
             <ul class="pt-2">
               {{#each data.class.origins as |origin id|}}
               <li class="item flex flex-col" data-item-id="{{item._id}}">
-                  {{origin}}
+                {{origin}}
               </li>
               {{/each}}
             </ul>

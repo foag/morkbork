@@ -683,14 +683,14 @@ body {
   color: white;
 }
 
-.morkbork .rollable {
+.morkbork .rollable, .morkbork .item .action {
   color: white;
   border-bottom: 1px dashed white;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.morkbork .rollable:hover, .morkbork .rollable:focus {
+.morkbork .rollable:hover, .morkbork .rollable:focus, .morkbork .item .action:hover, .morkbork .item .action:focus {
   color: white;
   text-shadow: 0 0 10px #f142af;
   cursor: pointer;
@@ -714,6 +714,22 @@ body {
 
 .morkbork .font-secondary {
   font-family: "requiem", fantasy, serif;
+}
+
+.morkbork .increase, .morkbork .decrease, .morkbork .item-remove, .morkbork .item-edit {
+  border: none;
+  border-radius: 100%;
+  display: inline-block;
+  width: 14px;
+  background: transparent;
+  height: 14px;
+  line-height: 0.8rem;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  background-image: url(../img/char_bg.svg);
 }
 
 .morkbork .character-name {
