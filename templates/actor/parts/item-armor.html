@@ -2,7 +2,6 @@
     <span class="rollable mr-1" data-roll="{{ armorDamageReduction item.data.tier.value }}"
       data-label="{{item.name~}}">{{item.name}}</span>
       <span class="text-mb-yellow armor" data-item-id="{{ item._id }}">
-        {{ log item }}
         -{{ armorDamageReduction item.data.tier.value }} skada.
         
         <a data-tier="1" class="text-xs armor-tier {{#if (is 1 item.data.tier.value)}}white{{/if}}">1</a>

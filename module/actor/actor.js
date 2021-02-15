@@ -7,9 +7,13 @@ import { generateCharacter, generateItems } from '../actor/generator.js'
  */
 export class MorkBorkActor extends Actor {
     static async create (data, options) {
-        if (data instanceof Array) { return super.create(data, options) }
+        if (data instanceof Array) {
+            return super.create(data, options)
+        }
 
-        if (data.items) { return super.create(data, options) }
+        if (data.items) {
+            return super.create(data, options)
+        }
 
         data.items = []
 
@@ -18,6 +22,10 @@ export class MorkBorkActor extends Actor {
 
         const characterItems = await generateItems(data)
         data.items = characterItems
+
+        if (data.type != 'npc') {
+            data['token.actorLink'] = true
+        }
 
         console.log(data, options)
         super.create(data, options)

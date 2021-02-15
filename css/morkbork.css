@@ -34,6 +34,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'nimbus';
+  src: url("../fonts/nimbus/nimbusmono-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nimbus';
+  src: url("../fonts/nimbus/nimbusmono-oblique.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'nimbus';
+  src: url("../fonts/nimbus/nimbusmono-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nimbus';
+  src: url("../fonts/nimbus/nimbusmono-boldoblique.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
 .mb-0 {
   margin-bottom: 0rem;
 }

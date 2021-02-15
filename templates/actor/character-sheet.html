@@ -176,14 +176,20 @@
 
           <div class="border-r">
             <h1>Sorgligt ursprung</h1>
-
-            <ul class="pt-2">
+            {{ log data.class }}
+            {{ log actor.classObj}}
+            <p class="pt-2">
               {{#each data.class.origins as |origin id|}}
-              <li class="item flex flex-col" data-item-id="{{item._id}}">
                 {{origin}}
-              </li>
-              {{/each}}
-            </ul>
+              {{/each}}              
+            </p>
+
+            <p class="pt-2">
+              {{ actor.classObj.data.description }}
+            </p>
+            <p class="pt-2">
+              {{ data.biography }}
+            </p>
           </div>
           <div>What should we do with the drunken sailor?</div>
         </div>

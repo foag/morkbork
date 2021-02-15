@@ -1,5 +1,5 @@
 import { MbClassList } from '../config.js'
-import { objValueFromPath } from '../utils.js'
+import { objValueFromPath } from '../utils/utils.js'
 
 /**
  * Extend the basic ActorSheet with some very simple modifications

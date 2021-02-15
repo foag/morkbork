@@ -2,6 +2,7 @@ import { MbClassList, MbEntityList, MB } from '../config.js'
 
 export const generateCharacter = async function () {
     const name = await getName()
+    const biography = await getBiography()
 
     // Get class
     const mbClass = await getClass()
@@ -19,6 +20,7 @@ export const generateCharacter = async function () {
     return {
         name: name,
         data: {
+            biography,
             abilities,
             omens: {
                 value: omens,
@@ -49,13 +51,24 @@ export const generateItems = async function (baseData) {
     return [...supplies, weapon, armor].filter(item => item !== null)
 }
 
-function roller (die, mod = 0) {
+function roller (die, mod = 0, dontAllow = null) {
     // const roll = new Roll('@die', { die: die })
-    const roll = new Roll('@die+@mod', { die, mod })
+    let roll = new Roll('@die+@mod', { die, mod })
 
     roll.roll()
-    MB.log('ROLL', roll.results, roll.total)
-    return roll.total
+    let result = roll.total
+
+    if (dontAllow !== null && result === dontAllow) {
+        while (result === dontAllow) {
+            roll = new Roll('@die+@mod', { die, mod })
+
+            roll.roll()
+            result = roll.total
+        }
+    }
+
+    MB.log('ROLL', roll, result)
+    return result
 }
 
 function getOmens (mbClass) {
@@ -188,6 +201,7 @@ function getClassAttributes (mbClass) {
 
     const originRoll = startingInfo.origins ? roller(`1d${startingInfo.origins.options.length}`) : 0
     const origin = startingInfo.origins ? startingInfo.origins.options[originRoll - 1] : []
+    const originDescription = startingInfo.origins ? startingInfo.origins.description : ''
 
     MB.log('ABILITY ROLL', startingInfo.startingAbilities, abilities)
     MB.log('ORIGINS ROLL', origin)
@@ -195,7 +209,7 @@ function getClassAttributes (mbClass) {
     return {
         abilities,
         name: mbClass.data.name,
-        origins: [origin],
+        origins: [originDescription, origin].filter(item => item),
         mbClass
     }
 }
@@ -243,13 +257,34 @@ async function getClass () {
 }
 
 async function getName () {
-    const request = await fetch('systems/morkbork/module/actor/names.json')
-    const names = await request.json()
+    const request = await fetch('systems/morkbork/module/data/character.json')
+    const json = await request.json()
 
     const groupRoll = roller('1d6')
     const itemRoll = roller('1d8')
 
-    return names[groupRoll][itemRoll]
+    const name = json.names.find(name => name.cell[0] == groupRoll && name.cell[1] == itemRoll)
+    console.log(json, name)
+    return name.name
+}
+
+async function getBiography () {
+    const request = await fetch('systems/morkbork/module/data/character.json')
+    const json = await request.json()
+
+    const traits = json.traits
+    const bodies = json.bodies
+    const habits = json.habits
+
+    const traitsRoll1 = roller('1d20')
+    const traitsRoll2 = roller('1d20', '', traitsRoll1)
+
+    const bodyRoll = roller('1d20')
+    const habitRoll = roller('1d20')
+
+    const biography = `${traits[traitsRoll1 - 1]} och ${traits[traitsRoll2 - 1].toLowerCase()}. ${bodies[bodyRoll - 1]} ${habits[habitRoll - 1]}`
+
+    return biography
 }
 
 window.generateCharacter = generateCharacter

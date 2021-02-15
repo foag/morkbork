@@ -17,4 +17,12 @@ export default function () {
     Hooks.on('preCreateToken', (scene, data, options, userId) => {
         // console.log('preCreateToken', scene, data, options, userId)
     })
+
+    Hooks.on('preUpdateToken', (scene, actor, updatedData, options, userId) => {
+        console.log('preUpdateToken', actor, updatedData, options, updatedData)
+    })
+
+    Hooks.on('updateToken', (scene, actor, updatedData, options, userId) => {
+        console.log('preCreateToken', actor, updatedData, options, userId)
+    })
 }
