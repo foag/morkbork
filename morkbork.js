@@ -69,6 +69,10 @@ Hooks.once('init', async function () {
         return game.i18n.localize(CONFIG.MB.scrollTypes[scrollKey])
     })
 
+    Handlebars.registerHelper('armorDamageReduction', function (tier) {
+        return MB.armorTierDamageReduction[tier]
+    })
+
     Handlebars.registerHelper('for', function (from, to, incr, block) {
         let accum = ''
         for (let i = from; i < to; i += incr) { accum += block.fn(i) }

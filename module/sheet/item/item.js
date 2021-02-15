@@ -14,36 +14,6 @@ export class MorkBorkItem extends Item {
         const actorData = this.actor ? this.actor.data : {}
         const data = itemData.data
         const C = CONFIG.MB
-
-        if (itemData.type === 'armor') {
-            switch (Number(data.tier.value)) {
-            case 0:
-                data.damageReductionDice = '-1'
-                data.agilityPenalty = null
-                data.defencePenalty = null
-                break
-            case 1:
-                data.damageReductionDice = '-1d2'
-                data.agilityPenalty = null
-                data.defencePenalty = null
-                break
-            case 2:
-                data.damageReductionDice = '-1d4'
-                data.agilityPenalty = 2
-                data.defencePenalty = 2
-                break
-            case 3:
-                data.damageReductionDice = '-1d6'
-                data.agilityPenalty = 4
-                data.defencePenalty = 2
-                break
-            default:
-                data.damageReductionDice = '0'
-                data.agilityPenalty = null
-                data.defencePenalty = null
-                break
-            }
-        }
     }
 
     /**

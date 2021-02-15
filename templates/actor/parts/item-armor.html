@@ -1,12 +1,17 @@
 <div>
-    <span class="action mr-1" data-roll="{{ item.data.damageReductionDice }}"
+    <span class="rollable mr-1" data-roll="{{ armorDamageReduction item.data.tier.value }}"
       data-label="{{item.name~}}">{{item.name}}</span>
       <span class="text-mb-yellow armor" data-item-id="{{ item._id }}">
-        {{item.data.damageReductionDice }} skada.
+        {{ log item }}
+        -{{ armorDamageReduction item.data.tier.value }} skada.
         
         <a data-tier="1" class="text-xs armor-tier {{#if (is 1 item.data.tier.value)}}white{{/if}}">1</a>
-        <a data-tier="2" class="text-xs armor-tier {{#if (is 2 item.data.tier.value)}}white{{/if}} {{#if (is 1 item.data.tier.max)}}hidden{{/if}}">2</a>
+        {{#if (notIs 1 item.data.tier.max)}}
+        <a data-tier="2" class="text-xs armor-tier {{#if (is 2 item.data.tier.value)}}white{{/if}}">2</a>
+        {{/if}}
+        {{#if (is 3 item.data.tier.max)}}
         <a data-tier="3" class="text-xs armor-tier {{#if (is 3 item.data.tier.value)}}white{{/if}} {{#if (is 2 item.data.tier.max)}}hidden{{/if}}">3</a>
+        {{/if}}
         <br>
 
         <small>

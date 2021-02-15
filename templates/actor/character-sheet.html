@@ -13,7 +13,7 @@
           </div>
 
           <ul class=" pl-8">
-            <li class="flex mb-1">
+            <li class="flex mb-1 items-center">
               <div class="w-24">
                 <span>{{ localize "MB.Hitpoints" }}:</span>
               </div>
@@ -30,9 +30,9 @@
               </div>
             </li>
 
-            <li class="flex mb-1">
+            <li class="flex mb-1 items-center">
               <div class="w-24">
-                <span class="rollable" >{{ localize "MB.Omens" }}:</span>
+                <span class="rollable reroll-omens">{{ localize "MB.Omens" }}:</span>
               </div>
               <div>
                 <span class="inline-block w-8">
@@ -47,9 +47,9 @@
               </div>
             </li>
 
-            <li class="flex mb-1">
+            <li class="flex mb-1 items-center">
               <div class="w-24">
-                <span class="rollable" data-roll="1d4+{{data.abilities.presence.value}}">{{ localize "MB.Powers"}}:</span>
+                <span class="rollable reroll-powers">{{ localize "MB.Powers"}}:</span>
               </div>
               <div>
                 <span class="inline-block w-8">
@@ -64,7 +64,7 @@
               </div>
             </li>
 
-            <li class="flex mb-1">
+            <li class="flex mb-1 items-center">
               <div class="w-24">
                 <span>{{ localize "MB.ItemSilver" }}:</span>
               </div>

@@ -254,7 +254,12 @@ export class MorkBorkActorSheet extends ActorSheet {
         // Allow increase/decrease for values
         html.find('.increase, .decrease').click(this._onIncreaseDecrease.bind(this))
 
+        // Upgrade/downgrade armor tier from buttons
         html.find('.armor-tier').click(this._onSetArmorTier.bind(this))
+
+        // Re-roll daily abilities armor tier from buttons
+        html.find('.reroll-omens').click(this._onReRollOmens.bind(this))
+        html.find('.reroll-powers').click(this._onReRollPowers.bind(this))
 
         // Update Inventory Item
         html.find('.item-edit').click(ev => {
@@ -337,6 +342,40 @@ export class MorkBorkActorSheet extends ActorSheet {
 
         await item.update({
             'data.tier.value': tier
+        })
+    }
+
+    _onReRollOmens (event) {
+        Dialog.confirm({
+            title: 'Slå om Järtecken',
+            content: `Detta slår <strong>${this.actor.data.data.class.mbClass.data.data.baseOmensDice}</strong> för nytt antal Järtecken och återställer förbrukade Järtecken.`,
+            yes: () => {
+                const omensRoll = new Roll(this.actor.data.data.class.mbClass.data.data.baseOmensDice).roll()
+
+                this.actor.update({
+                    'data.omens.max': omensRoll.total,
+                    'data.omens.value': omensRoll.total
+                })
+            },
+            no: () => null,
+            defaultYes: false
+        })
+    }
+
+    _onReRollPowers (event) {
+        Dialog.confirm({
+            title: 'Slå om Krafter',
+            content: `Detta slår <strong>1d4 + NÄRVARO (${this.actor.data.data.abilities.presence.value}) </strong> för nytt antal Krafter och återställer förbrukade Krafter.`,
+            yes: () => {
+                const powersRoll = new Roll('1d4 + @presence', { presence: this.actor.data.data.abilities.presence.value }).roll()
+
+                this.actor.update({
+                    'data.powers.max': powersRoll.total,
+                    'data.powers.value': powersRoll.total
+                })
+            },
+            no: () => null,
+            defaultYes: false
         })
     }
 

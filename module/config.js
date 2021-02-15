@@ -23,10 +23,21 @@ MB.abilities = {
  * @type {Object}
  */
 MB.armorTier = {
-    0: 'MB.ArmorShield',
+    0: 'MB.ArmorNone',
     1: 'MB.ArmorLight',
     2: 'MB.ArmorMedium',
     3: 'MB.ArmorHeavy'
+}
+
+/**
+ * The set of armor tiers and damage reductions
+ * @type {Object}
+ */
+MB.armorTierDamageReduction = {
+    0: '0',
+    1: '1d2',
+    2: '1d4',
+    3: '1d6'
 }
 
 /* -------------------------------------------- */
