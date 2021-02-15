@@ -129,6 +129,22 @@
               </li>
               {{/each}}
             </ul>
+
+            <h1 class="mt-4">Sorgligt ursprung</h1>
+            {{ log data.class }}
+            {{ log actor.classObj}}
+            <p class="pt-2">
+              {{#each data.class.origins as |origin id|}}
+              {{origin}}
+              {{/each}}
+            </p>
+
+            <p class="pt-2">
+              {{ actor.classObj.data.description }}
+            </p>
+            <p class="pt-2">
+              {{ data.biography }}
+            </p>
           </div>
           <div>
             <h1>Utrustning</h1>
@@ -138,13 +154,13 @@
 
               <li class="item flex mb-1" data-item-id="{{item._id}}">
                 {{#if (is item.type "gear")}}
-                  <div>
-                    {{#if (notIs item.data.quantity 0)}}
-                    <span>{{item.data.quantity}}</span>
-                    {{/if}}
-                    
-                    {{item.name}}
-                    <span class="text-mb-yellow">{{item.data.description}}</span>
+                <div>
+                  {{#if (notIs item.data.quantity 0)}}
+                  <span>{{item.data.quantity}}</span>
+                  {{/if}}
+
+                  {{item.name}}
+                  <span class="text-mb-yellow">{{item.data.description}}</span>
                 </div>
                 {{/if}}
 
@@ -164,7 +180,7 @@
                 {{/if}}
 
                 {{#if (is item.type "armor")}}
-                  {{> "systems/morkbork/templates/actor/parts/item-armor.html" item = item}}
+                {{> "systems/morkbork/templates/actor/parts/item-armor.html" item = item}}
                 {{/if}}
 
                 {{> "systems/morkbork/templates/actor/parts/item-controls.html" item = item}}
@@ -173,25 +189,6 @@
             </ul>
 
           </div>
-
-          <div class="border-r">
-            <h1>Sorgligt ursprung</h1>
-            {{ log data.class }}
-            {{ log actor.classObj}}
-            <p class="pt-2">
-              {{#each data.class.origins as |origin id|}}
-                {{origin}}
-              {{/each}}              
-            </p>
-
-            <p class="pt-2">
-              {{ actor.classObj.data.description }}
-            </p>
-            <p class="pt-2">
-              {{ data.biography }}
-            </p>
-          </div>
-          <div>What should we do with the drunken sailor?</div>
         </div>
       </div>
     </div>
