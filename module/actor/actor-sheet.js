@@ -40,6 +40,7 @@ export class MorkBorkActorSheet extends ActorSheet {
         if (this.actor.data.type == 'character') {
             dataActor.classNameList = await MbClassList.getClasses(true)
             dataActor.classObjectList = await MbClassList.getClasses(false)
+
             this._prepareCharacterItems(data)
         } else if (this.actor.data.type == 'npc') {
             this._prepareNpcItems(data)
@@ -261,6 +262,9 @@ export class MorkBorkActorSheet extends ActorSheet {
         html.find('.reroll-omens').click(this._onReRollOmens.bind(this))
         html.find('.reroll-powers').click(this._onReRollPowers.bind(this))
 
+        // Generate character data
+        html.find('.generate-character-btn').click(this._onGenerateCharacter.bind(this))
+
         // Update Inventory Item
         html.find('.item-edit').click(ev => {
             const li = $(ev.currentTarget).parents('.item')
@@ -331,6 +335,10 @@ export class MorkBorkActorSheet extends ActorSheet {
         }
 
         this.actor.update(data)
+    }
+
+    _onGenerateCharacter (event) {
+        this.actor.generate()
     }
 
     async _onSetArmorTier (event) {

@@ -46,6 +46,11 @@
       "templates": [
         "base"
       ],
+      "creationData": {
+        "isRolled": false,
+        "class": null,
+        "name": false
+      },
       "experiences": 0,
       "powers": {
         "value": 0,

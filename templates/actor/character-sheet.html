@@ -1,5 +1,5 @@
-<form class="{{cssClass}}" autocomplete="off">
-
+<form class="{{cssClass}}" autocomplete="off"> 
+  {{ log actor }}
   <div class="flex">
     <div class="w-full px-8 h-full">
       <div class="w-full flex items-center justify-center flex-col">
@@ -99,97 +99,11 @@
         </div>
         <!-- /ABILITIES -->
 
-        <div class="character-grid w-full grid grid-cols-2">
-          <div class="border-r">
-            <h1>{{ actor.classObj.name }}</h1>
-
-            <ul class="pt-2">
-              {{#each actor.classObj.data.modifiers as |item id|}}
-              <li class="item flex flex-col" data-item-id="{{item._id}}">
-                {{item}}
-              </li>
-              {{/each}}
-            </ul>
-
-            <ul class="pt-2">
-              {{#each data.class.abilities as |item id|}}
-              <li class="item flex flex-col" data-item-id="{{item._id}}">
-                {{item}}
-              </li>
-              {{/each}}
-            </ul>
-
-            <ul>
-              {{#each actor.features as |item id|}}
-              <li class="item flex flex-col" data-item-id="{{item._id}}">
-                <strong class="mr-1">
-                  {{item.name~}}
-                </strong>
-                {{ item.data.description }}
-              </li>
-              {{/each}}
-            </ul>
-
-            <h1 class="mt-4">Sorgligt ursprung</h1>
-            {{ log data.class }}
-            {{ log actor.classObj}}
-            <p class="pt-2">
-              {{#each data.class.origins as |origin id|}}
-              {{origin}}
-              {{/each}}
-            </p>
-
-            <p class="pt-2">
-              {{ actor.classObj.data.description }}
-            </p>
-            <p class="pt-2">
-              {{ data.biography }}
-            </p>
-          </div>
-          <div>
-            <h1>Utrustning</h1>
-            <ul class="mt-2">
-              {{#each actor.carriables as |item id|}}
-
-
-              <li class="item flex mb-1" data-item-id="{{item._id}}">
-                {{#if (is item.type "gear")}}
-                <div>
-                  {{#if (notIs item.data.quantity 0)}}
-                  <span>{{item.data.quantity}}</span>
-                  {{/if}}
-
-                  {{item.name}}
-                  <span class="text-mb-yellow">{{item.data.description}}</span>
-                </div>
-                {{/if}}
-
-                {{#if (is item.type "weapon")}}
-                <span class="action mr-1" data-roll="{{item.data.damageDice}}" data-label="{{item.name~}}">
-                  {{item.name~}}
-                </span>
-                <span class="text-mb-yellow">{{item.data.damageDice}} skada.</span>
-                {{/if}}
-
-                {{#if (is item.type "scroll")}}
-                <div>
-                  <span class="rollable mr-1" data-roll="1d10" data-label="{{item.name~}}">{{item.name}} ({{ scrollLabel
-                    item.data.scrollType }} {{ localize "MB.Scroll" }})</span>
-                  <span class="text-mb-yellow">{{item.data.description}}</span>
-                </div>
-                {{/if}}
-
-                {{#if (is item.type "armor")}}
-                {{> "systems/morkbork/templates/actor/parts/item-armor.html" item = item}}
-                {{/if}}
-
-                {{> "systems/morkbork/templates/actor/parts/item-controls.html" item = item}}
-              </li>
-              {{/each}}
-            </ul>
-
-          </div>
-        </div>
+        {{#if actor.data.creationData.isRolled }}
+        {{> "systems/morkbork/templates/actor/parts/character-grid.html" actor=actor data=data}}
+        {{else}}
+        {{> "systems/morkbork/templates/actor/parts/character-create.html" actor=actor data=data}}
+        {{/if}}
       </div>
     </div>
   </div>

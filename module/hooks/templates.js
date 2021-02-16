@@ -9,6 +9,8 @@ export class TemplatesHelper {
         const templatePaths = [
 
             // Actor Sheet Partials
+            'systems/morkbork/templates/actor/parts/character-create.html',
+            'systems/morkbork/templates/actor/parts/character-grid.html',
             'systems/morkbork/templates/actor/parts/actor-encumbrance.html',
             'systems/morkbork/templates/actor/parts/item-armor.html',
             'systems/morkbork/templates/actor/parts/item-controls.html',

@@ -1,5 +1,4 @@
-import { MbClassList, MbEntityList } from '../config.js'
-import { generateCharacter, generateItems } from '../actor/generator.js'
+import { ActorGenerator } from '../actor/generator.js'
 
 /**
  * Extend the base Actor entity by defining a custom roll data structure which is ideal for the Simple system.
@@ -17,18 +16,35 @@ export class MorkBorkActor extends Actor {
 
         data.items = []
 
-        const characterData = await generateCharacter()
-        data = mergeObject(data, characterData)
-
-        const characterItems = await generateItems(data)
-        data.items = characterItems
-
-        if (data.type != 'npc') {
+        if (data.type !== 'npc') {
             data['token.actorLink'] = true
         }
 
-        console.log(data, options)
         super.create(data, options)
+    }
+
+    async generate () {
+        let data = {
+            items: []
+        }
+
+        const creationData = this.data.data.creationData
+        const generator = new ActorGenerator()
+
+        const characterData = await generator.character(creationData.class, creationData.name)
+        data = mergeObject(data, characterData)
+
+        const characterItems = await generator.items(data)
+        data.items = characterItems
+
+        console.log(generator)
+
+        // Remove data for generation
+        data = mergeObject(data, {
+            'data.creationData.isRolled': true
+        })
+
+        super.update(data)
     }
 
     /**

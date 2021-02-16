@@ -9,7 +9,7 @@ import * as initHooks from './module/hooks/init.js'
 
 Hooks.once('init', async function () {
     CONFIG.MB = MB
-    CONFIG.debug.hooks = true
+    // CONFIG.debug.hooks = true
 
     game.morkbork = {
         MorkBorkActor,

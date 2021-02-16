@@ -1,6 +1,7 @@
 .char-sign {
     font-family: $font-icons;
     background-image: url('../img/char_bg.svg');
+    text-shadow: 2px 2px $mb-yellow
 }
 
 .character-grid {

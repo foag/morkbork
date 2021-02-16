@@ -434,6 +434,10 @@ body {
   color: #FFE82C;
 }
 
+.bg-mb-yellow {
+  background-color: #FFE82C;
+}
+
 /* Styles limited to morkbork sheets */
 .morkbork {
   /* ----------------------------------------- */
@@ -699,6 +703,7 @@ body {
 .morkbork .char-sign {
   font-family: "agathodaimonregular";
   background-image: url("../img/char_bg.svg");
+  text-shadow: 2px 2px #FFE82C;
 }
 
 .morkbork .character-grid > div {
