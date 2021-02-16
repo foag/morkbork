@@ -1,6 +1,6 @@
 {
   "name": "morkbork",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "MorkBork",
   "scripts": {
     "build": "gulp dist",
