@@ -414,7 +414,7 @@ export class ActorGenerator {
 
         const name = json.names.find(name => name.cell[0] == groupRoll && name.cell[1] == itemRoll)
 
-        this.log('RESULT', name)
+        this.log('RESULT', name.name)
 
         return name.name
     }
