@@ -44,7 +44,9 @@ export class MorkBorkActor extends Actor {
             'data.creationData.isRolled': true
         })
 
-        super.update(data)
+        await super.update(data)
+
+        generator.showRollLogDialog()
     }
 
     /**

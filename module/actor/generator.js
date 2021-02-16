@@ -75,7 +75,13 @@ export class ActorGenerator {
      * @param {Number} dontAllow
      */
     roller (die, mod = 0, dontAllow = null) {
-        let roll = new Roll('@die+@mod', { die, mod })
+        let roll
+
+        if (mod) {
+            roll = new Roll('@die+@mod', { die, mod })
+        } else {
+            roll = new Roll('@die', { die })
+        }
 
         roll.roll()
         let result = roll.total
@@ -89,44 +95,91 @@ export class ActorGenerator {
             }
         }
 
-        MB.log('ROLL', roll, result)
+        this.log('ROLL', result, roll)
         return result
     }
 
+    log (name, description = '', roll = null) {
+        this.rollLog.push({
+            name,
+            description,
+            roll
+        })
+    }
+
     /**
+     * Get class from selection or roll 1d@{classList.length}
+     *
+     * @param {String} selectedClass
+     */
+    async getClass (selectedClass = null) {
+        const classList = await MbClassList.getClasses(false)
+        this.log('GETCLASS', `${selectedClass || 'Ingen/slumpad'} vald.`)
+
+        if (selectedClass) {
+            let foundClass = classList.find(item => item.data.name === selectedClass)
+
+            if (!foundClass) {
+                foundClass = classList.find(item => item.data.name === 'Classless')
+            }
+
+            return foundClass
+        }
+
+        const classRoll = this.roller(`1d${classList.length - 1}`)
+
+        this.log('RESULT', `${classList[classRoll].data.name} slagen.`)
+
+        return classList[classRoll]
+    }
+
+    /**
+     *  Roll starting Omens MÖRK BORG s.38
      *
      * @param {MBActorClass} mbClass
      */
     getOmens (mbClass) {
+        this.log('GETOMENS')
+
         const omensDice = mbClass.data.data.baseOmensDice
         const omenRoll = this.roller(omensDice)
+
+        this.log('RESULT', omenRoll)
 
         return omenRoll
     }
 
     /**
+     * Roll starting abilities MÖRK BORG s.34
      *
      * @param {Array} abilities
      */
     getPowers (abilities) {
+        this.log('GETABILITIES')
         const presence = abilities.presence.value
         const powersRoll = this.roller('1d4', presence)
 
-        return Math.max(0, powersRoll)
+        const powers = Math.max(0, powersRoll)
+
+        this.log('RESULT', powers)
+
+        return powers
     }
 
     /**
+     *  Roll starting hit points MÖRK BORG s.28
      *
      * @param {MBActorClass} mbClass
      * @param {Array} abilities
      */
     getHitPoints (mbClass, abilities) {
+        this.log('GETHITPOINTS')
         const startingInfo = mbClass.data.data.startingInfo
 
         const hitPointRoll = this.roller(startingInfo.startingHitPointDice, abilities[startingInfo.startingHitPointAtt].value)
         const hitPoint = Math.max(1, hitPointRoll)
 
-        MB.log('HIT POINTS', hitPoint, startingInfo.startingHitPointDice, startingInfo.startingHitPointAtt, abilities[startingInfo.startingHitPointAtt].value)
+        this.log('RESULT', hitPoint)
 
         return {
             value: hitPoint,
@@ -135,20 +188,24 @@ export class ActorGenerator {
     }
 
     /**
+     * Roll starting silver MÖRK BORG s.18
      *
      * @param {MBActorClass} mbClass
      */
     getSilver (mbClass) {
+        this.log('GETSILVER')
         const startingInfo = mbClass.data.data.startingInfo
 
         const silverRoll = this.roller(startingInfo.startingSilverDice)
         const silver = silverRoll * startingInfo.startingSilverMod
 
-        MB.log('Silver', silver, silverRoll, startingInfo.startingSilverMod)
+        this.log('RESULT', silver)
+
         return silver
     }
 
     /**
+     * Get item from collection
      *
      * @param {Collection} list
      * @param {Number} group
@@ -160,10 +217,9 @@ export class ActorGenerator {
 
         if (!gearItem) {
             MB.log(group, order)
+            this.log('RESULT', 'Inget')
             return null
         }
-
-        MB.log('GEAR ITEM', gearItem.data.data.startingEquipment)
 
         if (gearItem.data.data.startingEquipment.quantity) {
             gearItem.data.data.quantity = gearItem.data.data.startingEquipment.quantity
@@ -173,23 +229,32 @@ export class ActorGenerator {
             gearItem.data.data.quantity = gearItem.data.data.quantity + abilities[gearItem.data.data.startingEquipment.modAbility].value
         }
 
+        this.log('RESULT', gearItem.data.name)
+
         return gearItem
     }
 
     /**
+     * Get random scroll of type
      *
      * @param {String} scrollType
      */
     async getScroll (scrollType) {
+        this.log('GETSCROLL', scrollType)
+
         const scrollList = await MbEntityList.getEntities('scrolls')
         const scrolls = scrollList.filter(item => item.data.data.scrollType === scrollType)
 
         const scrollsRoll = this.roller(`1d${scrolls.length}`)
+        const scroll = scrolls[scrollsRoll - 1]
 
-        return scrolls[scrollsRoll - 1]
+        this.log('RESULT', scroll)
+
+        return scroll
     }
 
     /**
+     * Roll starting equipment MÖRK BORG s.19
      *
      * @param {MBActorClass} mbClass
      * @param {Array} abilities
@@ -199,19 +264,19 @@ export class ActorGenerator {
         const gear = gearList.filter(item => item.data.data.startingEquipment)
         const supplyRoll = this.roller('1d4')
         const items = []
+        // TODO STARTING SUPPLIES
 
+        this.log('GETSTARTINGGEAR', 't6')
         const startingGearRoll1 = this.roller('1d6')
         const startingGear1 = this.getItem(gear, 1, startingGearRoll1, abilities)
 
+        this.log('GETSTARTINGGEAR', 't12')
         const startingGearRoll2 = this.roller('1d12')
         const startingGear2 = startingGearRoll2 !== 5 ? this.getItem(gear, 2, startingGearRoll2, abilities) : await this.getScroll('unclean')
 
+        this.log('GETSTARTINGGEAR', 't12')
         const startingGearRoll3 = this.roller('1d12')
         const startingGear3 = startingGearRoll3 !== 2 ? this.getItem(gear, 3, startingGearRoll3, abilities) : await this.getScroll('sacred')
-
-        console.log('startingGear1', startingGearRoll1, startingGear1)
-        console.log('startingGear2', startingGearRoll2, startingGear2)
-        console.log('startingGear3', startingGearRoll3, startingGear3)
 
         return [startingGear1, startingGear2, startingGear3]
     }
@@ -221,13 +286,14 @@ export class ActorGenerator {
      * @param {MBActorClass} mbClass
      */
     async getWeapon (mbClass) {
+        this.log('GETWEAPON')
+
         const startingInfo = mbClass.data.data.startingInfo
         const weaponsList = await MbEntityList.getEntities('weapons')
         const weapons = weaponsList.filter(item => item.data.data.startingEquipment)
 
         const weaponRoll = this.roller(startingInfo.weaponsDice)
         const weapon = this.getItem(weapons, 1, weaponRoll)
-        console.log('WEAPONS', weapon, weaponRoll)
 
         return weapon
     }
@@ -237,12 +303,14 @@ export class ActorGenerator {
      * @param {MBActorClass} mbClass
      */
     async getArmor (mbClass) {
+        this.log('GETARMOR')
         const startingInfo = mbClass.data.data.startingInfo
         const armors = await MbEntityList.getEntities('armor')
 
         const armorRoll = this.roller(startingInfo.armorDice)
         const armor = armors[armorRoll - 1]
-        console.log('ARMOR', armor, armorRoll)
+
+        this.log('RESULT', armor.data.name)
 
         return armor
     }
@@ -255,23 +323,26 @@ export class ActorGenerator {
         const startingInfo = mbClass.data.data.startingInfo
         const abilities = []
 
+        this.log('GETCLASSATTRIBUTES')
         for (let i = 1; i <= startingInfo.startingAbilities; i++) {
             const specialtyRoll = this.roller(`1d${startingInfo.abilities.options.length}`)
             const ability = startingInfo.abilities.options[specialtyRoll - 1]
 
             if (abilities.includes(ability)) {
                 i--
+                this.log('RESULT', 'Attribut fanns redan, slår om.')
             } else {
                 abilities.push(ability)
+                this.log('RESULT', ability)
             }
         }
 
+        this.log('GETCLASSORIGINS')
         const originRoll = startingInfo.origins ? this.roller(`1d${startingInfo.origins.options.length}`) : 0
         const origin = startingInfo.origins ? startingInfo.origins.options[originRoll - 1] : []
         const originDescription = startingInfo.origins ? startingInfo.origins.description : ''
 
-        MB.log('ABILITY ROLL', startingInfo.startingAbilities, abilities)
-        MB.log('ORIGINS ROLL', origin)
+        this.log('RESULT', `${origin} ${originDescription}`)
 
         return {
             abilities,
@@ -286,12 +357,15 @@ export class ActorGenerator {
      * @param {MBActorClass} mbClass
      */
     async getAbilities (mbClass) {
-        MB.log('CLASS', mbClass.data.name, mbClass)
         const startingInfo = mbClass.data.data.startingInfo
 
+        this.log('GETSTRENGTH')
         const strength = this.getAbilityPoint(startingInfo.strMod)
+        this.log('GETAGILITY')
         const agility = this.getAbilityPoint(startingInfo.agiMod)
+        this.log('GETPRESENCE')
         const presence = this.getAbilityPoint(startingInfo.preMod)
+        this.log('GETTOUGHNESS')
         const toughness = this.getAbilityPoint(startingInfo.touMod)
 
         return {
@@ -321,35 +395,17 @@ export class ActorGenerator {
 
         const abilityKey = Object.keys(abilityMap).find(max => abilityRoll <= max)
 
+        this.log('RESULT', abilityMap[abilityKey])
+
         return { value: parseInt(abilityMap[abilityKey]) }
-    }
-
-    /**
-     *
-     * @param {String} selectedClass
-     */
-    async getClass (selectedClass = null) {
-        const classList = await MbClassList.getClasses(false)
-
-        if (selectedClass) {
-            let foundClass = classList.find(item => item.data.name === selectedClass)
-
-            if (!foundClass) {
-                foundClass = classList.find(item => item.data.name === 'Classless')
-            }
-
-            return foundClass
-        }
-
-        const classRoll = this.roller(`1d${classList.length - 1}`)
-
-        return classList[classRoll]
     }
 
     /**
      * Get name from character library
      */
     async getName () {
+        this.log('GETNAME')
+
         const request = await fetch('systems/morkbork/module/data/character.json')
         const json = await request.json()
 
@@ -357,7 +413,9 @@ export class ActorGenerator {
         const itemRoll = this.roller('1d8')
 
         const name = json.names.find(name => name.cell[0] == groupRoll && name.cell[1] == itemRoll)
-        console.log(json, name)
+
+        this.log('RESULT', name)
+
         return name.name
     }
 
@@ -365,6 +423,7 @@ export class ActorGenerator {
      * Get biography from character library
      */
     async getBiography () {
+        this.log('GETBIO')
         const request = await fetch('systems/morkbork/module/data/character.json')
         const json = await request.json()
 
@@ -380,7 +439,41 @@ export class ActorGenerator {
 
         const biography = `${traits[traitsRoll1 - 1]} och ${traits[traitsRoll2 - 1].toLowerCase()}. ${bodies[bodyRoll - 1]} ${habits[habitRoll - 1]}`
 
+        this.log('RESULT', biography)
+
         return biography
+    }
+
+    showRollLogDialog () {
+        const htmlLines = []
+
+        this.rollLog.forEach(log => {
+            if (!log.roll) {
+                if (log.name !== 'RESULT') {
+                    htmlLines.push(`<small class="text-xs font-bold">${log.name} ${log.description || ''}</small><br>`)
+                } else {
+                    htmlLines.push(`Resultat: ${log.description || ''}<br><br>`)
+                }
+            } else {
+                const roll = log.roll
+                htmlLines.push(`Slog <pre class="inline-block text-white bg-black px-1">${roll._formula}</pre> fick ${roll.results.join('')} (${roll.total})<br>`)
+            }
+        })
+
+        const html = `<div>${htmlLines.join('')}</div>`
+
+        const d = new Dialog({
+            title: 'Resultat',
+            content: html,
+            default: 'one',
+            buttons: {
+                one: {
+                    icon: '<i class="fas fa-check"></i>',
+                    label: 'Ok'
+                }
+            }
+        })
+        d.render(true)
     }
 }
 
