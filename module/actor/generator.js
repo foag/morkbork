@@ -84,6 +84,7 @@ export class ActorGenerator {
 
             const newMaxRoll = this.roller('1d6')
             data['data.health.max'] = actorData.data.health.max + newMaxRoll
+            data['data.health.value'] = data['data.health.max']
 
             this.log('RESULT', `Ny TP-max: ${data['data.health.max']}`)
         }
