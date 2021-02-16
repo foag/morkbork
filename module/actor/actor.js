@@ -1,4 +1,5 @@
 import { ActorGenerator } from '../actor/generator.js'
+import { ActorAvatar } from '../actor/avatar.js'
 
 /**
  * Extend the base Actor entity by defining a custom roll data structure which is ideal for the Simple system.
@@ -24,6 +25,7 @@ export class MorkBorkActor extends Actor {
     }
 
     async generate () {
+        const actorData = this.data
         let data = {
             items: []
         }
@@ -37,13 +39,15 @@ export class MorkBorkActor extends Actor {
         const characterItems = await generator.items(data)
         data.items = characterItems
 
-        console.log(generator)
-
+        console.log(generator, actorData.name)
+        const name = creationData.name ? data.name : actorData.name
+        const actorAvatar = new ActorAvatar()
+        const avatar = await actorAvatar.make(name.charAt(0))
         // Remove data for generation
         data = mergeObject(data, {
             'data.creationData.isRolled': true,
-            img: data.data.class.mbClass.data.img
-            // img: generator.getAvatar()
+            // img: data.data.class.mbClass.data.img
+            img: avatar
         })
 
         await super.update(data)

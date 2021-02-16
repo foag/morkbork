@@ -5,12 +5,11 @@
       <div class="w-full flex items-center justify-center flex-col">
         <div class="w-full grid grid-cols-3">
           <div class="flex items-center">
-            <img class="profile-img rounded-full" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
-            <input class="text-6xl mb-2 color-white font-secondary character-name" name="name" value="{{ actor.name }}">
+            <img src="{{actor.classObj.img}}" title="{{actor.classObj.name}}" height="100" width="100" class="profile-img rounded-full" />
+            <input class="text-6xl mb-2 color-white font-secondary character-name" name="name" value="{{ actor.name }}" />
           </div>
-          <div>
-            <div class="char-sign text-6xl text-black w-20 h-20 flex items-center justify-center my-4 mx-auto">
-              {{firstChar actor.name}}</div>
+          <div class="py-1">
+              <img class="profile-img rounded-full border-none" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
           </div>
 
           <ul class=" pl-8">

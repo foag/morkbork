@@ -108,33 +108,6 @@ export class ActorGenerator {
         })
     }
 
-    getAvatar () {
-        return 'systems/morkbork/icons/bestiary/default.png'
-
-        const app = new PIXI.Application({
-            width: 100, height: 100, backgroundColor: 0x1099bb
-        })
-        // document.body.appendChild(app.view);
-
-        const container = new PIXI.Container()
-        container.x = app.screen.width / 2
-        container.y = app.screen.height / 2
-        app.stage.addChild(container)
-
-        const basicText = new PIXI.Text('Basic text in pixi')
-        basicText.x = 50
-        basicText.y = 100
-        container.addChild(basicText)
-
-        // const bg = PIXI.Sprite.from('systems/morkbork/icons/bestiary/default.png')
-        // bg.width = app.screen.width
-        // bg.height = app.screen.height
-        // app.stage.addChild(bg)
-        // console.log(app)
-
-        return app.renderer.plugins.extract.image(container)
-    }
-
     /**
      * Get class from selection or roll 1d@{classList.length}
      *
@@ -526,7 +499,7 @@ window.mockCharacter = async function () {
     console.log(generator)
 }
 
-window.makeAvatar = async function () {
+window.makeAvatar = async function (char = 'Z') {
     const app = new PIXI.Application({
         width: 100, height: 100, backgroundColor: 0x1099bb
     })
@@ -537,9 +510,13 @@ window.makeAvatar = async function () {
     // document.body.appendChild(app.view);
     const style = new PIXI.TextStyle({
         fontFamily: 'agathodaimonregular',
-        fontSize: 36,
-        fill: ['#ffffff', '#00ff99'], // gradient
-        stroke: '#4a1850'
+        fontSize: 50,
+        fill: '#000000',
+        dropShadow: true,
+        dropShadowColor: '#FFE82C',
+        dropShadowBlur: 0,
+        dropShadowAngle: Math.PI / 6,
+        dropShadowDistance: 3
     })
 
     const container = new PIXI.Container()
@@ -547,17 +524,26 @@ window.makeAvatar = async function () {
     container.y = 100
     app.stage.addChild(container)
 
-    const bg = PIXI.Sprite.from('systems/morkbork/img/char_bg.svg')
+    const img = await preloadImage('systems/morkbork/img/char_bg.png')
+    const bg = await PIXI.Sprite.from(img)
     bg.width = app.screen.width
     bg.height = app.screen.height
     container.addChild(bg)
 
-    const basicText = new PIXI.Text('z', style)
-    basicText.x = 0
-    basicText.y = 0
+    const basicText = new PIXI.Text(char, style)
+    basicText.x = 50
+    basicText.y = 50
+    basicText.anchor.set(0.4, 0.5)
     container.addChild(basicText)
 
-    // console.log(app)
-
     $('#chat-log').append('<img src="' + app.renderer.plugins.extract.base64(container) + '">')
+}
+
+function preloadImage (src) {
+    return new Promise((resolve, reject) => {
+        const img = new Image()
+        img.onload = () => resolve(img)
+        img.onerror = reject
+        img.src = src
+    })
 }
