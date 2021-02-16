@@ -1,5 +1,5 @@
 export class ActorAvatar {
-    async make (char = 'Z') {
+    async make () {
         const app = new PIXI.Application({
             width: 200, height: 200, backgroundColor: 0x1099bb
         })
@@ -30,13 +30,20 @@ export class ActorAvatar {
         bg.height = app.screen.height
         container.addChild(bg)
 
-        const basicText = new PIXI.Text(char, style)
+        const basicText = new PIXI.Text(this.getRandomChar(), style)
         basicText.x = 100
         basicText.y = 100
         basicText.anchor.set(0.4, 0.5)
         container.addChild(basicText)
 
         return await app.renderer.plugins.extract.base64(container, 'image/png', 1)
+    }
+
+    getRandomChar () {
+        const text = ''
+        const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÅabcdefghijklmnopqrstuvwxyzå'
+
+        return possible.charAt(Math.floor(Math.random() * possible.length))
     }
 
     preloadImage (src) {

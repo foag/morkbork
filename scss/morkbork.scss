@@ -231,6 +231,10 @@ body {
     }
   }
 
+  .actor-avatar:hover span {
+    display: inline-block!important;
+  }
+
   /* ----------------------------------------- */
   /*  TinyMCE                                  */
   /* ----------------------------------------- */

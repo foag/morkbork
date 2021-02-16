@@ -265,6 +265,9 @@ export class MorkBorkActorSheet extends ActorSheet {
         // Generate character data
         html.find('.generate-character-btn').click(this._onGenerateCharacter.bind(this))
 
+        // Level up
+        html.find('.actor-avatar').on('click', this._onActorLevelUp.bind(this))
+
         // Update Inventory Item
         html.find('.item-edit').click(ev => {
             const li = $(ev.currentTarget).parents('.item')
@@ -307,6 +310,34 @@ export class MorkBorkActorSheet extends ActorSheet {
                 li.addEventListener('dragstart', handler, false)
             })
         }
+    }
+
+    _onActorLevelUp (event) {
+        event.preventDefault()
+
+        const html = `
+            <h2 class="text-2xl mb-1">Att bli bättre <span class="text-sm">eller sämre</h2>
+            <p class="pb-4">Det är spelledaren som avgör när en rollperson bör förbättras. 
+            Det kan handla om att klara äventyr, döda mäktiga monster eller samla silver.</p>
+        `
+
+        const d = new Dialog({
+            title: 'Vill du verkligen bli bättre?',
+            content: html,
+            default: 'one',
+            buttons: {
+                one: {
+                    icon: '<i class="fas fa-check"></i>',
+                    label: 'Jag vågar chansa',
+                    callback: () => this.actor.levelUp()
+                },
+                two: {
+                    icon: '<i class="fas fa-times"></i>',
+                    label: 'Nej. Jag vill inte.'
+                }
+            }
+        })
+        d.render(true)
     }
 
     _onIncreaseDecrease (event) {

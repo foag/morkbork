@@ -66,6 +66,89 @@ export class ActorGenerator {
         return [...supplies, weapon, armor].filter(item => item !== null)
     }
 
+    async levelUp (actorData) {
+        const data = {}
+        const items = []
+
+        // Mer TP:
+        // Slå 6t10 och nå över
+        // eller lika med nuvarande
+        // TP-max. Om du lyckas
+        // ökar TP-max med t6 TP.
+        this.log('Slå 6t10 och nå över eller lika med nuvarande TP-max. Om du lyckas ökar TP-max med t6 TP.')
+        const hitpointsRoll = this.roller('6d10')
+        this.log()
+
+        if (hitpointsRoll > actorData.data.health.max) {
+            this.log('Du lyckas och ökar TP-max med:')
+
+            const newMaxRoll = this.roller('1d6')
+            data['data.health.max'] = actorData.data.health.max + newMaxRoll
+
+            this.log('RESULT', `Ny TP-max: ${data['data.health.max']}`)
+        }
+
+        // Bland bratet hittar du:
+        // 0-3 ingenting
+        // 4 3t10 silver
+        // 5 en smutsig pergamentrulle
+        // 6 en ren pergamentrulle
+        this.log('Bland bråtet hittar du:')
+        const richesRoll = this.roller('1d6')
+
+        if (richesRoll < 4) {
+            this.log('RESULT', 'Ingenting')
+        }
+
+        if (richesRoll === 4) {
+            data['data.currency.sp'] = parseInt(actorData.data.currency.sp) + this.roller('3d10')
+            this.log('RESULT', `${this.roller('3d10')} silver`)
+        }
+
+        if (richesRoll === 5) {
+            const scroll = await this.getScroll('unclean', false)
+            items.push(scroll)
+
+            this.log('RESULT', scroll.data.name)
+        }
+
+        if (richesRoll === 6) {
+            const scroll = await this.getScroll('sacred', false)
+            items.push(scroll)
+
+            this.log('RESULT', scroll.data.name)
+        }
+
+        // Forandrade egenskaper:
+        // Slå t6 mot varje egenskaps
+        // värde. Resultat lika med eller
+        // över värdet höjer egenskapen
+        // +1 till max +6. Resultat under
+        // värdet sänker -1.
+        // Egenskaper från −3 till +1 höjs därmed alltid med +1. Undantaget är om en etta slås med t6.
+        // Då sänks istället egenskapens värde med -1, men aldrig lägre än till –3.
+
+        this.log('Slå t6 mot varje egenskaps värde. Resultat lika med eller över värdet höjer egenskapen +1 till max +6. Resultat under värdet sänker -1.')
+        this.log()
+        const abilities = actorData.data.abilities
+
+        Object.keys(abilities).forEach(ability => {
+            const abilityRoll = this.roller('1d6')
+
+            if (abilityRoll >= abilities[ability].value) {
+                data[`data.abilities.${ability}.value`] = Math.min(abilities[ability].value + 1, abilities[ability].max)
+
+                this.log(ability, `ökar med +1 till ${data[`data.abilities.${ability}.value`]}`)
+            } else {
+                data[`data.abilities.${ability}.value`] = Math.max(abilities[ability].value - 1, abilities[ability].min)
+
+                this.log(ability, `minskar med -1 till ${data[`data.abilities.${ability}.value`]}`)
+            }
+        })
+
+        return { data, items }
+    }
+
     /**
      * Simple convenience wrapper around Roll Class. Takes Die and Mod as primary arguments,
      * also allows for exclusion of values (dontAllow) which forces rerolls until a different value is met.
@@ -100,7 +183,7 @@ export class ActorGenerator {
         return result
     }
 
-    log (name, description = '', roll = null) {
+    log (name = '', description = '', roll = null) {
         this.rollLog.push({
             name,
             description,
@@ -240,8 +323,8 @@ export class ActorGenerator {
      *
      * @param {String} scrollType
      */
-    async getScroll (scrollType) {
-        this.log('GETSCROLL', scrollType)
+    async getScroll (scrollType, log = true) {
+        if (log) this.log('GETSCROLL', scrollType)
 
         const scrollList = await MbEntityList.getEntities('scrolls')
         const scrolls = scrollList.filter(item => item.data.data.scrollType === scrollType)
@@ -249,7 +332,7 @@ export class ActorGenerator {
         const scrollsRoll = this.roller(`1d${scrolls.length}`)
         const scroll = scrolls[scrollsRoll - 1]
 
-        this.log('RESULT', scroll)
+        if (log) this.log('RESULT', scroll)
 
         return scroll
     }
@@ -445,11 +528,13 @@ export class ActorGenerator {
         return biography
     }
 
-    showRollLogDialog () {
+    getHtml () {
         const htmlLines = []
 
         this.rollLog.forEach(log => {
-            if (!log.roll) {
+            if (log.name === '') {
+                htmlLines.push('<br>')
+            } else if (!log.roll) {
                 if (log.name !== 'RESULT') {
                     htmlLines.push(`<small class="text-xs font-bold">${log.name} ${log.description || ''}</small><br>`)
                 } else {
@@ -457,15 +542,19 @@ export class ActorGenerator {
                 }
             } else {
                 const roll = log.roll
-                htmlLines.push(`Slog <pre class="inline-block text-white bg-black px-1">${roll._formula}</pre> fick ${roll.results.join('')} (${roll.total})<br>`)
+                htmlLines.push(`Slog <pre class="inline-block font-bold text-xs text-white bg-black px-1">${roll._formula}</pre> fick ${roll.results.join('')} (${roll.total})<br>`)
             }
         })
 
-        const html = `<div>${htmlLines.join('')}</div>`
+        const html = `<div class="pb-4">${htmlLines.join('')}</div>`
 
+        return html
+    }
+
+    showRollLogDialog () {
         const d = new Dialog({
             title: 'Resultat',
-            content: html,
+            content: this.getHtml(),
             default: 'one',
             buttons: {
                 one: {
@@ -497,53 +586,4 @@ window.mockCharacter = async function () {
     data.items = characterItems
 
     console.log(generator)
-}
-
-window.makeAvatar = async function (char = 'Z') {
-    const app = new PIXI.Application({
-        width: 100, height: 100, backgroundColor: 0x1099bb
-    })
-
-    const font = new FontFaceObserver('agathodaimonregular')
-
-    await font.load()
-    // document.body.appendChild(app.view);
-    const style = new PIXI.TextStyle({
-        fontFamily: 'agathodaimonregular',
-        fontSize: 50,
-        fill: '#000000',
-        dropShadow: true,
-        dropShadowColor: '#FFE82C',
-        dropShadowBlur: 0,
-        dropShadowAngle: Math.PI / 6,
-        dropShadowDistance: 3
-    })
-
-    const container = new PIXI.Container()
-    container.x = 100
-    container.y = 100
-    app.stage.addChild(container)
-
-    const img = await preloadImage('systems/morkbork/img/char_bg.png')
-    const bg = await PIXI.Sprite.from(img)
-    bg.width = app.screen.width
-    bg.height = app.screen.height
-    container.addChild(bg)
-
-    const basicText = new PIXI.Text(char, style)
-    basicText.x = 50
-    basicText.y = 50
-    basicText.anchor.set(0.4, 0.5)
-    container.addChild(basicText)
-
-    $('#chat-log').append('<img src="' + app.renderer.plugins.extract.base64(container) + '">')
-}
-
-function preloadImage (src) {
-    return new Promise((resolve, reject) => {
-        const img = new Image()
-        img.onload = () => resolve(img)
-        img.onerror = reject
-        img.src = src
-    })
 }

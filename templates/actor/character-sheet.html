@@ -3,13 +3,22 @@
   <div class="flex">
     <div class="w-full px-8 h-full">
       <div class="w-full flex items-center justify-center flex-col">
-        <div class="w-full grid grid-cols-3">
-          <div class="flex items-center">
-            <img src="{{actor.classObj.img}}" title="{{actor.classObj.name}}" height="100" width="100" class="profile-img rounded-full" />
-            <input class="text-6xl mb-2 color-white font-secondary character-name" name="name" value="{{ actor.name }}" />
+        <div class="w-full grid grid-cols-3 py-2">
+          <div class="flex flex-col">
+            <div class="flex items-center">
+              <img src="{{actor.classObj.img}}" title="{{actor.classObj.name}}" height="75" width="75" class="rounded-full" />
+              <input class="text-6xl mb-2 color-white font-secondary character-name" name="name" value="{{ actor.name }}" />
+            </div>
+            <div class="flex items-center">
+              <button>Slå</button>
+              <button>Kasta</button>
+              <button>Försvara</button>
+            </div>
           </div>
-          <div class="py-1">
-              <img class="profile-img rounded-full border-none" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+          
+          <div class="actor-avatar py-1 flex items-center justify-center cursor-pointer">
+              <img class="profile-img rounded-full border-none" src="{{actor.img}}" title="{{actor.name}}" />
+              <span class="bg-black text-white inline-block w-32 text-center py-1 absolute hidden">Bli bättre</span>
           </div>
 
           <ul class=" pl-8">

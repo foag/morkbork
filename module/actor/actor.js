@@ -39,20 +39,47 @@ export class MorkBorkActor extends Actor {
         const characterItems = await generator.items(data)
         data.items = characterItems
 
-        console.log(generator, actorData.name)
         const name = creationData.name ? data.name : actorData.name
         const actorAvatar = new ActorAvatar()
         const avatar = await actorAvatar.make(name.charAt(0))
-        // Remove data for generation
+
         data = mergeObject(data, {
             'data.creationData.isRolled': true,
-            // img: data.data.class.mbClass.data.img
             img: avatar
         })
 
-        await super.update(data)
+        await this.update(data)
 
         generator.showRollLogDialog()
+    }
+
+    async levelUp () {
+        const actorData = this.data
+
+        const generator = new ActorGenerator()
+        const data = await generator.levelUp(actorData)
+
+        await this.update(data.data)
+
+        data.items.forEach(item => {
+            this.createOwnedItem(item)
+        })
+
+        generator.showRollLogDialog()
+
+        const speaker = { alias: this.name, _id: this._id }
+        const html = generator.getHtml()
+
+        const messageData = {
+            user: game.user._id,
+            speaker: speaker,
+            type: CONST.CHAT_MESSAGE_TYPES.EMOTE,
+            content: game.i18n.format('MB.LevelUpEmote', {
+                levelUpHTML: html
+            }),
+            sound: CONFIG.sounds.dice
+        }
+        await CONFIG.ChatMessage.entityClass.create(messageData)
     }
 
     /**

@@ -133,7 +133,8 @@
     "MB.Weight": "Vikt",
     "MB.Usage": "Usage",
 
-    "MB.UIAdd": "Skapa"
+    "MB.UIAdd": "Skapa",
 
+    "MB.LevelUpEmote" : "försökte bli bättre och lyckades med:<br><br> {levelUpHTML}"
 }
     

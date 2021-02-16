@@ -896,6 +896,10 @@ body {
   text-shadow: 0 1px 0 #f142af;
 }
 
+.morkbork .actor-avatar:hover span {
+  display: inline-block !important;
+}
+
 .morkbork .editor-content:empty:before {
   content: "This text is editable";
 }
