@@ -1,4 +1,5 @@
 import { MbClassList, MbEntityList, MB } from '../config.js'
+import '../lib/fontfaceobserver.js'
 
 export class ActorGenerator {
     constructor () {
@@ -523,4 +524,40 @@ window.mockCharacter = async function () {
     data.items = characterItems
 
     console.log(generator)
+}
+
+window.makeAvatar = async function () {
+    const app = new PIXI.Application({
+        width: 100, height: 100, backgroundColor: 0x1099bb
+    })
+
+    const font = new FontFaceObserver('agathodaimonregular')
+
+    await font.load()
+    // document.body.appendChild(app.view);
+    const style = new PIXI.TextStyle({
+        fontFamily: 'agathodaimonregular',
+        fontSize: 36,
+        fill: ['#ffffff', '#00ff99'], // gradient
+        stroke: '#4a1850'
+    })
+
+    const container = new PIXI.Container()
+    container.x = 100
+    container.y = 100
+    app.stage.addChild(container)
+
+    const bg = PIXI.Sprite.from('systems/morkbork/img/char_bg.svg')
+    bg.width = app.screen.width
+    bg.height = app.screen.height
+    container.addChild(bg)
+
+    const basicText = new PIXI.Text('z', style)
+    basicText.x = 0
+    basicText.y = 0
+    container.addChild(basicText)
+
+    // console.log(app)
+
+    $('#chat-log').append('<img src="' + app.renderer.plugins.extract.base64(container) + '">')
 }
