@@ -1,0 +1,32 @@
+<div class="mt-4 w-2/3 mx-auto text-center">
+    <p>
+        Fortfarande finns de som söker rikedom eller försoning. En del menar att apokalypsen är töjbar. Att den rentav
+        går att stoppa. Du vandrar där i gyttret av klagosång och desperation, med en hand som hårt greppar efter något
+        av värde.
+    </p>
+    <span class="bg-mb-yellow text-black">
+        Tyvärr bryr sig få om din själ, du är vad du äger och börjar med:
+    </span>
+
+    <div class="mt-4">
+        <div class="flex flex-col justify-center items-center">
+            <label for="">Vilken fördömd klass ska <strong>{{ actor.name }}</strong> tillhöra?</label>
+            <select class="w-1/2" name="data.creationData.class" data-type="String">
+                {{#select data.creationData.class}}
+                    <option value="">Låt ödet avgöra</option>
+                    {{#each actor.classNameList}}
+                    <option value="{{this}}">{{this}}</option>
+                    {{/each}}
+                {{/select}}
+            </select>
+
+            <label for="creation-data-name" class="flex items-center">
+                <input type="checkbox" id="creation-data-name" name="data.creationData.name" {{#if data.creationData.name}}checked{{/if}} "/> Ge {{ actor.name }} ett nytt vansinnigt namn
+            </label>
+
+            <div class="mt-4 w-full">
+            <button class="w-64 generate-character-btn" type="button">Fördöm den stackars saten</button>
+        </div>
+        </div>
+    </div>
+</div>
