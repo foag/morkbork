@@ -41,7 +41,9 @@ export class MorkBorkActor extends Actor {
 
         // Remove data for generation
         data = mergeObject(data, {
-            'data.creationData.isRolled': true
+            'data.creationData.isRolled': true,
+            img: data.data.class.mbClass.data.img
+            // img: generator.getAvatar()
         })
 
         await super.update(data)

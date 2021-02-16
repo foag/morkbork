@@ -1,10 +1,11 @@
 <form class="{{cssClass}}" autocomplete="off"> 
-  {{ log actor }}
+  
   <div class="flex">
     <div class="w-full px-8 h-full">
       <div class="w-full flex items-center justify-center flex-col">
         <div class="w-full grid grid-cols-3">
           <div class="flex items-center">
+            <img class="profile-img rounded-full" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
             <input class="text-6xl mb-2 color-white font-secondary character-name" name="name" value="{{ actor.name }}">
           </div>
           <div>
@@ -25,8 +26,8 @@
                 / {{data.health.max}}
               </div>
               <div class="ml-auto">
-                <a href="#" class="decrease ml-1" data-value="data.health">-</a>
-                <a href="#" class="increase" data-value="data.health">+</a>
+                <a href="javascript:;" class="decrease ml-1" data-value="data.health">-</a>
+                <a href="javascript:;" class="increase" data-value="data.health">+</a>
               </div>
             </li>
 
@@ -42,8 +43,8 @@
                 / {{data.omens.max}}
               </div>
               <div class="ml-auto">
-                <a href="#" class="decrease ml-1" data-value="data.omens">-</a>
-                <a href="#" class="increase" data-value="data.omens">+</a>
+                <a href="javascript:;" class="decrease ml-1" data-value="data.omens">-</a>
+                <a href="javascript:;" class="increase" data-value="data.omens">+</a>
               </div>
             </li>
 
@@ -59,8 +60,8 @@
                 / {{data.powers.max}}
               </div>
               <div class="ml-auto">
-                <a href="#" class="decrease ml-1" data-value="data.powers">-</a>
-                <a href="#" class="increase" data-value="data.powers">+</a>
+                <a href="javascript:;" class="decrease ml-1" data-value="data.powers">-</a>
+                <a href="javascript:;" class="increase" data-value="data.powers">+</a>
               </div>
             </li>
 
@@ -75,8 +76,8 @@
                 </span>
               </div>
               <div class="ml-auto">
-                <a href="#" class="decrease ml-1" data-value="data.currency.sp">-</a>
-                <a href="#" class="increase" data-value="data.currency.sp">+</a>
+                <a href="javascript:;" class="decrease ml-1" data-value="data.currency.sp">-</a>
+                <a href="javascript:;" class="increase" data-value="data.currency.sp">+</a>
               </div>
             </li>
           </ul>
