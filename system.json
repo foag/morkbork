@@ -2,7 +2,7 @@
   "name": "morkbork",
   "title": "Mork Bork",
   "description": "A despicable and hopeless attempt at a Mörk Borg system for FoundryVTT.",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "compatibleCoreVersion": "0.7.8",
   "minimumCoreVersion": "0.6.0",
   "templateVersion": 2,
