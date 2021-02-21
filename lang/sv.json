@@ -22,7 +22,7 @@
 
     "MB.DistSelf": "Själv",
     "MB.DistTouch": "Röra",
-    "MB.DistClose": "Nära",
+    "MB.DistClose": "Kort",
     "MB.DistFar": "Långt borta",
     "MB.DistNearby": "I närheten",
 
@@ -50,12 +50,12 @@
     "MB.DamageSlashing": "Skärande",
     "MB.DamageMagical": "Magisk",
 
-    "MB.ItemWeaponDamage": "Skada",
-    "MB.ItemWeaponHands": "Händer",
-    "MB.ItemRange": "Avstånd",
+    "MB.ItemWeaponDamage": "skada",
+    "MB.ItemWeaponHands": "hands",
+    "MB.ItemRange": "avstånd",
     "MB.ItemType": "Typ",
     "MB.ItemDice": "Tärning",
-    "MB.ItemDistance": "Distans",
+    "MB.ItemDistance": "distans",
     "MB.ItemConsumable": "Förbrukningsvara",
 
     "MB.ItemWeight": "Vikt",

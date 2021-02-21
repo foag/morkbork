@@ -29,6 +29,10 @@ export class MorkBorkItemSheet extends ItemSheet {
         data.config = CONFIG.MB
 
         data.itemType = data.item.type.titleCase()
+        data.damageType = CONFIG.MB.damageTypes[data.item.data.damageType]
+        data.rangeType = CONFIG.MB.rangeTypes[data.item.data.rangeType]
+        data.rangeDistance = CONFIG.MB.distanceUnits[data.item.data.rangeDistance]
+        console.log(data)
 
         return data
     }

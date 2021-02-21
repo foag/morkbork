@@ -62,6 +62,46 @@
   font-style: italic;
 }
 
+.font-edo {
+  font-family: "edoregular", cursive, serif;
+}
+
+.font-kingthings {
+  font-family: "kingthings", "Signika", sans-serif;
+}
+
+.font-requiem {
+  font-family: "requiem", fantasy, serif;
+}
+
+.font-icons {
+  font-family: "agathodaimonregular";
+}
+
+.text-mb-pink {
+  color: #FF42B4 !important;
+}
+
+.text-mb-yellow {
+  color: #FFE82C !important;
+}
+
+.text-mb-blue {
+  color: #098AC7 !important;
+}
+
+.bg-mb-pink {
+  background-color: #FF42B4 !important;
+}
+
+.bg-mb-yellow {
+  background-color: #FFE82C !important;
+}
+
+.bg-mb-blue {
+  background-color: #098AC7 !important;
+}
+
 .mb-0 {
   margin-bottom: 0rem;
 }
@@ -586,12 +626,12 @@ body {
 }
 
 .morkbork .items-list .item .action {
-  color: #f142af;
+  color: #FF42B4;
 }
 
 .morkbork .items-list .item .action:hover, .morkbork .items-list .item .action:focus {
   color: white;
-  text-shadow: 0 0 10px #f142af;
+  text-shadow: 0 0 10px #FF42B4;
   cursor: pointer;
 }
 
@@ -675,7 +715,7 @@ body {
 
 .morkbork .items-list .item-controls a:hover, .morkbork .items-list .item-controls a:focus {
   color: white;
-  text-shadow: 0 0 10px #f142af;
+  text-shadow: 0 0 10px #FF42B4;
   cursor: pointer;
 }
 
@@ -725,7 +765,7 @@ body {
 
 .morkbork .rollable:hover, .morkbork .rollable:focus, .morkbork .item .action:hover, .morkbork .item .action:focus {
   color: white;
-  text-shadow: 0 0 10px #f142af;
+  text-shadow: 0 0 10px #FF42B4;
   cursor: pointer;
 }
 
@@ -893,7 +933,7 @@ body {
   margin: 40px;
   background: black;
   color: white;
-  text-shadow: 0 1px 0 #f142af;
+  text-shadow: 0 1px 0 #FF42B4;
 }
 
 .morkbork .actor-avatar:hover span {

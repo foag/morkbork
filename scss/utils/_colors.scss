@@ -1,6 +1,31 @@
 $mb-yellow: #FFE82C;
-$mb-pink: #f142af;
+$mb-pink: #FF42B4;
 $mb-red: #8B4446;
+$mb-blue: #098AC7;
 $mb-black: black;
 $mb-white: white;
-$mb-faint: #ffffff18
+$mb-faint: #ffffff18;
+
+.text-mb-pink {
+    color: $mb-pink!important;
+}
+
+.text-mb-yellow {
+    color: $mb-yellow!important;
+}
+
+.text-mb-blue {
+    color: $mb-blue!important;
+}
+
+.bg-mb-pink {
+    background-color: $mb-pink!important;
+}
+
+.bg-mb-yellow {
+    background-color: $mb-yellow!important;
+}
+
+.bg-mb-blue {
+    background-color: $mb-blue!important;
+}

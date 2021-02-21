@@ -69,3 +69,19 @@ $font-primary: 'kingthings', "Signika", sans-serif;
 $font-secondary: 'requiem', fantasy, serif;
 $font-tertiary: 'edoregular', cursive, serif;
 $font-icons: 'agathodaimonregular';
+
+.font-edo {
+    font-family: $font-tertiary;
+}
+
+.font-kingthings {
+    font-family: $font-primary;
+}
+
+.font-requiem {
+    font-family: $font-secondary;
+}
+
+.font-icons {
+    font-family: $font-icons;
+}
