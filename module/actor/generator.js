@@ -388,6 +388,7 @@ export class ActorGenerator {
      * @param {MBActorClass} mbClass
      */
     async getArmor (mbClass) {
+        // TODO kontrollera tärningsslagen
         this.log('GETARMOR')
         const startingInfo = mbClass.data.data.startingInfo
         const armors = await MbEntityList.getEntities('armor')

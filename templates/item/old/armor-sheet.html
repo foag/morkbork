@@ -1,36 +1,5 @@
 <form class="{{cssClass}}" autocomplete="off">
 
-    <div class="flex items-center justify-center flex-col">
-        <span class="text-mb-pink text-xl font-requiem -mb-2 mt-2">
-            {{ localize "MB.Armor" }}
-        </span>
-        <div class="text-7xl mb-2 text-black font-edo transform -skew-y-12 -skew-x-12 rotate-6 text-center">
-            {{ item.name }}
-        </div>
-    </div>
-
-    <div class="flex items-center justify-center text-mb-pink text-3xl">
-        {{ localize "MB.ItemArmorTier" }} {{ data.tier.value }}
-    </div>
-
-    <div class="text-xl text-black flex flex-col items-center mt-2 mx-4">
-        <span class="inline-block text-center transform -skew-y-1 skew-x-1">{{ data.description }}</span>
-    
-        <span class="bg-mb-pink text-4xl inline-block text-white transform -skew-y-1 skew-x-1 mr-2">
-            -{{ armorDamageReduction item.data.tier.value }} skada.
-        </span>
-
-        <div class="flex flex-col text-base">
-            {{#if item.data.agilityPenalty}}
-            <span> SG+{{item.data.agilityPenalty}} för tester som rör Smidighet.</span>
-            {{/if}}
-
-            {{#if item.data.defencePenalty}}
-            <span> SG+{{item.data.defencePenalty}} för tester som rör Försvar.</span>
-            {{/if}}
-        </div>
-    </div>
-    <!--
     {{!-- header --}}
     {{> "systems/morkbork/templates/item/parts/item-header.html"}}
     
@@ -80,5 +49,5 @@
                 {{> "systems/morkbork/templates/item/parts/item-light.html"}}
             </div>
         </div>
-    </section>---->
+    </section>
 </form>

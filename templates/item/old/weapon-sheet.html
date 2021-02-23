@@ -1,0 +1,28 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- header --}}
+    <div class="flex items-center justify-center flex-col">
+        <span class="text-white text-xl font-requiem -mb-2 mt-2">
+            {{ itemType }}
+        </span>
+        <div class="text-7xl mb-2 text-mb-pink font-edo transform -skew-y-12 -skew-x-12 rotate-6 text-center">
+            {{ item.name }}
+        </div>
+    </div>
+
+    <div class="text-5xl text-white flex flex-col items-center mt-4">
+        <span class="bg-white inline-block text-black transform -skew-y-1 skew-x-1 font-requiem">{{ localize damageType }}</span>
+        <span class="inline-block text-black -mt-1 -mb-1 text-2xl bg-white">i</span>
+        <span class="bg-white inline-block text-black transform skew-y-1 skew-x-1 font-requiem">{{ localize rangeType }}</span>
+        
+        <div class="flex mt-2 items-center">
+            <div>
+                <span class="bg-mb-pink text-4xl inline-block text-white transform -skew-y-1 skew-x-1 mr-2">{{ data.damageDice }} {{ localize "MB.ItemWeaponDamage" }}</span>
+            </div>
+            <div class="flex flex-col text-center">
+                <span class="bg-white text-2xl inline-block text-black transform -skew-y-1 skew-x-1 mb-1 rotate-1">{{ data.hands }}-{{ localize "MB.ItemWeaponHands" }}</span>
+                <span class="bg-white text-2xl inline-block text-black transform -skew-y-1 -skew-x-1 -rotate-1">{{ data.silver }} {{ localize "MB.ItemSilver"}}</span>
+            </div>
+        </div>
+    </div>
+</form>

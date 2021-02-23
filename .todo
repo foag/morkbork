@@ -1,0 +1,13 @@
+[o] Translations
+[ ] Revamp GEAR pack - missing a lot, and a lot of weird extra items
+[x] Add start group to gear included in character generator
+[ ] More translations
+[ ] Template localization
+[ ] Rundown of all packs (do we have MBC for controls?)
+    [ ] Make supplies to "Torkad mat" och "Vattenskinn" with quantity
+    [ ] Add damagepoints to animal gear (bonus action)
+[ ] Roll power (Presence DR12 or -d2 HP (and no powers for 1hr))
+[x] Leveling
+[ ] Resting system
+[ ] Set isRottable on decoctions in gear, only true when rolled by Occult Herbmaster
+[ ] Use localization keys in packs utilize views 

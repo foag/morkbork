@@ -49,6 +49,16 @@ body {
     color: $mb-white;
   }
 
+  &.sheet.scroll .window-content {
+    background-image: url('../img/dialog_bg_inverted.jpg');
+    color: $mb-black;
+  }
+
+  &.sheet.armor .window-content {
+    background-image: url('../img/dialog_bg_yellow.jpg');
+    color: $mb-black;
+  }
+
   .rollable, .item .action {
     color: $mb-white;
     border-bottom: 1px dashed $mb-white;

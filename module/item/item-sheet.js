@@ -3,11 +3,16 @@
  * @extends {ItemSheet}
  */
 export class MorkBorkItemSheet extends ItemSheet {
+    constructor (item, options) {
+        super(item, options)
+        this.options.classes = [...this.options.classes, item.type] // append some custom classes
+    }
+
     /** @override */
     static get defaultOptions () {
         return mergeObject(super.defaultOptions, {
             classes: ['morkbork', 'sheet', 'item'],
-            width: 520,
+            width: 590,
             height: 480,
             tabs: [{ navSelector: '.sheet-tabs', contentSelector: '.sheet-body', initial: 'description' }]
         })
@@ -29,9 +34,17 @@ export class MorkBorkItemSheet extends ItemSheet {
         data.config = CONFIG.MB
 
         data.itemType = data.item.type.titleCase()
-        data.damageType = CONFIG.MB.damageTypes[data.item.data.damageType]
-        data.rangeType = CONFIG.MB.rangeTypes[data.item.data.rangeType]
-        data.rangeDistance = CONFIG.MB.distanceUnits[data.item.data.rangeDistance]
+
+        if (data.item.type === 'weapon') {
+            data.damageType = CONFIG.MB.damageTypes[data.item.data.damageType]
+            data.rangeType = CONFIG.MB.rangeTypes[data.item.data.rangeType]
+            data.rangeDistance = CONFIG.MB.distanceUnits[data.item.data.rangeDistance]
+        }
+
+        if (data.item.type === 'scroll') {
+            data.scrollType = CONFIG.MB.scrollTypes[data.item.data.scrollType]
+        }
+
         console.log(data)
 
         return data

@@ -756,6 +756,16 @@ body {
   color: white;
 }
 
+.morkbork.sheet.scroll .window-content {
+  background-image: url("../img/dialog_bg_inverted.jpg");
+  color: black;
+}
+
+.morkbork.sheet.armor .window-content {
+  background-image: url("../img/dialog_bg_yellow.jpg");
+  color: black;
+}
+
 .morkbork .rollable, .morkbork .item .action {
   color: white;
   border-bottom: 1px dashed white;
@@ -915,7 +925,7 @@ body {
   background: white;
   color: black;
   cursor: pointer;
-  text-shadow: 0 0 10px #8B4446;
+  text-shadow: 0 0 10px #EB4241;
 }
 
 .morkbork select {
