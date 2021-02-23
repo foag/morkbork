@@ -49,7 +49,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkbork/icons/items/weapons/bow-short.jpg"
+        "img": "systems/morkbork/icons/items/weapons/bow-short.png"
     },
     {
         "name": "Kompositbåge",
@@ -73,7 +73,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkbork/icons/items/weapons/bow-long.jpg"
+        "img": "systems/morkbork/icons/items/weapons/bow-long.png"
     },
     {
         "name": "Slunga",
@@ -97,7 +97,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkbork/icons/items/weapons/sling.jpg"
+        "img": "systems/morkbork/icons/items/weapons/sling.png"
     },
     {
         "name": "Armborst",
@@ -125,7 +125,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkbork/icons/items/weapons/crossbow.jpg"
+        "img": "systems/morkbork/icons/items/weapons/crossbow.png"
     },
     {
         "name": "Tungt armborst",
@@ -173,7 +173,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkbork/icons/items/weapons/club.jpg"
+        "img": "systems/morkbork/icons/items/weapons/club.png"
     },
     {
         "name": "Stridsgissel",
@@ -229,7 +229,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkbork/icons/items/weapons/femur.jpg"
+        "img": "systems/morkbork/icons/items/weapons/femur.png"
     },
     {
         "name": "Handyxa",
@@ -253,7 +253,7 @@
             "lightStrength": null
         },
         "flags": {},
-        "img": "systems/morkbork/icons/items/weapons/axe-hand.jpg"
+        "img": "systems/morkbork/icons/items/weapons/axe-hand.png"
     },
     {
         "name": "Kniv",
@@ -333,7 +333,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkbork/icons/items/weapons/sword-short.jpg"
+        "img": "systems/morkbork/icons/items/weapons/sword-short.png"
     },
     {
         "name": "Stav",
@@ -361,7 +361,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkbork/icons/items/weapons/staff.jpg"
+        "img": "systems/morkbork/icons/items/weapons/staff.png"
     },
     {
         "name": "Svärd",
@@ -389,7 +389,7 @@
             }
         },
         "flags": {},
-        "img": "systems/morkbork/icons/items/weapons/sword-long.jpg"
+        "img": "systems/morkbork/icons/items/weapons/sword-long.png"
     },
     {
         "name": "Hjälmkrossare",

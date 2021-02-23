@@ -1,30 +1,20 @@
 Arguments: 
-  /Users/foag/.nvm/versions/node/v10.22.1/bin/node /Users/foag/.yarn/bin/yarn.js add eslint-handlebars
+  C:\Program Files\nodejs\node.exe C:\Users\Sebastian\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
 
 PATH: 
-  /Users/foag/.yarn/bin:/Users/foag/.config/yarn/global/node_modules/.bin:/Users/foag/.nvm/versions/node/v10.22.1/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/foag/.gem/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Users/foag/.yarn/bin:/Users/foag/.config/yarn/global/node_modules/.bin:/Users/foag/.nvm/versions/node/v10.22.1/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/foag/.gem/bin:/usr/local/opt/mysql@5.7/bin:/Users/foag/.composer/vendor/bin:/usr/local/sbin:/Users/foag/bin:/Users/foag/Library/Android/sdk/tools:/Users/foag/Library/Android/sdk/platform-tools:/Library/java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home:/Users/foag/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Users/foag/.yarn/bin:/Users/foag/.config/yarn/global/node_modules/.bin:/Users/foag/.nvm/versions/node/v10.22.1/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/foag/.gem/bin:/usr/local/opt/mysql@5.7/bin:/Users/foag/.composer/vendor/bin:/usr/local/sbin:/Users/foag/bin:/Users/foag/Library/Android/sdk/tools:/Users/foag/Library/Android/sdk/platform-tools:/Library/java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home:/Users/foag/.composer/vendor/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Users/foag/.yarn/bin:/Users/foag/.config/yarn/global/node_modules/.bin:/Users/foag/.nvm/versions/node/v10.22.1/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/foag/.gem/bin:/usr/local/opt/mysql@5.7/bin:/Users/foag/.composer/vendor/bin:/usr/local/sbin:/Users/foag/bin:/Users/foag/Library/Android/sdk/tools:/Users/foag/Library/Android/sdk/platform-tools:/Library/java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home:/Users/foag/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Users/foag/.yarn/bin:/Users/foag/.config/yarn/global/node_modules/.bin:/Users/foag/.nvm/versions/node/v10.22.1/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/foag/.gem/bin:/usr/local/opt/mysql@5.7/bin:/Users/foag/.composer/vendor/bin:/usr/local/sbin:/Users/foag/bin:/Users/foag/Library/Android/sdk/tools:/Users/foag/Library/Android/sdk/platform-tools:/Library/java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home:/Users/foag/.composer/vendor/bin:/Users/foag/bin:/usr/local/bin:/Users/foag/Library/Android/sdk/tools:/Users/foag/Library/Android/sdk/platform-tools:/Library/java/JavaVirtualMachines/jdk1.8.0_212.jdk/Contents/Home
+  C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Sebastian\AppData\Local\Microsoft\WindowsApps;C:\Users\Sebastian\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Sebastian\AppData\Local\GitHubDesktop\bin;C:\Users\Sebastian\AppData\Roaming\npm
 
 Yarn version: 
-  1.22.5
+  1.22.10
 
 Node version: 
-  10.22.1
+  14.15.5
 
 Platform: 
-  darwin x64
+  win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/eslint-handlebars: Not found
-      at Request.params.callback [as _callback] (/Users/foag/.yarn/lib/cli.js:66988:18)
-      at Request.self.callback (/Users/foag/.yarn/lib/cli.js:140749:22)
-      at Request.emit (events.js:198:13)
-      at Request.<anonymous> (/Users/foag/.yarn/lib/cli.js:141721:10)
-      at Request.emit (events.js:198:13)
-      at IncomingMessage.<anonymous> (/Users/foag/.yarn/lib/cli.js:141643:12)
-      at Object.onceWrapper (events.js:286:20)
-      at IncomingMessage.emit (events.js:203:15)
-      at endReadableNT (_stream_readable.js:1145:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  Error: 16244:error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:677:
 
 npm manifest: 
   {
