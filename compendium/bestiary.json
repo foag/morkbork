@@ -6,7 +6,7 @@
       },
       "type": "npc",
       "data": {
-          "biography": "All goblins carry a curse. Once like you, they are now trapped in the prison of their crazed goblin flesh. Only their eyes reveal the truth: a ruined mind watching its body-prison perform terrible deeds. Even being attacked by goblins sends the curse, carried on the winds of their hate. Hit or miss, it doesn’t matter. In the dark of Sarkash they shoot at passers-by with twanging bows. You must find and kill the goblin before your mind is paralyzed. If the curse-carrying creature still lives d6 days after the attack, you will warp irrevocably into one yourself. Then, only the dark of Sarkash will hide you.",
+          "biography": "Gobliner bär på en förbannelse. Instängda i deras kroppar finns fullt medvetna individer, som är oförmögna att påverka sin omgivning. Bli anfallen av en goblin och du drabbas av förbannelsen! Det är allt som krävs. Träff eller miss, det spelar ingen roll. I Sarkashs nattmörker skjuter de på förbipasserande stackare med sina kortbågar. Man måste finna och dräpa goblinen innan sinnet lamslås. Om den attackerande goblinen fortfarande lever t6 dagar efter att du angripits så förvandlas du permanent till en goblin.",
           "movement":20,
           "health": {
               "value": 6,
@@ -24,29 +24,29 @@
             "max": 12
           },
           "defence": {
-            "description": "Ropy skin",
+            "description": "Seg hud",
             "defenceDice": "1d2"
           },
           "attack": {
-            "description": "Knife/shortbow",
+            "description": "Kniv/kortbåge",
             "rangeType": "both",
             "rangeDistance": "close",
             "damageType": "piercing",
             "damageDice": "1d4"
           },
-          "special": "Quick, attacks and defence are DR14."
+          "special": "Kvick, anfall och försvar görs mot SG14."
       },
       "flags": {},
       "img": "systems/morkbork/icons/bestiary/SETH_Goblin.webp"
   },
   {
-    "name": "BENT Scum",
+    "name": "BENT Slusk",
     "permission": {
         "default": 0
     },
     "type": "npc",
     "data": {
-        "biography": "There are few fiends more fell than poverty or monsters more powerful than hate. In this stricken world, the slums and black alleyways are fecund scum, mothering countless abhorred miscreants. The PC with the highest Presence makes a DR14 test at the start of battle. Failure means a random party member is automatically hit with a cowardly backstab-normal damage +3",
+        "biography": "Slummens och de mörka grändernas hatade kräk. Vid misslyckat Närvaro mot SG14 (den i gruppen med högst) skadas automatiskt slumpad RP av ett fegt lönnhugg i början av striden, alltså normal skada +3.",
         "movement":20,
         "health": {
             "value": 7,
@@ -64,29 +64,29 @@
           "max": 12
         },
         "defence": {
-          "description": "No armor",
+          "description": "Inget skydd",
           "defenceDice": null
         },
         "attack": {
-          "description": "Poisoned knife",
+          "description": "Förgiftad kniv",
           "rangeType": "melee",
           "rangeDistance": "close",
           "damageType": "piercing",
           "damageDice": "1d4"
         },
-        "special": "Poisoned knife. Test Toughness DR10 or become infected."
+        "special": "Förgiftad kniv. Tålighet mot SG 10 eller drabbas av infektion."
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/BENT_Scum.webp"
   },
   {
-    "name": "ZUKUMA Berserker",
+    "name": "ZUKUMA Bärsärk",
     "permission": {
         "default": 0
     },
     "type": "npc",
     "data": {
-        "biography": "They’re on you! As if from nowhere, a frenzied ambush in dusty hallways and from behind the stacked black stones of catacombs. Special Attacks twice per round but doesn’t have time for defence (DR10 to hit them).",
+        "biography": "Kan plötsligt dyka upp som från ingenstans; ur dammet i det tomma rummet, bland kummelåsens staplade stenar.",
         "movement":20,
         "health": {
             "value": 13,
@@ -104,7 +104,7 @@
           "max": 12
         },
         "defence": {
-          "description": "Hardened skin",
+          "description": "Härdad hud",
           "defenceDice": "1d2"
         },
         "attack": {
@@ -114,19 +114,19 @@
           "damageType": "bludgeoning",
           "damageDice": "1d8"
         },
-        "special": "Wields (d4) 1. Long flail d8; 2. Heavy mace d6; 3. Chained sword d6; 4. Huge warhammer d10"
+        "special": "Anfaller två gånger per runda men hinner knappt försvara sig (anfall SG10). Vapen: 1. Långt stridsgissel t8 2. Tung stridsklubba t6 3. Svärd med kedja t6 4. Tvåhandshammare t10"
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/ZUKUMA_Berserker.webp"
   },
   {
-    "name": "WRAT Wraith",
+    "name": "WRAT Vålnad",
     "permission": {
         "default": 0
     },
     "type": "npc",
     "data": {
-        "biography": "These soundless phantoms always win initiative. Their touch drains Strength, Presence and Agility by 1 for the duration of the fight.",
+        "biography": "Vålnaden är helt tyst och vinner alltid initiativ.",
         "movement":20,
         "health": {
             "value": 15,
@@ -144,7 +144,7 @@
           "max": 12
         },
         "defence": {
-          "description": "No armor",
+          "description": "Inget skydd",
           "defenceDice": null
         },
         "attack": {
@@ -154,19 +154,19 @@
           "damageType": "magical",
           "damageDice": "1d4"
         },
-        "special": "Swift, elusive and difficult to hit (DR14)."
+        "special": "Snabba och svåra att träffa (SG14). Varje beröring dränerar också Styrka, Närvaro och Smidighet med –1 under striden."
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/WRAT_Wraith.webp"
   },
   {
-    "name": "BELZE Blood-drenched skeleton",
+    "name": "BELZE Blodingt skelett",
     "permission": {
         "default": 0
     },
     "type": "npc",
     "data": {
-        "biography": "Body knuckles d2",
+        "biography": "Tassar fram helt ljudlöst och överraskar sina offer. Kan också imitera röster för att locka till sig folk, men kan bara upprepa sådant de hört.",
         "movement":20,
         "health": {
             "value": 7,
@@ -184,29 +184,29 @@
           "max": 12
         },
         "defence": {
-          "description": "No armor",
+          "description": "Inget skydd",
           "defenceDice": null
         },
         "attack": {
-          "description": "Shortsword or knife",
+          "description": "Kortsvärd eller kniv",
           "rangeType": "melee",
           "rangeDistance": "close",
           "damageType": "slashing",
           "damageDice": "1d4"
         },
-        "special": "Skulks about, impossibly soundless. Attacks by surprise. Can mimic voices to lure victims, but can only repeat what it has heard. Attacks on them with piercing weapons are DR14. Any strike doing 5 or more damage destroys the skeleton completely."
+        "special": "Svåra (SG14) att skada med stickvapen då de är så blodigt glatta, men attacker som gör 5 eller mer i skada får dem att falla sönder direkt."
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/BELZE_skeleton.webp"
   },
   {
-    "name": "LICH Undead (weak) necromancer",
+    "name": "LICH Odöd (klen) nekromagiker",
     "permission": {
         "default": 0
     },
     "type": "npc",
     "data": {
-        "biography": "No one can use Powers near this anti-magical wound in reality. Every round they can steal the contents of a nearby scroll and use this Power against its owner.",
+        "biography": "Ingen kan nyttja Krafter i närheten av denna varelse från vidrig verklighet. Nekromagikern kan ”stjäla” innehållet ur en pergamentrulle varje runda, och därefter använda Kraften mot dess ägare.",
         "movement":20,
         "health": {
             "value": 15,
@@ -224,17 +224,17 @@
           "max": 12
         },
         "defence": {
-          "description": "Barrier (necro)",
+          "description": "Barriär (necro",
           "defenceDice": "1d4"
         },
         "attack": {
-          "description": "Strike",
+          "description": "Slag",
           "rangeType": "melee",
           "rangeDistance": "touch",
           "damageType": "magical",
           "damageDice": "1d6"
         },
-        "special": "Paralyzing touch (Presence DR14 every round to break free)."
+        "special": "Paralyserar vid beröring (Närvaro mot SG14 varje runda för att häva)."
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/LICH_Undead.webp"
@@ -246,7 +246,7 @@
     },
     "type": "npc",
     "data": {
-        "biography": "Cowards despite their size. Usually retreat if badly wounded. Never forget who hurt them. They grow larger during the healing process and will definitely come back, stronger than before. Any HP healed is added to their maximum HP. Every time they return, add another d6 to their damage.",
+        "biography": "Fega som få, trots sin storlek. Drar sig ofta tillbaka om de skadats allvarligt. Glömmer aldrig den som åsamkat skadan. De växer dessutom under läkeprocessen och kommer garanterat tillbaka, starkare än någonsin. Alla TP som läks läggs till deras maximala TP. De kommer också att göra +t6 i skada vid återkomst.",
         "movement":20,
         "health": {
             "value": 32,
@@ -264,17 +264,17 @@
           "max": 12
         },
         "defence": {
-          "description": "Thick hide",
+          "description": "Tjock hud",
           "defenceDice": "1d2"
         },
         "attack": {
-          "description": "Fist",
+          "description": "Näve",
           "rangeType": "melee",
           "rangeDistance": "close",
           "damageType": "bludgeoning",
           "damageDice": "2d6"
         },
-        "special": "easy to hit; attacks are DR10."
+        "special": "Lätt att träffa; SG10 vid anfall."
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/ARBINT_Troll.webp"
@@ -286,7 +286,7 @@
     },
     "type": "npc",
     "data": {
-        "biography": "King Fathmu IX of Wästland in particular seeks this cure and knows the name and location of the forest which the mountain overlooks.",
+        "biography": "Det ryktas om ett slags vaccin som ska finnas tillgängligt uppe på ett blekt berg bortom en eländigt svart skog. I synnerhet kung Fathmu IX av Wästland trånar efter vaccinet. Han råkar veta namn och plats på den skog som överskuggas av berget.",
         "movement":20,
         "health": {
             "value": 7,
@@ -304,29 +304,29 @@
           "max": 12
         },
         "defence": {
-          "description": "Leather scraps",
+          "description": "Läderslamsor",
           "defenceDice": "1d2"
         },
         "attack": {
-          "description": "Claw/bite",
+          "description": "Slag/bett",
           "rangeType": "melee",
           "rangeDistance": "close",
           "damageType": "slashing",
           "damageDice": "1d2"
         },
-        "special": "Anyone bitten tests Toughness DR8 or dies within two days before rising as a zombie. The only cure or vaccine is said to be found at the peak of a pale mountain within an infinitely-miserable forest of dark leaves."
+        "special": "Vid bett måste Tålighet mot SG 8 klaras för att inte dö inom två dagar och sedan vakna som en zombie."
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/NOHD_Zombie.webp"
   },
   {
-    "name": "LADY PORCELAIN undead doll",
+    "name": "LADY PORCELAIN odöd docka",
     "permission": {
         "default": 0
     },
     "type": "npc",
     "data": {
-        "biography": "In Tveland relic thieves, defamers and corrupt clerks suffer a punishment of exquisite and deeply impractical cruelty. Their children or grandchildren are enclosed in porcelain dolls then placed in cathedral windows, to die slowly of starvation and heat. Despite warding rituals, many return as vengeful undead, often gathering in large throngs to hunt their tormentors.",
+        "biography": "I Tveland bestraffas reliktjuvar, ärekränkare och korrupta tjänstemän hårt. Deras barn eller barnbarn stängs in i porslinsdockor och placeras i kyrkfönster, där de går en plågsam död till mötes. Trots skyddande ritualer vaknar ändå dockorna ibland till odött liv för att hämnas. De håller ofta samman i stora grupper.",
         "movement":20,
         "health": {
             "value": 11,
@@ -344,17 +344,17 @@
           "max": 12
         },
         "defence": {
-          "description": "Porcelain",
+          "description": "Porslin",
           "defenceDice": "1d2"
         },
         "attack": {
-          "description": "Claws/piercing bite",
+          "description": "Klor/naggande bett",
           "rangeType": "melee",
           "rangeDistance": "close",
           "damageType": "piercing",
           "damageDice": "1d4"
         },
-        "special": "Their mad gaze demands a Presence DR12 test at the start of combat to avoid being frozen with fear for d4 rounds."
+        "special": "Utöver sina obehagliga naglar och små tänder, har dockorna också en galen blick som kräver Närvaro mot SG12 (inledningsvis i strid) för att inte paralysera av skräck under t4 rundor."
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/LADY_POROCELAIN_Undead_Doll.webp"
@@ -366,7 +366,7 @@
     },
     "type": "npc",
     "data": {
-        "biography": "Lurking round churches, stalking graveyards, creeping closer when you look away. Disturbingly still, difficult to discern against gray stone and hard to recognize even when seen.",
+        "biography": "Trivs vid kyrkor och på gravplatser. Kan hålla sig väldigt stilla och mot grå sten är den svår att upptäcka. Verkar närma sig när du tittar bort.",
         "movement":20,
         "health": {
             "value": 18,
@@ -384,29 +384,29 @@
           "max": 12
         },
         "defence": {
-          "description": "Clay/stone",
+          "description": "Lera/sten",
           "defenceDice": "1d6"
         },
         "attack": {
-          "description": "Claws",
+          "description": "Klor",
           "rangeType": "both",
           "rangeDistance": "close",
           "damageType": "slashing",
           "damageDice": "1d6"
         },
-        "special": "They move slowly and are easy to hit (DR10). Their terrifying gaze is used on 1–2 on a d6 each round. Always hits (Eye-beam d8)"
+        "special": "Rör sig långsamt och är lätt (SG10) att träffa, men dess penetrerande ögon är omöjliga att skydda sig från. Ögonen används vid 1–2 på t6 varje runda. Träffar automatiskt."
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/THINX_Grotesque.webp"
   },
   {
-    "name": "ALAND Wickhead knife-wielder",
+    "name": "ALAND Lyktgubbe med kniv",
     "permission": {
         "default": 0
     },
     "type": "npc",
     "data": {
-        "biography": "Sneaks up behind its victims, silent as the grave. Skulks around the cities' outskirts and the thickets of Sarkash. 25% chance wounds from the insanely filthy knife become infected.",
+        "biography": "Smyger upp bakom sina offer, tysta som natten. Håller till i städers utkanter och där Sarkash blir djup nog. 25 % risk att skador från den sjukligt smutsiga kniven leder till infektion.",
         "movement":20,
         "health": {
             "value": 10,
@@ -424,17 +424,17 @@
           "max": 12
         },
         "defence": {
-          "description": "No armor",
+          "description": "Inget skydd",
           "defenceDice": null
         },
         "attack": {
-          "description": "Knife with dried blood",
+          "description": "Kniv med gammalt blod",
           "rangeType": "melee",
           "rangeDistance": "close",
           "damageType": "slashing",
           "damageDice": "1d4"
         },
-        "special": "Can magically douse all nearby light sources, ignite its own blinding light and attack. Then vanish into the darkness."
+        "special": "Kan släcka alla ljuskällor i sin omgivning, slå på sitt eget förblindande ljus och anfalla. För att sedan släcka ner och försvinna i mörkret."
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/ALAND_Wickhead.webp"
@@ -446,7 +446,7 @@
     },
     "type": "npc",
     "data": {
-        "biography": "The tail's venomous sting can paralyze a victim. Test Toughness DR14 to avoid one painful hour of paralysis. Where the Wyvern fly crops die.",
+        "biography": "Med svansens giftiga sting riskerar offret att paralyseras (Tålighet mot SG14) en plågsam timme.",
         "movement":20,
         "health": {
             "value": 25,
@@ -464,17 +464,17 @@
           "max": 12
         },
         "defence": {
-          "description": "Thick hide",
+          "description": "Tjockt skinn",
           "defenceDice": "1d4"
         },
         "attack": {
-          "description": "Bite/Sting",
+          "description": "Bett/Sting",
           "rangeType": "melee",
           "rangeDistance": "close",
           "damageType": "piercing",
           "damageDice": "1d6"
         },
-        "special": "60% chance that she bites."
+        "special": "60 % chans att hon bits."
     },
     "flags": {},
     "img": "systems/morkbork/icons/bestiary/EULOTHA_Wyvern.webp"

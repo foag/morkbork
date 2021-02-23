@@ -7,13 +7,13 @@
         "type": "class",
         "data": {
             "type": "core",
-            "description": "Utkastad ur armén, alltför il lojal och oberäknelig. Brigadören har inslag av tjurhuvud och i käften sitter enorma hörntänder (SG10 i anfall, t6 skada) som allt som oftast kommer väl till pass.",
+            "description": "Utkastad ur armén, alltför illojal och oberäknelig. Du har inslag av tjurhuvud och i käften sitter enorma hörntänder (SG10 i anfall, t6 skada) som allt som oftast kommer väl till pass.",
             "baseOmensDice": "1d2",
             "canUseScrolls": false,
             "modifiers": [
-                "Normal Agility tests are DR14 instead of DR12, excluding defence.",
-                "Illiterate; you are incapable of understanding scrolls. If you begin with one then reroll, eat it or use it as toilet paper.",
-                "Bite attack: DR10 to attack, d6 damage. You must be close to your target. 1–2 on d6 chance the enemy gets a free attack."
+                "Normala Smidighetstest (SG12) görs istället mot SG14, detta gäller dock inte försvar i strid.",
+                "Du är inkapabel att förstå pergamentrullar.",
+                "Bitattack: SG10 i anfall, t6 skada. Du måste komma nära ditt offer och det finns en risk om 1–2 på t6 att fienden kan göra en extra attack när de används."
             ],
             "startingInfo": {
               "startingSilverDice": "2d6",
@@ -28,18 +28,18 @@
               "armorDice": "1d4",
               "startingAbilities": 1,
               "abilities": {
-                  "description": "Brigadören börjar också med ett av följande:",
+                  "description": "Du börjar också med ett av följande:",
                   "options": [
                       "Tilltufsat, löstagbart tryne. Upplevs som skrämmande bland mindre varelser som gobliner, svartdvärgar och barn. De är därför tvungna att testa Moral varje runda i strid.",
-                      "Nedsmutsad kroksabel funnen nära Galgenbeck. Utöver att göra skada t6 och att Brigadören är skicklig med sabeln (SG10 anfall/försvar) finns en risk om 1 på 6 att fienden drabbas av extremt snabbverkande blodförgiftning. Den som drabbas dör inom 10 minuter",
+                      "Nedsmutsad kroksabel funnen nära Galgenbeck. Utöver att göra skada t6 och att du är skicklig med sabeln (SG10 anfall/försvar) finns en risk om 1 på 6 att fienden drabbas av extremt snabbverkande blodförgiftning. Den som drabbas dör inom 10 minuter",
                       "Tygpåse med utdragna tänder. Tänderna är fyra till antalet och för varje tand slås en t6 inför strid. Dela ut en maxskada per 6:a vid valfritt anfall i striden. De kommer inte att förlora sin kraft.",
                       "Gammelgubben Sigûrds slunga. Ett riktigt kraftfullt vapen som gör 2t4 i skada. I en hård värld som den i MÖRK BORG finns det obegränsat med knytnävsstora stenar.",
                       "Åldrad flåsande blodhund. Det gamla åbäket har trots allt ett förträffligt luktsinne och sniffar enkelt upp skatter bland skräp. Blir också fullkomligt vansinnig i möten med bärsärkar och gobliner: går till anfall med SG10 (bett t6), Försvar SG12 och TP 10.",
-                      "Hästsko från obskyr krypta. Utmärkt kastvapen som brigadören mot SG10 lyckas träffa med. 6 på t6 innebär träff i huvudet vilket dödar små och medelstora varelser. Hästskon återvänder sedan till handen. t4 TP i skada."
+                      "Hästsko från obskyr krypta. Utmärkt kastvapen som du mot SG10 lyckas träffa med. 6 på t6 innebär träff i huvudet vilket dödar små och medelstora varelser. Hästskon återvänder sedan till handen. t4 TP i skada."
                   ]
               },
               "origins": {
-                  "description": "VÄXTE UPP",
+                  "description": "Växte upp",
                   "options": [
                       "i bränd del av Sarkash.",
                       "på förlist, rutten skuta.",
@@ -62,12 +62,12 @@
         "type": "class",
         "data": {
             "type": "core",
-            "description": "Stjärnorna stod inte rätt när slusken blev till och växte upp. I städers mindre kultiverade kvarter har ett vanligt dagsknäck aldrig varit aktuellt. Utan kärlek blir skuggan en trygg vän.",
+            "description": "Stjärnorna stod inte rätt när du blev till och växte upp. I städers mindre kultiverade kvarter har ett vanligt dagsknäck aldrig varit aktuellt. Utan kärlek blir skuggan en trygg vän.",
             "baseOmensDice": "1d2",
             "canUseScrolls": true,
             "modifiers": [
                 "Alltid SG-2 vid test mot Närvaro och Smidighet, exempelvis görs normala (SG12) tester mot SG10.",
-                "När slusken första gången blir bättre (se Att bli bättre på sidan 33) slumpas ytterligare en specialitet fram. Maxantalet är just två, men varje gång slusken hädanefter blir bättre är det tillåtet att slumpa om båda specialiteterna, eller bara en."
+                "När du första gången blir bättre slumpas ytterligare en specialitet fram. Maxantalet är just två, men varje gång du hädanefter blir bättre är det tillåtet att slumpa om båda specialiteterna, eller bara en."
             ],
             "startingInfo": {
               "startingSilverDice": "1d6",
@@ -82,14 +82,14 @@
               "armorDice": "1d2",
               "startingAbilities": 1,
               "abilities": {
-                "description": "You also begin with one specialty:",
+                "description": "Du börjar också med ett av följande:",
                 "options": [
-                    "Coward’s Jab: When attacking by surprise test Agility DR10. On a success you automatically hit once with a light one-handed weapon, dealing normal damage +3.",
-                    "Filthy Fingersmith: Your snaky little digits get into pockets and pick locks with a DR8 Agility test. You also begin with lockpicks!",
-                    "Abominable Gob Lobber: Your phlegm is viscous, lumpy, vile and ballistically accurate at short range. You can spit d2 times during a fight. Roll a DR8 Presence test for accuracy. Targets are blinded, retching and vomiting for d4 rounds. Anyone witnessing this—friend and foe—must make a Toughness test to not also vomit. PCs test DR10 and enemies DR12.",
-                    "Escaping Fate: Every time you use an omen there is a 50% chance it is not spent.",
-                    "Excretal Stealth: You have an astounding, almost preternatural ability to hide in muck, debris and filth. When hidden in these conditions a DR16 Presence test is required to notice you.",
-                    "Dodging Death: You are so unpleasant, irrelevant, disgusting and vile even Death would rather avoid you if it can. On death, if there is even the slightest possibility that you survived, there is a 50% chance that you did. If successful, after 10 rounds you pop back up with d4 HP and an unlikely explanation of your escape."
+                    "Ynkryggsanfall: Smyg och överraska, vilket du klarar vid lyckat Smidighet mot SG10. Med ett lätt enhandsvapen görs sedan, utan anfallstest mot något SG, normal skada +3.",
+                    "Smutsiga små korvfingrar: Fingerfärdig som få. Lyckas Smidighet mot SG 8 kan du sno åt sig föremål ur fickor och låsta dörrar kan pillras upp. Dyrkar ingår!",
+                    "Lusens loska: En vedervärdig spottloska som med lyckat Närvaro mot SG8 prickar utvalt offer. Du får spotta t2 gånger/strid. Offret börjar kräkas och förblindas under t4 rundor. Det finns risk/chans att både vänner och fiender börja kräkas också: RP slår Tålighet mot SG10 och fiender SG12.",
+                    "Gäcka Järtecken: Varje gång ett Järtecken förbrukats är det 50 % chans att tecknet återfås.",
+                    "Exkrement maskering: Enastående förmåga att gömma sig bland smuts, bråte och exkrement. Vanligtvis krävs ett test mot SG16 för att upptäcka dig.",
+                    "Den obetydliges tricks: Vid dödsfall är det 50 % chans att du vaknar till liv igen efter 10 rundor. Förmodligen med en makaber och osannolik historia om hur det gick till. Inte ens Döden orkar ta sig an en sådan obetydlig varelse. Lyckas detta återfås t4 TP."
                 ]
               },
               "origins": {
@@ -116,11 +116,11 @@
         "type": "class",
         "data": {
             "type": "core",
-            "description": "The stone of your cave is one with the stars. Silence and perfection. Now the chaos of a fallen world disturbs your rituals and the caul of night grows blacker than your cavern’s gloom. Irritating!",
+            "description": "Grottan är allt. Mystiska ritualer i natten. Folk … ja, de är mest i vägen.",
             "baseOmensDice": "1d4",
             "canUseScrolls": true,
             "modifiers": [
-                "Starts with one random scroll (sacred or unclean)."
+                "Du får utöver vanlig utrustning en slumpad smutsig alternativt ren pergamentrulle."
             ],
             "startingInfo": {
               "startingSilverDice": "1d6",
@@ -135,25 +135,25 @@
               "armorDice": "1d2",
               "startingAbilities": 1,
               "abilities": {
-                "description": "You also begin with one of the following:",
+                "description": "Du börjar också med ett av följande:",
                 "options": [
-                    "Master of Fate: What use are maps when the substance of causality itself is open to you? You know the right way with a DR8 Presence test.",
-                    "A Book of Boiling Blood: You may open and read from this book once a day. Your enemy must make a DR12 test to prevent this. If they fail D2 Berserker-slayers (see page 60) appear from the depths of a forgotten dimension of blood. Roll a D6. On a 1–4 these creatures fight alongside you. On a 5–6 they turn on you, attempting to kill you and destroy the book. After the battle they return to their imprisonment.",
-                    "Speaker of Truths: Twice per day use your wisdom, knowledge, advice and inner calm to bring clarity to a creature of your choice. The DR of the next test they undertake is lowered by 4.",
-                    "Initiate of the Invisible College: Once per day you may summon D2 scrolls, whose power can be used only once. Roll a d4, on a 1–2 the scrolls are sacred, on a 3–4, unclean. If the scrolls are not used before sunrise they turn to ash.",
-                    "Bard of the Undying: You learnt your melodies in the Otherworld. The music of your Harp gives +D4 on reaction rolls.",
-                    "Hawk as weapon: Your crafty almost-intelligent hawk is loyal only to you. Even without shared language, you understand its cries as it keeps watch, scouts and swoops to attack foes. Attacks/ defence DR10 (claws/bite D4), HP 8."
+                    "Ödesmästare: Känner på sig vilken väg som är den rätta om Närvaro mot SG8 lyckas.",
+                    "En bok om kokande blod: När boken öppnas måste fienden lyckas mot SG12. Misslyckas detta tar sig T2 Bärsärksbödlar (se sidan 60) genom från en blodig, bortglömd dimension och slåss vid din sida. Tyvärr är de också frenetiskt lynniga: vid 5–6 på T6 blir de din fiender och försöker dessutom förstöra boken. Efter striden återvänder bödlarna till sin dimension. Boken kan bara användas en gång per dygn.",
+                    "Medit@ion: Skänk klarhet till en utvald varelse som sänker nästa test mot SG med 4. Det är möjligt att använda det energiska lugnet två gånger per dygn.",
+                    "Esoterisk högborg: Frambringa en märklig aura en gång per dygn. T2 pergamentrullar skapas vars Krafter kan användas en gång, men de måste användas samma dygn. Sedan blir rullarna till aska och faller till marken. (T4) 1–2: ren. 3–4: smutsig.",
+                    "Harmonins harpa: Svårt att motstå dess vackra melodier. Vid slag på Reaktionstabellen ges +T4.",
+                    "Härdad hök: En trogen vän som kan spana från höga höjder och anfalla fiender. Du förstår flera av dess läten. Anfall/ Försvar SG10 (klor/bett T4) och TP 8."
                 ]
               },
               "origins": {
-                "description": "Eldritch Origins",
+                "description": "Oönskat skapad",
                 "options": [
-                    "Awakening, adult, in a ritual circle underneath the northern bridge to Grift.",
-                    "Wandered, memoryless, from the mouth of a cavern at the cliffs of Terion.",
-                    "Single child survivor of an incident in the Valley of the Unfortunate Undead.",
-                    "Dying of plague in a Bergen Chrypt hovel, you touched something from outside.",
-                    "An average individual until you encountered something in a dim glade in Sarkash.",
-                    "Raised on a lonely island in Lake Onda. No one else has ever heard of this island and you can’t return."
+                    "under Grifts norra bro.",
+                    "i en grotta vid klippan Terion.",
+                    "som från ingenstans i <b>De Olyckligt Odödas Dal.</b>",
+                    "i en koja i Bergen Chrypt.",
+                    "i någon av Sarkashs dunkla gläntor.",
+                    "på en enslig ö i Ondasjön."
                 ]
               }
             }
@@ -169,11 +169,11 @@
         "type": "class",
         "data": {
             "type": "core",
-            "description": "Bowed down only by the memories of your own lost glory, you could never submit to anyone else. Not you, of noble blood! (Not that you expect any of these peons to understand the depths of your sorrow.)",
+            "description": "Minnen från en svunnen tid i glans och ära plågar den till försök stolta högheten.",
             "baseOmensDice": "1d2",
             "canUseScrolls": true,
             "modifiers": [
-                "Painfully average, you adjust no abilities."
+                "Medelmåtta genomsyrar vardagen, så glöm egenskapsmodifikationer åt ena eller andra hållet."
             ],
             "startingInfo": {
               "startingSilverDice": "4d6",
@@ -188,25 +188,25 @@
               "armorDice": "1d3",
               "startingAbilities": 2,
               "abilities": {
-                "description": "You begin with two of the following:",
+                "description": "Du börjar också med ett av följande:",
                 "options": [
-                    "The Blade of your Ancestors: This magnificent and clearly magical talking sword is foppish, unreliable and quietly despises you. It taunts your failures and, if continually disappointed, develops a 1 in 6 chance to ‘accidentally’ attack you or your companions. Deals d6+1 damage. Attack/Defence DR is 10.",
-                    "‘Poltroon’ the Court Jester: While practically useless, personally irritating and an emotional drain, Poltroon’s capering actually makes enemies lose their focus in combat. For the first two rounds you and your allies get +2 on attack/defence.",
-                    "Barbarister the Incredible Horse: Barbarister is magical, intelligent, arrogant and vain. He can also talk. If you can persuade him to care, Barbarister occasionally adds +2 to Presence tests involving logic and intellect. The horse may be smarter than you and is quite aware of this.",
-                    "Hamfund the Squire: This intensely cowardly servant acts only as guardian for the scabbard of the cursed sword Eurekia. Once per combat, if Ham can be found, Eurekia may be drawn. The sword does 2d6 damage, and for every swing of Eurekia roll a d6. On a 1 the squire is slain and Eurekia vanishes forever.",
-                    "The Snake-Skin Gift: An expensive sandalwood box bound in snakeskin. It contains a seemingly ordinary dagger, wrapped in silk. The dagger does d4 damage but on a 1 the target dies immediately of deadly poison weeping from the blade.",
-                    "Horn of the Schleswig Lords!: Once per day release a blare from this dented old trumpet and test Presence DR12. One creature may make their next non-combat test an automatic success."
+                    "Talande svärd: Ett svärd som dessvärre retar sin ägare ibland. Utdelar t6+1 i skada och anfall/försvar görs mot SG10. Det sprättiga svärdet är också lynnigt: vid 1 på t6 drabbar svärdets skada dig eller någon av annan i gruppen, istället för motståndaren.",
+                    "Narren: En synnerligen tramsig typ, som får fiender att tappa fokus i konflikter. Under de två första rundorna slår alla RP med +2 vid anfalls- och försvarstester.",
+                    "Intelligent häst med högmod: Bidrar inte sällan med +2 vid test mot Närvaro som rör logik, tack vare intelligens och förmåga att tala. Nackdelen är att pållen tenderar att vara oerhört dryg och göra ett nummer av detta.",
+                    "Väpnare: En riktigt feg väpnare som emellertid erbjuder sin mästare ett enormt svärd en gång per strid. Svärdet, kallat Eurekia, gör 2t6 i skada. Varje gång Eurekia svingas, slå t6. En 1:a innebär att väpnaren dör och svärdet går upp i rök för alltid.",
+                    "Skrin med dolk inlindad i siden: En till synes simpel dolk som utdelar normal skada. Men … om skadan är 1 dör motståndaren av förgiftning.",
+                    "Bucklig trumpet från Schleswigs hov Blås i den gamla trumpeten en gång per dygn och testa Närvaro mot SG12. Valfri varelse får sedan göra om sitt nästa test, utanför strid, till en automatisk Succé."
                 ]
               },
               "origins": {
-                "description": "Things were going so well, until...",
+                "description": "Det började bra",
                 "options": [
-                    "your Wästland palace was reduced to rubble. ",
-                    "your caravan kingdom of Tveland fell into penury.",
-                    "King Fathmu IX’s brother Zigmund, your father, was murdered.",
-                    "the southern empire of Südglans sank into the sea.",
-                    "Anthelia demanded a gift of noble blood.",
-                    "two young princes were kidnapped west of Bergen Chrypt and disappeared into the black crevasse of the eastern slopes."
+                    "i vackra salar i Wästlands kronpalats, nu jämnat med marken.",
+                    "i Tvelands förintade karavankungadöme.",
+                    "tills Fathmus IX broder Zigmund, tillika din far, dräptes.",
+                    "men riket Südglans i söder sjönk ner i havet.",
+                    "men nobla arvingar kidnappades väster om Bergen Chrypt och gömdes undan bland bergens skrevor i öst.",
+                    "tills Anthelia krävde adligt blod i maktens skålar."
                 ]
               }
             }
@@ -222,11 +222,11 @@
         "type": "class",
         "data": {
             "type": "core",
-            "description": "Hunted by the Two-Headed Basilisks of the One True Faith, this heretic can be found raving in ruins, traipsing endlessly down dusty roads and desecrating cathedrals by night.",
+            "description": "Du är jagad av den enda sanna kyrkan, De Tvehövdade Basiliskerna. Irrar allt som oftast omkring bland övergivna kyrkor, ruiner och på dammiga landsvägar.",
             "baseOmensDice": "1d4",
             "canUseScrolls": true,
             "modifiers": [
-                "May use Powers while wearing medium armor."
+                "Du får nyttja Krafter även iförd medeltung rustning."
             ],
             "startingInfo": {
               "startingSilverDice": "3d6",
@@ -241,25 +241,25 @@
               "armorDice": "1d4",
               "startingAbilities": 1,
               "abilities": {
-                "description": "You begin with one of the following:",
+                "description": "Du börjar också med ett av följande:",
                 "options": [
-                    "Sacred shepherd’s crook: Its head a hook of human bone inscribed with overlapping anti-prayers. This crook hooks through other worlds. Staff does 2d4 damage except to faithless humans.",
-                    "Stolen Mitre: While wearing this holy hat the priest’s vile body fades, becoming hard to hit in combat (Defence DR10). If pulled over the ears outside of battle the priest becomes nearly invisible, testing stealth against DR8.",
-                    "List of Sins: A long and accurate document cross-referenced against reality to discover unseen evil-doers. Successful Presence DR10: A strange light surrounds evil creatures. The list’s owner defends with +2 against any being discovered this way.",
-                    "The Blasphemous Nechrubel Bible: So intensely blasphemous even the Priests themselves can only peruse it once per day. When read, roll a die. Even result: For the rest of the day PCs heal d4 HP after just five minutes of rest. Odd result: The priest is plagued by demonic hallucinations. The DM may invent d3 things that only the Priest can see and describe them to the player as if true.",
-                    "Stones taken from Thel-Emas’ Lost Temple Cast the stones on the ground. Their pattern reveals if danger lurks in an adjacent room. The stones can lie. The priest tests Presence DR10 to see if they are true but after failing they cannot test again until the sun has set.",
-                    "666 (WRONG JESUS) CRUCIFIX: The crucifix can be used in encounters with the undead as well as lesser trolls and goblins. Check morale (add or subtract the priest’s Presence modifier) to see if the creatures bow and kindly remove themselves."
+                    "Helgad herdestav: Huvudkroken på staven är av mänskligt ben och fylld av inskriptioner med överlappande antiböner. De kommunicerar med okända dimensioner. Staven gör 2t4 i skada om fienden inte är en trolös människa.",
+                    "Stulen kardinalshatt: Med hatten på börjar din kropp ”blinka” och blir svår att träffa i strid (Försvar SG10). Dras den ner över öronen utanför strid blir din smått osynlig och kan gömma sig samt smyga mot SG8.",
+                    "Syndernas lista: Ett långt och pricksäkert dokument som kan användas mot de som är svåra att läsa av. Lyckat Närvaro mot SG10: ett märkligt ljus omsluter ondskefulla individer. Ägaren av listan får efter detta +2 i försvar mot de som märkts av ljuset.",
+                    "Blasfemisk Nechrubels Bibel: Bibeln är så intensivt hädisk att inte ens du orkar läsa den mer än en gång per dygn. När så görs, slå en tärning. Udda resultat: Du plågas av demoniska hallucinationer. SL kan slå t3 och beskriva så många falska fenomen under dygnet, som bara du ser och tror på. Effekterna upphör vid nästa soluppgång. Jämnt resultat: alla RP läker t4 TP efter bara fem minuters vila hela dygnet.",
+                    "Stenar från Försvunna Thel-Emas tempel: Lägg ut stenarna på marken. Ett prisma förtäljer om fara i angränsande rum. Testa Närvaro mot SG10 för att se om stenarna ljuger. Misslyckas testet går det inte att kontrollera stenarnas sanningshalt förrän nästa solnedgång.",
+                    "(FEL JESUS) KRUCIFIX: Krucifixet kan användas i möten med odöda samt mindre svartblod. Ett vanligt Moralslag görs med din Närvaro som bonus och lyckas det avlägsnar sig vänligt varelserna."
                 ]
               },
               "origins": {
-                "description": "Unholy origins",
+                "description": "Oheligt kommen från",
                 "options": [
-                    "Galgenbeck, near the cathedral of the Two-Headed Basilisks.",
-                    "Massacred Alliáns cult, sole survivor.",
-                    "The crypts of Grift.",
-                    "Temple ruins in the Valley of the Unfortunate Undead.",
-                    "One of the many Graven-Tosk thief-tunnels.",
-                    "Secret Bergen Chrypt church."
+                    "Galgenbeck, alltför nära De Tvehövdade Basiliskernas kyrka.",
+                    "utplånad sekt i Alliáns.",
+                    "Grifts vindlande katakomber.",
+                    "tempelruiner i De Olyckligt Odödas Dal.",
+                    "utbrytarnas kulvertar vid Graven-Tosk.",
+                    "dold kyrka vid Bergen Chrypts fot."
                 ]
               }
             }
@@ -279,7 +279,7 @@
             "baseOmensDice": "1d2",
             "canUseScrolls": true,
             "modifiers": [
-                "You carry a portable laboratory and continually search for frequently expended ingredients. Daily you have the materials to create two randomly determined decoctions and can brew a total of d4 doses. If unused they lose vitality after 24 hours."
+                "Kånkar omkring på ett portabelt laboratorium vilket kan skapa totalt t4 doser av max två slumpade dekokter varje dygn. Hur doserna fördelas är upp till dig, men de ruttnar om de inte använts inom ett dygn."
             ],
             "startingInfo": {
               "startingSilverDice": "2d6",
@@ -294,29 +294,29 @@
               "armorDice": "1d2",
               "startingAbilities": 2,
               "abilities": {
-                "description": "Create two randomly determined decoctions",
+                "description": "Skapa två slumpade dekokter",
                 "options": [
-                    "Red Poison Toughness DR12 or -d10 HP.",
-                    "Ezumiels Vapor Pass a DR14 test or severe (and arguably fun) hallucinations for d4 hours.",
-                    "Southern Frog Stew Vomit for d4 hours, pass a DR14 test or you can do nothing else.",
-                    "Elixir Vitalis Heals d6 HP and stops infection. Can be habit-forming.",
-                    "Spider-Owl Soup See in darkness, climb on walls for 30 minutes.",
-                    "Fernor’s Philtre Translucent oil, must be dabbed right into the eye. Heals infection and gives +2 on Presence tests for d4 hours.",
-                    "Hyphos’ Enervating Snuff Berserk! Two attacks per round but defend with DR14. Lasts one fight. Must be snorted, causes sneezing.",
-                    "Black Poison Toughness DR14 or -d6 HP and blinded for one hour."
+                    "Rött gift Tålighet mot SG12 eller -t10 TP.",
+                    "Ezumiels ånga Svåra hallucinationer under t4 timmar om Tålighet mot SG14 misslyckas.",
+                    "Sydländsk grodlårsröra Offret kräks djävulskt mycket under t4 timmar, kan inte göra något annat, om test mot SG14 misslyckas.",
+                    "Elixir Vitalis Läker t6 TP och häver infektion. Kan vara beroendeframkallande.",
+                    "Spindelugglans soppa Se i mörker och klättra på väggar under 30 minuter.",
+                    "Fernors filter Genomskinlig olja, måste strykas direkt på ögat. Renar infektion och ger +2 vid Närvarotest i t4 timmar.",
+                    "Hyperhs pulver Måste sniffas, orsakar rejäla nysningar. Bärsärkseffekt! Två anfall per runda men SG14 i försvar. Varar en strid.",
+                    "Svart gift -t6 TP och förblindad en timme om Tålighet mot SG14 misslyckas."
                 ]
               },
               "origins": {
-                "description": "Probably raised in ... but may also come from",
+                "description": "Sannolik uppväxt i... men kan också komma från",
                 "options": [
-                    "calm isolation in the Sarkash dark.",
-                    "calm isolation in the Sarkash dark.",
-                    "calm isolation in the Sarkash dark.",
-                    "the illegal midnight markets of Schleswig.",
-                    "the heretic isle of Crëlut, two nautical miles east of Grift.",
-                    "the old frozen ruins not far from Alliáns.",
-                    "a little witches cottage in Galgenbeck.",
-                    "the ruins of the Shadow King’s manse, thick with memories of mushrooms and smoke."
+                    "ostörd tillvaro i Sarkashs mörker.",
+                    "ostörd tillvaro i Sarkashs mörker.",
+                    "ostörd tillvaro i Sarkashs mörker.",
+                    "Schleswigs kvarter med otillåtna marknader.",
+                    "hednamystiskt leverne på ön Crëlut, belägen två sjömil öster om Grift.",
+                    "frusna ruiner lagom långt från Alliáns.",
+                    "ett litet stenhus i Galgenbeck.",
+                    "Skuggkungens palatsruiner, med minnen av svampar och rök."
                 ]
               }
             }
